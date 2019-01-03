@@ -1,0 +1,101 @@
+body {
+    /* The image used */
+    background-image: url("images/gearsBackground.jpg");
+
+    /* Full height */
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    background-color: #999;
+}
+
+button_robot_face {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    position:absolute;
+    left:15%;
+    bottom:60%;
+    height:16%;
+    width:10%;
+
+}
+.button_image, button_robot_face{
+    background-image: url('images/robotFace.png');
+    background-size: 100% 100%;
+}
+
+
+.circle_begin iniciar{
+    color:#fff;
+    text-decoration:none;
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: x-large;
+}
+
+
+div.circle_begin {
+    background: #02b9f3;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    height:10%;
+    width:5.5%;
+    left: 59.6%;
+    top: 27%;
+    cursor: pointer;
+}
+
+/*Al dar click*/
+.circle_begin:active {
+    box-shadow: inset 0 5px 30px rgba(0,0,0,.2); /* Sombra interior */
+    background-size: 55%; /* Cambiamos el tamaño de la imagen */
+}
+
+.circle_exit salir{
+    color:#fff;
+    text-decoration:none;
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: x-large;
+}
+
+div.circle_exit {
+    background: #3f51b5;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    height:13%;
+    width:6.9%;
+    left: 45.7%;
+    top: 49%;
+    cursor: pointer;
+}
+.circle_exit:active {
+    box-shadow: inset 0 5px 30px rgba(0,0,0,.2); /* Sombra interior */
+    background-size: 55%; /* Cambiamos el tamaño de la imagen */
+}
+
+
+div.gear_image {
+    content:url('images/gears.png');
+    width: 40%;
+    height: 70%;
+    left: 35%;
+    top: 10%;
+    position: fixed;
+}​
+
+
+

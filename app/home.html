@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="home.css" rel="stylesheet" type="text/css" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <div>
+            <script>
+                var bflat = new Audio();
+                bflat.src = "audio/robot.mp4";
+                function PlaySound() {
+                    bflat.play();
+                }
+            </script>
+            <audio id="bflat"> </audio>
+            <button_robot_face  onclick="PlaySound()">
+
+            </button_robot_face>
+
+            <div class="gear_image">
+            </div>
+            <div class="circle_begin">
+                <iniciar>Iniciar</iniciar>
+            </div>
+            <div class="circle_exit">
+                <salir>Salir</salir>
+            </div>
+        </div>
+    </body>
+</html>
