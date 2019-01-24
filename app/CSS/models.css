@@ -1,0 +1,24 @@
+/* Home icon */
+.home {
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+    width: fit-content
+  }
+  
+  /* Select an option text */
+ .option {
+    text-align: center;
+    float: left;
+    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+    width: 90%
+  }
+
+  /* Clear floats after the columns */
+  .top:after {
+    content: "";
+    display: table;
+    clear: both;
+    height: 10px;
+  }
