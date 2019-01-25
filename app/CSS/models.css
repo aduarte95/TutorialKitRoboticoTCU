@@ -27,8 +27,14 @@
     height: 10px;
   }
 
-  .models-option {
+  .lvls-option {
     width: 95%;
+    margin: auto;
+    margin-bottom: 5%;
+  }
+
+  .models-option {
+    width: 75%;
     margin: auto;
     margin-bottom: 5%;
   }
