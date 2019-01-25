@@ -15,10 +15,20 @@
     width: 90%
   }
 
+  .top {
+    margin-bottom: 25px;
+  }
+
   /* Clear floats after the columns */
   .top:after {
     content: "";
     display: table;
     clear: both;
     height: 10px;
+  }
+
+  .models-option {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 5%;
   }
