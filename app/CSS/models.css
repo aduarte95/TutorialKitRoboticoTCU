@@ -26,13 +26,17 @@
   }
 
   .lvls-option {
-    width: 95%;
+    width: 88%;
     margin: auto;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
   }
 
   .models-option {
-    width: 75%;
-    margin: auto;
-    margin-bottom: 5%;
+    width: 58%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .work {
+    height: 300px;
   }

@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="sp">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/bootstrap.min.css">
-    <script scr="js/bootstrap.min.js"></script>
-    <script src="js/objectsVisibility.js"></script>
-    <link href="CSS/models.css" rel="stylesheet" type="text/css" >
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script scr="../js/bootstrap.min.js"></script>
+    <link href="../CSS/description.css" rel="stylesheet" type="text/css" >
 
     <head>
         <meta charset="UTF-8">
@@ -14,93 +16,71 @@
         <div>
           <!-- Top of the screen. Contains a home button and an option's text--> 
           <div class="top">
-            <!-- Home button --> 
-            <div class="home">
-              <a href="home.html">
-                  <img src="images/home.png" width="35" height="35">
-              </a>
+            <div class="row no-gutters">
+              <div class="col-0">
+                  &nbsp;
+                  <a href="../lvlOne.html">
+                      <img src="../images/atras.png" width="35" height="35">
+                    </a>
+              </div>
+              <div class="col-0 text-right">
+              &nbsp;
+                  <a href="../home.html">
+                      <img src="../images/home.png" width="35" height="35">
+                    </a>
+              </div>
             </div>
+          </div>
 
-            <!-- Option's text--> 
-            <div class="option">
-                Seleccioná el nivel que querás trabajar
-            </div>
-            </div>
+          <!-- Display the models description -->
+            <section>
+              <div class="container-fluid">
+                  <div class="row">
+                      <div class="col-12 mt-3">
+                          <div class="card">
+                              <div class="card-horizontal">
+                                  <div class="img-square-wrapper">
+                                      <img src="../images/micropiano.jpg" alt="Micropiano">
+                                  </div>
+                                  <div class="card-body">
+                                      <h4 class="card-title">Micropiano</h4>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  </div>
+                              </div>
+                              <div class="card-footer">
+                                  <ul class="list-group">
+                                    <a class="list-group-item-action" href="#">
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Componente 1 
+                                        <span class="badge badge-primary badge-pill">3</span>
+                                      </li>
+                                    </a>
+                                    <a class="list-group-item-action" href="#">
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Componente 2 
+                                        <span class="badge badge-primary badge-pill">1</span>
+                                        </li>
+                                    </a>
+                                    <a class="list-group-item-action" href="#">
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Componente n 
+                                        <span class="badge badge-primary badge-pill">1</span>
+                                        </li>
+                                    </a>
+                                </ul>
+                              </div>
+                          </div>  <!-- Card termination--> 
+                      </div>
+                  </div>
+              </div>  <!-- Container termination-->
 
-            <!-- Display the models by levels --> 
-            <section class="lvls-option">
-              <div class="card-deck">
-                <div class="card text-center">
-                  <div class="card-body">
-                  <img class="card-img-top" src="images/gears0.png"  alt="Tutoriales básicos">
-                  <h5 class="card-title">Nivel 0</h5>
-                  <p class="card-text">Tutoriales básicos</p>
-                  </div>
-                  <div class="card-footer">
-                    <a href="#" class="btn btn-primary">Comenzar</a>
-                  </div>
-                </div>
+            <!-- Bottom -->
+            <section class="description-bottom top-margin">
+                    <section class="next-button">
+                        <a class="btn btn-primary" href="Step/stepOne.html" role="button">Siguiente &raquo;</a>
+                    </section>
+            </section> <!-- Bottom section termination-->
 
-                <div class="card text-center">
-                  <div class="card-body">
-                    <img class="card-img-top" src="images/nvl1.png"  alt="Card image cap">
-                    <h5 class="card-title">Nivel 1</h5>
-                    <p class="card-text">Micropiano</br> 
-                    Caballo</p>
-                  </div>
-                  <div class="card-footer">
-                    <a href="#" class="btn btn-primary" onclick="showOptions(true)">Comenzar</a>
-                  </div>
-                </div>
-              
-                <div class="card text-center">
-                  <div class="card-body">
-                    <img class="card-img-top" src="images/nvl2.png"  alt="Card image cap">
-                    <h5 class="card-title">Nivel 2</h5>
-                    <p class="card-text">Generador eléctrico</br> 
-                    Motor</p>
-                  </div>
-                  <div class="card-footer">
-                    <a href="#" class="btn btn-primary" onclick="showOptions(false)">Comenzar</a>
-                  </div>
-                </div>
-              </div> <!-- Card-deck termination--> 
-
-              <!-- Second Card-deck--> 
-              <div class="card-deck">
-                <div class="card text-center">
-                  <div class="card-body">
-                    <img class="card-img-top" src="images/nvl3.png"  alt="Card image cap">
-                    <h5 class="card-title">Nivel 3</h5>
-                    <p class="card-text">Girabot</p>
-                  </div>
-                  <div class="card-footer">
-                    <a href="#" class="btn btn-primary">Comenzar</a>
-                  </div>
-                </div>
-
-                <div class="card text-center">
-                  <div class="card-body">
-                    <img class="card-img-top" src="images/brazo.png"  alt="Card image cap">
-                    <h5 class="card-title">Nivel 4</h5>
-                    <p class="card-text">Brazo mecánico</p>  
-                  </div>
-                  <div class="card-footer">
-                    <a href="#" class="btn btn-primary">Comenzar</a>
-                  </div>
-                </div>
-
-                <div class="card text-center">
-                  <div class="card-body">
-                    <img class="card-img-top" src="images/carro.png"  alt="Card image cap">
-                    <h5 class="card-title">Nivel 5</h5>
-                    <p class="card-text">Carro</p>
-                  </div>
-                  <div class="card-footer">
-                    <a href="#" class="btn btn-primary">Comenzar</a>
-                  </div>
-                </div>
-              </div> <!-- Card-deck termination--> 
           </section> <!-- Section termination--> 
         </div>
     </body>

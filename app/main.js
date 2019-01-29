@@ -6,7 +6,7 @@ require('electron-reload')(__dirname);
 let win  
 
 function createWindow() { 
-   win = new BrowserWindow({width: 800, height: 600, autoHideMenuBar: true})
+   win = new BrowserWindow({width: 800, height: 600, autoHideMenuBar: true,  minWidth: 800, minHeight: 600,center: true})
    win.loadURL(url.format ({ 
       pathname: path.join(__dirname, 'home.html'),
       protocol: 'file:', 

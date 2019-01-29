@@ -1,0 +1,10 @@
+.top-margin{
+    margin-top: 2% 
+}
+
+.center-content{
+    margin: 0;
+    position: absolute;            
+    top: 50%;                         
+    transform: translate(0, -50%);
+}
