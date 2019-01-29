@@ -8,7 +8,7 @@
 
 # production
 /build
-/release-build
+/release-builds
 
 # misc
 .DS_Store
