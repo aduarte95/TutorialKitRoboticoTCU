@@ -5,6 +5,34 @@
 .center-content{
     margin: 0;
     position: absolute;            
-    top: 50%;                         
-    transform: translate(0, -50%);
+    top: 45%;                         
+    transform: translate(0, -45%);
 }
+
+.bottom-bar {
+    position: absolute; 
+    bottom: 20px;
+}
+
+.max-size {
+    width: 100%;
+}
+
+.image-size {
+    width: 100%
+}
+
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.next-button {
+    width: fit-content;
+    margin-left:auto;
+    margin-right:10px
+}
+
+.progress-position {
+    margin-top:11px;
+  }
