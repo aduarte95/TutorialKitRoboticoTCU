@@ -9,6 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Tutorial Kit Robótico</title>
+
     <script type="text/javascript">
         function setModel(component)
         {
@@ -20,22 +21,38 @@
             return fetch(path).then(response => response.json());
         }
 
-        let allQuestions;
+        function loadJSON(callback) {
+            var xobj = new XMLHttpRequest();
+            xobj.overrideMimeType("JSONFiles");
+            xobj.open('GET', 'JSONFiles/Components.json', true); // Replace 'my_data' with the path to your file
+            xobj.onreadystatechange = function () {
+                if (xobj.readyState == 4 && xobj.status == "200") {
+                    // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
+                    callback(xobj.responseText);
+                }
+            };
+            xobj.send(null);
+        }
 
-        function loadDeck()
-        {
-            // load JSON data; then proceed
-            getJSON('JSONFiles/Components.json').then(data => {
-                // assign allQuestions with data
-               allQuestions = data;
+        function init() {
+           loadJSON(function(response) {
+                // Parse JSON string into object
+                localStorage.setItem("json",response);
+               //alert(localStorage.getItem("json"));
             });
-            console.log("allQuestions");
-            console.log(allQuestions);
+
+        }
+        var x = JSON.parse(localStorage.getItem("json"))
+        alert(localStorage.getItem("json")[0].Descripcion);
+        console.log(localStorage);
+        for (i in localStorage.getItem("json"))
+        {
+            alert(localStorage.getItem("json")[i].Descipcion);
         }
     </script>
 </head>
 
-<body onload="loadDeck();">
+<body onload="init();">
 <div>
     <!-- Top of the screen. Contains a home button and an option's text-->
     <div class="top">

@@ -1,16 +1,10 @@
 {
-  "Resistencia":
-          [
-            {
-              "Descripcion": "Se denomina resistencia eléctrica a la oposición que se le genera al flujo de electrones cuando se mueven a través de un material conductor; es decir, es la capacidad eléctrica que posee un dispositivo para contrarrestar el efecto de la corriente eléctrica, con el objetivo de controlar el grado en que se disipa dicha corriente. Un resistor es un componente electrónico diseñado para introducir una resistencia eléctrica determinada entre dos puntos de un circuito eléctrico.",
-              "Foto":"../images/Components/resistencia.jpm"
-            }
-          ],
-  "LED":
-  [
-    {
-      "Descripcion": "Un LED (diodo emisor de luz, del inglés light-emitting diode) es una fuente de luz que posee un material semiconductor de electricidad compuesto por dos terminales. Una de las terminales tiene carga positiva (p) y la otra carga negativa (n), por lo que se denomina diodo de unión p-n, el cual emite luz cuando está activado. \nHoy en día, los LED ofrecen muchas ventajas sobre las fuentes más comunes de luces incandescentes o fluorescentes, destacando un menor consumo de energía, una vida útil más larga, un tamaño más pequeño, así como la posibilidad de fabricarlos en diversos colores. Además, su eliminación como desecho posee un menor impacto ambiental que las luces convencionales.\nEstos diodos se utilizan ahora en una gran cantidad de aplicaciones, abarcando todas las áreas tecnológicas actuales, como lo son la Bioingeniería y la Nanotecnología. Dentro de las aplicaciones más populares están los televisores, los celulares, la luz de navegación de los aviones, los focos delanteros de los vehículos, los anuncios publicitarios, los semáforos, entre otras cosas.\n",
-      "Foto":"../images/Components/LED.jpm"
-    }
-  ]
+  "Resistencia": {
+  "Descripcion": "Se denomina resistencia eléctrica a la oposición que se le genera al flujo de electrones cuando se mueven a través de un material conductor; es decir, es la capacidad eléctrica que posee un dispositivo para contrarrestar el efecto de la corriente eléctrica, con el objetivo de controlar el grado en que se disipa dicha corriente. Un resistor es un componente electrónico diseñado para introducir una resistencia eléctrica determinada entre dos puntos de un circuito eléctrico.",
+  "Foto": "../images/Components/resistencia.jpm"},
+
+
+  "Arduino": {
+    "Descripcion": "xxxxxxxx",
+    "Foto": "yyyyyyy"}
 }
