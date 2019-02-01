@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="sp">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link rel="stylesheet" href="CSS/bootstrap.min.css">
+<script scr="js/bootstrap.min.js"></script>
+<script src="js/objectsVisibility.js"></script>
+<link href="CSS/models.css" rel="stylesheet" type="text/css" >
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tutorial Kit Robótico</title>
+    <script type="text/javascript">
+        function setModel(component)
+        {
+            localStorage.setItem("component", component);
+        }
+
+        // return JSON data from any file path (asynchronous)
+        function getJSON(path) {
+            return fetch(path).then(response => response.json());
+        }
+
+        let allQuestions;
+
+        function loadDeck()
+        {
+            // load JSON data; then proceed
+            getJSON('JSONFiles/Components.json').then(data => {
+                // assign allQuestions with data
+               allQuestions = data;
+            });
+            console.log("allQuestions");
+            console.log(allQuestions);
+        }
+    </script>
+</head>
+
+<body onload="loadDeck();">
+<div>
+    <!-- Top of the screen. Contains a home button and an option's text-->
+    <div class="top">
+        <div class="row no-gutters">
+            <div class="col-0 text-right">
+                &nbsp;
+                <a href="home.html">
+                    <img src="images/home.png" width="35" height="35">
+                </a>
+            </div>
+            <div class="col-11 text-center">
+                <h6 class="option" >
+                    Seleccioná el nivel que querás trabajar
+                </h6>
+            </div>
+        </div>
+    </div>
+
+    <!-- Display the models by levels -->
+    <section class="lvls-option">
+        <div class="card-deck">
+
+        </div> <!-- Card-deck termination-->
+    </section> <!-- Card decks section termination-->
+</div>
+</body>
+</html>

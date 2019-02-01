@@ -8,8 +8,23 @@
     <head>
         <meta charset="UTF-8">
         <title>Tutorial Kit Robótico</title>
+        <script type="text/javascript">
+            function loadModel()
+            {
+                if( localStorage.getItem("model") == "1")
+                {
+                    document.getElementById('message').innerHTML = "Valor de variable con modelo 1";
+                    console.log("El item es 1");
+                }
+                else
+                {
+                    document.getElementById('message').innerHTML = "Valor de variable con modelo 2";
+                    console.log("El item es 2");
+                }
+            }
+        </script>
     </head>
-    <body>
+    <body onload="loadModel();">
         <div>
           <!-- Top of the screen. Contains a home button and an option's text--> 
           <div class="top">
@@ -41,7 +56,7 @@
                                   </div>
                                   <div class="card-body">
                                       <h4 class="card-title">Micropiano</h4>
-                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                      <p class="card-text" id='message'></p>
                                   </div>
                               </div>
                               <div class="card-footer">

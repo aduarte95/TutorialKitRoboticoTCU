@@ -9,10 +9,17 @@
     <head>
         <meta charset="UTF-8">
         <title>Tutorial Kit Robótico</title>
+        <script type="text/javascript">
+            function setModel(model)
+            {
+                localStorage.setItem("model", model);
+            }
+        </script>
     </head>
+
     <body>
         <div>
-          <!-- Top of the screen. Contains a home button and an option's text--> 
+          <!-- Top of the screen. Contains a home button and an option's text-->
           <div class="top">
               <div class="row no-gutters">
                   <div class="col-0 text-right">
@@ -29,7 +36,7 @@
                 </div>
             </div>
 
-            <!-- Display the models by levels --> 
+            <!-- Display the models by levels -->
             <section class="lvls-option">
               <div class="card-deck">
                 <div class="card text-center">
@@ -47,28 +54,28 @@
                   <div class="card-body">
                     <img class="card-img-top" src="images/nvl1.png"  alt="Card image cap">
                     <h5 class="card-title">Nivel 1</h5>
-                    <p class="card-text">Micropiano</br> 
+                    <p class="card-text">Micropiano</br>
                     Caballo</p>
                   </div>
                   <div class="card-footer">
-                    <a href="#" class="btn btn-primary" onclick="showOptions(true)">Comenzar</a>
+                    <a href="#" class="btn btn-primary" onclick="showOptions(true);setModel(1);">Comenzar</a>
                   </div>
                 </div>
-              
+
                 <div class="card text-center">
                   <div class="card-body">
                     <img class="card-img-top" src="images/nvl2.png"  alt="Card image cap">
                     <h5 class="card-title">Nivel 2</h5>
-                    <p class="card-text">Generador eléctrico</br> 
+                    <p class="card-text">Generador eléctrico</br>
                     Motor</p>
                   </div>
                   <div class="card-footer">
                     <a href="#" class="btn btn-primary" onclick="showOptions(false)">Comenzar</a>
                   </div>
                 </div>
-              </div> <!-- Card-deck termination--> 
+              </div> <!-- Card-deck termination-->
 
-              <!-- Second Card-deck--> 
+              <!-- Second Card-deck-->
               <section style="margin-top:2%">
                 <div class="card-deck">
                   <div class="card text-center">
@@ -86,7 +93,7 @@
                     <div class="card-body">
                       <img class="card-img-top" src="images/brazo.png"  alt="Card image cap">
                       <h5 class="card-title">Nivel 4</h5>
-                      <p class="card-text">Brazo mecánico</p>  
+                      <p class="card-text">Brazo mecánico</p>
                     </div>
                     <div class="card-footer">
                       <a href="#" class="btn btn-primary">Comenzar</a>
@@ -100,12 +107,12 @@
                       <p class="card-text">Carro</p>
                     </div>
                     <div class="card-footer">
-                      <a href="#" class="btn btn-primary">Comenzar</a>
+                      <a href="#" class="btn btn-primary" >Comenzar</a>
                     </div>
                   </div>
-                </div> <!-- Card-deck termination--> 
-            </section> <!-- Second card section termination--> 
-          </section> <!-- Card decks section termination--> 
+                </div> <!-- Card-deck termination-->
+            </section> <!-- Second card section termination-->
+          </section> <!-- Card decks section termination-->
         </div>
     </body>
 </html>
