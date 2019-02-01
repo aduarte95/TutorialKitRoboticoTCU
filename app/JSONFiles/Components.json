@@ -2,15 +2,79 @@
   "Resistencia":
           [
             {
-              "Descripcion": "Se denomina resistencia eléctrica a la oposición que se le genera al flujo de electrones cuando se mueven a través de un material conductor; es decir, es la capacidad eléctrica que posee un dispositivo para contrarrestar el efecto de la corriente eléctrica, con el objetivo de controlar el grado en que se disipa dicha corriente. Un resistor es un componente electrónico diseñado para introducir una resistencia eléctrica determinada entre dos puntos de un circuito eléctrico.",
-              "Foto":"../images/Components/resistencia.jpm"
+              "Descripcion": "Se denomina resistencia eléctrica a la oposición que se le genera al flujo de electrones cuando se mueven a través de un material conductor; es decir, es la capacidad eléctrica que posee un dispositivo para contrarrestar el efecto de la corriente eléctrica, con el objetivo de controlar el grado en que se disipa dicha corriente. Un resistor es un componente electrónico diseñado para introducir una resistencia eléctrica determinada entre dos puntos de un circuito eléctrico.\n               \"Descripcion\": \"Se denomina resistencia eléctrica a la oposición que se le genera al flujo de electrones cuando se mueven a través de un material conductor; es decir, es la capacidad eléctrica que posee un dispositivo para contrarrestar el efecto de la corriente eléctrica, con el objetivo de controlar el grado en que se disipa dicha corriente. Un resistor es un componente electrónico diseñado para introducir una resistencia eléctrica determinada entre dos puntos de un circuito eléctrico.\n",
+              "Foto":"../images/Components/resistencia.jpg"
             }
           ],
   "LED":
   [
     {
       "Descripcion": "Un LED (diodo emisor de luz, del inglés light-emitting diode) es una fuente de luz que posee un material semiconductor de electricidad compuesto por dos terminales. Una de las terminales tiene carga positiva (p) y la otra carga negativa (n), por lo que se denomina diodo de unión p-n, el cual emite luz cuando está activado. \nHoy en día, los LED ofrecen muchas ventajas sobre las fuentes más comunes de luces incandescentes o fluorescentes, destacando un menor consumo de energía, una vida útil más larga, un tamaño más pequeño, así como la posibilidad de fabricarlos en diversos colores. Además, su eliminación como desecho posee un menor impacto ambiental que las luces convencionales.\nEstos diodos se utilizan ahora en una gran cantidad de aplicaciones, abarcando todas las áreas tecnológicas actuales, como lo son la Bioingeniería y la Nanotecnología. Dentro de las aplicaciones más populares están los televisores, los celulares, la luz de navegación de los aviones, los focos delanteros de los vehículos, los anuncios publicitarios, los semáforos, entre otras cosas.\n",
-      "Foto":"../images/Components/LED.jpm"
+      "Foto":"../images/Components/led.jpm"
+    }
+  ],
+
+  "Cable":
+  [
+    {
+      "Descripcion": "Un cable es un conductor eléctrico, generalmente recubierto de un material aislante o protector como el cobre, el más común. Al igual que los resistores, es uno de los elementos fundamentales de los circuitos eléctricos, por lo que se pueden encontrar en la mayoría de ellos, así como en cualquier otro dispositivo que ocupe ser conectado a una corriente eléctrica, como las planchas, las cocinas, los videojuegos, entre muchos otros.\n",
+      "Foto":"../images/Components/cable.jpg"
+    }
+  ],
+
+  "Botón":
+  [
+    {
+      "Descripcion": "Un botón o pulsador es una tecla utilizada para activar alguna función de un dispositivo. Los botones son de diversas formas y tamaños y se encuentran en todo tipo de dispositivos, aunque principalmente en aparatos eléctricos y electrónicos.\n Los botones son, por lo general, activados al ser pulsados con un dedo. Permiten el flujo de corriente mientras son accionados. Cuando ya no se presiona sobre él vuelve a su posición de reposo. \n El botón se utiliza en calculadoras, teléfonos, electrodomésticos, y varios otros dispositivos mecánicos y electrónicos, del hogar y comerciales.\n",
+      "Foto":"../images/Components/boton.jpg"
+    }
+  ],
+
+  "Potenciómetro":
+  [
+    {
+      "Descripcion": "El potenciómetro se comporta como un interruptor que modifica el valor de la resistencia con el objetivo de disminuir, si se acciona para un lado, o aumentar, si se acciona para el otro lado, la potencia que se disipa.\n Son adecuados para su uso como elemento de control de la tensión (resistencia) en los aparatos electrónicos. El usuario acciona sobre ellos para cambiar los parámetros normales de funcionamiento, por ejemplo, el volumen de un aparato de audio.\n",
+      "Foto":"../images/Components/potenciometro.jpg"
+    }
+  ],
+
+  "Sensor Ultrasónico":
+  [
+    {
+      "Descripcion": "Los sensores de ultrasonidos o sensores ultrasónicos son dispositivos que detectan objetos a distancias que van desde pocos centímetros hasta varios metros. El sensor emite un sonido y mide el tiempo que la señal tarda en regresar. El sensor recibe el eco producido y lo convierte en señales eléctricas, las cuales son elaboradas en otro aparato.\n Estos sensores trabajan solamente donde se tiene presencia de aire (no pueden trabajar en el vacío, necesitan medio de propagación), y pueden detectar objetos con diferentes formas, diferentes colores, superficies y de diferentes materiales. Los materiales pueden ser sólidos, líquidos o polvorientos, sin embargo, deben ser necesariamente deflectores de sonido.\n El problema que presentan estos dispositivos son las zonas ciegas, las cuales son comprendidas entre el lado sensible del detector y el alcance mínimo en el que ningún objeto puede detectarse de forma segura.",
+      "Foto":"../images/Components/sensorUltrasonico.jpg"
+    }
+  ],
+
+  "Fotoresistencia":
+  [
+    {
+      "Descripcion": "Un fotorresistor o fotorresistencia es un componente electrónico cuya resistencia disminuye con el aumento de intensidad de luz que le entra. A medida que la intensidad de luz entra a la superficie de la fotorresistencia, va a ser menor la resistencia, pero en cuanto menor sea la luz que entra en el material, mayor será la resistencia.\n Son utilizadas con regularidad en el sector de la iluminación para el apagado y el encendido de alumbrado. Por ejemplo, el alumbrado público utiliza fotorresistencias, el cual aumenta la resistencia al mismo tiempo que el sol se empieza a poner. Gracias a esto las luces permanecen encendidas en la noche, lo cual permite alumbrar las calles y aceras. Cuando el sol empieza a salir, las fotorresistencias disminuyen su intensidad por lo que el alumbrado público se apaga durante el día.\n",
+      "Foto":"../images/Components/fotoresistencia.jpg"
+    }
+  ],
+
+  "Servomotor":
+  [
+    {
+      "Descripcion": "Un servomotor es un tipo especial de motor que permite controlar la posición del eje en un momento dado. Está diseñado para moverse determinada cantidad de grados y luego mantenerse fijo en una posición. Posee un consumo de energía reducido. La corriente que requiere depende del tamaño del servo. Normalmente el fabricante indica cuál es la corriente que consume.\n Los servomotores se pueden utilizar tanto en dispositivos electrónicos como mecánicos, como por ejemplo brazos robóticos, ‘zoom’ de una cámara de fotos, puertas automáticas de un ascensor, impresoras para el control de avance y retroceso del papel, en el timón de los aviones, entre otras cosas.\n",
+      "Foto":"../images/Components/servo.jpg"
+    }
+  ],
+
+  "Potenciómetro":
+  [
+    {
+      "Descripcion": "Zumbador (buzzer en inglés) es un dispositivo que produce un sonido o zumbido de un mismo tono (generalmente agudo). Su construcción consta de dos elementos, un electroimán y una lámina metálica de acero. Puede ser conectado a circuitos integrados especiales para así lograr distintos tonos. Cuando se acciona, la corriente pasa por el electroimán y produce un campo magnético que hace vibrar la lámina de acero sobre la armadura lo cual genera sonidos.\n Sirve como mecanismo de aviso y se utiliza en múltiples sistemas, como en automóviles, microondas, despertadores, celulares, entre otras cosas.\n",
+      "Foto":"../images/Components/zumbador.jpg"
+    }
+  ],
+
+  "Arduino UNO":
+  [
+    {
+      "Descripcion": "El Arduino UNO es un tablero microcontrolador de código abierto basado en el microcontrolador Microchip ATmega328P y desarrollado por Arduino.cc. La tarjeta está equipada con un conjunto de pines de entrada y salida digitales y analógicos que pueden conectarse a uno o varios circuitos. La placa tiene 14 pines digitales y 6 pines analógicos programables con el Arduino IDE a través de un cable USB tipo B. Puede ser alimentado por un cable USB o por una batería externa de 9 voltios, aunque acepta voltajes entre 7 y 20 voltios.\n",
+      "Foto":"../images/Components/arduinoUno.jpg"
     }
   ]
 }
