@@ -29,7 +29,7 @@ function init() {
         let y = localStorage.getItem("model");
         if( y == "1")
         {
-            document.getElementById('desc-model-title').innerHTML = x.LED.Titulo;
+            document.getElementById('desc-model-title').innerHTML = x.LED.Foto;
             document.getElementById('message').innerHTML = x.LED.Descripcion;
         }
         else if( y =="2")

@@ -8,6 +8,7 @@
     margin-right: auto;
     width: 99%;
     padding: 5% 0;
+    margin-bottom: 20px;
 }
 
 .bottom-bar {
@@ -34,7 +35,7 @@
 .next-button {
     width: fit-content;
     margin-left:auto;
-    margin-right:10px
+    margin-right:15.5px
 }
 
 .progress-position {
