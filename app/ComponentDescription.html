@@ -7,15 +7,16 @@
 
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
     <link rel="stylesheet" href="ComponentDescription.css">
+    <script src="js/components.js"></script>
 </head>
 
-<body>
+<body onload="init()">
 
 <div class="fond"> <span class="s1"></span><span class="s2"></span></div>
 <div class="card">
     <div class="thumbnail"><img class="left" src="images/arduino.jpg"/></div>
     <div class="right">
-        <h1>Arduino</h1>
+        <h1 id="desc-component-title"></h1>
         <div class="separator"></div>
         <p>
             Este es el nuevo Arduino Uno R3 utiliza el microcontrolador ATmega328. En adición a todas las características
@@ -24,7 +25,7 @@
             No se necesitan drivers para Linux o Mac (el archivo inf para Windows es necesario y está incluido en el IDE de Arduino).
         </p>
     </div>
-    <div class="fab"><a href="Micropiano/description.html"> <i class="fa fa-arrow-left fa-3x"> </i> </a></div>
+    <div class="fab"><a href="description.html"> <i class="fa fa-arrow-left fa-3x"> </i> </a></div>
 </div>
 
 <script src="js/index.js"></script>
