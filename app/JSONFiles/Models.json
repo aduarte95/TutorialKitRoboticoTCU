@@ -1,0 +1,217 @@
+{
+  "data": {
+    "Models": [
+      {
+          "Nombre":"Caballo",
+          "Id": "1",
+          "Descripción": "Consta de una estructura electromecánica capaz de mover objetos de poco peso. Emplea dos motores servos para ejecutar el movimiento y un Arduino como modo de control.",
+          "Imagen": "../images/caballo.png",
+          "Cantidad Componentes": ["1","2","3"],
+          "Components": [
+            "Arduino Uno",
+            "Servo Motor",
+            "Led"
+          ],
+          "Pasos": [
+            {
+              "Encabezado": "Paso 1",
+              "Descripción": "Con este proyecto se pretende abarcar el tema de movimiento, fuerza y trabajo del MEP.",
+              "Image": "../images/brazo.png"
+            },
+            {
+              "Encabezado": "Paso 2",
+              "Descripción": "Can este proyecto se pretende abarcar el tema de movimiento, fuerza y trabajo del MEP.",
+              "Image": "../images/brazo.png"
+            },
+            {
+              "Encabezado": "Paso 3",
+              "Descripción": "Cen este proyecto se pretende abarcar el tema de movimiento, fuerza y trabajo del MEP.",
+              "Image": "../images/brazo.png"
+            }
+          ]
+
+      },
+      {
+          "Nombre":"Piano",
+          "Id": "2",
+          "Descripción": "Consta de una estructura electromecánica capaz de mover objetos de poco peso. Emplea dos motores servos para ejecutar el movimiento y un Arduino como modo de control.",
+          "Imagen": "../images/piano.png",
+          "Cantidad Componentes": ["1","2","3"],
+          "Components": [
+            "Arduino Uno",
+            "Servo Motor",
+            "Led"
+          ],
+          "Pasos": [
+            {
+              "Encabezado": "Paso 1",
+              "Descripción": "Con este proyecto se pretende abarcar el tema de movimiento, fuerza y trabajo del MEP.",
+              "Image": "../images/brazo.png"
+            },
+            {
+              "Encabezado": "Paso 2",
+              "Descripción": "Can este proyecto se pretende abarcar el tema de movimiento, fuerza y trabajo del MEP.",
+              "Image": "../images/brazo.png"
+            },
+            {
+              "Encabezado": "Paso 3",
+              "Descripción": "Cen este proyecto se pretende abarcar el tema de movimiento, fuerza y trabajo del MEP.",
+              "Image": "../images/brazo.png"
+            }
+          ]
+
+      },
+      {
+          "Nombre":"Motor",
+          "Id": "3",
+          "Descripción": "Consta de una estructura electromecánica capaz de mover objetos de poco peso. Emplea dos motores servos para ejecutar el movimiento y un Arduino como modo de control.",
+          "Imagen": "../images/motor.png",
+          "Cantidad Componentes": ["1","2","3"],
+          "Components": [
+            "Arduino Uno",
+            "Servo Motor",
+            "Led"
+          ],
+          "Pasos": [
+            {
+              "Encabezado": "Paso 1",
+              "Descripción": "Con este proyecto se pretende abarcar el tema de movimiento, fuerza y trabajo del MEP.",
+              "Image": "../images/brazo.png"
+            },
+            {
+              "Encabezado": "Paso 2",
+              "Descripción": "Can este proyecto se pretende abarcar el tema de movimiento, fuerza y trabajo del MEP.",
+              "Image": "../images/brazo.png"
+            },
+            {
+              "Encabezado": "Paso 3",
+              "Descripción": "Cen este proyecto se pretende abarcar el tema de movimiento, fuerza y trabajo del MEP.",
+              "Image": "../images/brazo.png"
+            }
+          ]
+
+      },
+      {
+          "Nombre":"Generador",
+          "Id": "4",
+          "Descripción": "Consta de una estructura electromecánica capaz de mover objetos de poco peso. Emplea dos motores servos para ejecutar el movimiento y un Arduino como modo de control.",
+          "Imagen": "../images/generador.png",
+          "Cantidad Componentes": ["1","2","3"],
+          "Components": [
+            "Arduino Uno",
+            "Servo Motor",
+            "Led"
+          ],
+          "Pasos": [
+            {
+              "Encabezado": "Paso 1",
+              "Descripción": "Con este proyecto se pretende abarcar el tema de movimiento, fuerza y trabajo del MEP.",
+              "Image": "../images/brazo.png"
+            },
+            {
+              "Encabezado": "Paso 2",
+              "Descripción": "Can este proyecto se pretende abarcar el tema de movimiento, fuerza y trabajo del MEP.",
+              "Image": "../images/brazo.png"
+            },
+            {
+              "Encabezado": "Paso 3",
+              "Descripción": "Cen este proyecto se pretende abarcar el tema de movimiento, fuerza y trabajo del MEP.",
+              "Image": "../images/brazo.png"
+            }
+          ]
+
+      },
+      {
+          "Nombre":"Flor",
+          "Id": "5",
+          "Descripción": "Consta de una estructura electromecánica capaz de mover objetos de poco peso. Emplea dos motores servos para ejecutar el movimiento y un Arduino como modo de control.",
+          "Imagen": "../images/girabot.png",
+          "Cantidad Componentes": ["1","2","3"],
+          "Components": [
+            "Arduino Uno",
+            "Servo Motor",
+            "Led"
+          ],
+          "Pasos": [
+            {
+              "Encabezado": "Paso 1",
+              "Descripción": "Con este proyecto se pretende abarcar el tema de movimiento, fuerza y trabajo del MEP.",
+              "Image": "../images/brazo.png"
+            },
+            {
+              "Encabezado": "Paso 2",
+              "Descripción": "Can este proyecto se pretende abarcar el tema de movimiento, fuerza y trabajo del MEP.",
+              "Image": "../images/brazo.png"
+            },
+            {
+              "Encabezado": "Paso 3",
+              "Descripción": "Cen este proyecto se pretende abarcar el tema de movimiento, fuerza y trabajo del MEP.",
+              "Image": "../images/brazo.png"
+            }
+          ]
+
+      },
+      {
+          "Nombre":"Brazo",
+          "Id": "6",
+          "Descripción": "Consta de una estructura electromecánica capaz de mover objetos de poco peso. Emplea dos motores servos para ejecutar el movimiento y un Arduino como modo de control.",
+          "Imagen": "../images/brazo.png",
+          "Cantidad Componentes": ["1","2","3"],
+          "Components": [
+            "Arduino Uno",
+            "Servo Motor",
+            "Led"
+          ],
+          "Pasos": [
+            {
+              "Encabezado": "Paso 1",
+              "Descripción": "Con este proyecto se pretende abarcar el tema de movimiento, fuerza y trabajo del MEP.",
+              "Image": "../images/brazo.png"
+            },
+            {
+              "Encabezado": "Paso 2",
+              "Descripción": "Can este proyecto se pretende abarcar el tema de movimiento, fuerza y trabajo del MEP.",
+              "Image": "../images/brazo.png"
+            },
+            {
+              "Encabezado": "Paso 3",
+              "Descripción": "Cen este proyecto se pretende abarcar el tema de movimiento, fuerza y trabajo del MEP.",
+              "Image": "../images/brazo.png"
+            }
+          ]
+
+      },
+      {
+          "Nombre":"Carro",
+          "Id": "7",
+          "Descripción": "El carro que se propone es un dispositivo móvil de tres ruedas con sensor ultrasónico, dos de las ruedas son impulsados por motor. Los movimientos del vehículo serán controlados desde una aplicación.",
+          "Imagen": "../images/carro.png",
+          "Cantidad Componentes": ["1","2","3"],
+          "Components": [
+            "Arduino Uno",
+            "Servo Motor",
+            "Led"
+          ],
+          "Pasos": [
+            {
+              "Encabezado": "Paso 1",
+              "Descipción": "Este proyecto se sitúa dentro de la ejecución del proyecto de robótica educativa del MEP, con el objetivo de identificar los procesos metodológicos que utiliza la ciencia para generar conocimientos.",
+              "Image": "../images/carro.png"
+            },
+            {
+              "Encabezado": "Paso 2",
+              "Descipción": "Aste proyecto se sitúa dentro de la ejecución del proyecto de robótica educativa del MEP, con el objetivo de identificar los procesos metodológicos que utiliza la ciencia para generar conocimientos.",
+              "Image": "../images/carro.png"
+            },
+            {
+              "Encabezado": "Paso 3",
+              "Descipción": "Oste proyecto se sitúa dentro de la ejecución del proyecto de robótica educativa del MEP, con el objetivo de identificar los procesos metodológicos que utiliza la ciencia para generar conocimientos.",
+              "Image": "../images/carro.png"
+            }
+          ]
+
+      }
+    ]
+  }
+
+}
