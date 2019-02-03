@@ -3,6 +3,50 @@ function setModel(model)
     localStorage.setItem("model", model);
 }
 
+function loadLvl() {
+    let lvl = localStorage.getItem("level"); //El modelo que se debe cargar
+    let title1;
+    let title2;
+    let src1;
+    let src2;
+
+    console.log(lvl);
+    if(lvl == "1") {
+        title1="Micropiano";
+        src1 ="images/piano.png";
+        title2 ="Caballo";
+        src2 ="images/horse.png";
+    }
+    else {
+        console.log(lvl);
+        title1="Generador";
+        src1 ="images/generador.png";
+        title2 ="Motor";
+        src2 ="images/mot.png";
+    }
+
+    let modelText = "<div class=\"card text-center\">" +
+       "<div class=\"card-body\">" +
+        "<img class=\"card-img-top\" src=\"" + src1 +"\"  alt=\"" + title1 + "\">" +
+        "<h5 class=\"card-title\">" + title1 +"</h5>" +
+        "</div>" +
+        "<div class=\"card-footer\">" +
+        "<a href=\"description.html\" class=\"btn btn-primary\" onclick=\"setModel('" + title1 + "')\">Comenzar</a>" +
+        "</div>" +
+        "</div>" +
+
+        "<div class=\"card text-center\">" +
+        "<div class=\"card-body\">" +
+        "<img class=\"card-img-top\" src=\"" + src2 +"\"  alt=\"" + title2 + "\">" +
+        "<h5 class=\"card-title\">" + title2 +"</h5>" +
+        "</div>" +
+        "<div class=\"card-footer\">" +
+        "<a href=\"description.html\" class=\"btn btn-primary\" onclick=\"setModel('" + title2 + "')\">Comenzar</a>" +
+        "</div>" +
+        "</div>";
+    document.getElementById('lvl-deck').innerHTML = modelText; //Carga la lista
+}
+
 function setComponent(component)
 {
     localStorage.setItem("component", component);
@@ -47,14 +91,14 @@ function loadModelInfo() {
         case "Micropiano":
             kitModel = result.Micropiano;
             break;
-        case "2":
-            //kitModel = result. ;
+        case "Caballo":
+            kitModel = result.Caballo;
             break;
-        case "3":
-            //kitModel = result. ;
+        case "Generador":
+            kitModel = result.Generador ;
             break;
-        case "4":
-            //kitModel = result. ;
+        case "Motor":
+            kitModel = result.Motor ;
             break;
         case "5":
             //kitModel = result. ;

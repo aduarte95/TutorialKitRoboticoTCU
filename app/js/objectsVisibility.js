@@ -1,7 +1,3 @@
-function showOptions(show) {
-    if(show) {
-      window.location.href = "lvlOne.html";
-    } else {
-      window.location.href = "lvlTwo.html";
-    }
+function showOptions(level) {
+    localStorage.setItem("level", level);
   }

@@ -11,7 +11,7 @@
     <head>
         <meta charset="UTF-8">
     </head>
-    <body>
+    <body onload="loadLvl()">
         <div>
           <!-- Top of the screen. Contains a home button and an option's text--> 
           <div class="top">
@@ -39,27 +39,7 @@
             <!-- Display the models by levels --> 
             <section class="models-option">
               <!-- Second Card-deck--> 
-              <div class="card-deck">
-
-                <div class="card text-center">
-                  <div class="card-body">
-                    <img class="card-img-top" src="images/piano.png"  alt="Micropiano">
-                    <h5 class="card-title">Micropiano</h5>
-                  </div>
-                  <div class="card-footer">
-                    <a href="description.html" class="btn btn-primary" onclick="setModel('Micropiano')">Comenzar</a>
-                  </div>
-                </div>
-
-                <div class="card text-center">
-                  <div class="card-body">
-                    <img class="card-img-top" src="images/horse.png"  alt="Caballo">
-                    <h5 class="card-title">Caballo</h5>
-                  </div>
-                  <div class="card-footer">
-                    <a href="description.html" class="btn btn-primary" onclick="setModel(2)">Comenzar</a>
-                  </div>
-                </div>
+              <div class="card-deck" id="lvl-deck">
               </div> <!-- Card-deck termination--> 
           </section> <!-- Section termination--> 
         </div>

@@ -31,7 +31,7 @@
   "Caballo" : {
     "Id": "2",
     "Descripcion": "Consta de una estructura electromecánica capaz de mover objetos de poco peso. Emplea dos motores servos para ejecutar el movimiento y un Arduino como modo de control.",
-    "Imagen": "../images/caballo.png",
+    "Imagen": "images/theo.png",
     "CantidadComponentes": [
       "1",
       "2",
@@ -64,7 +64,7 @@
   "Motor" : {
       "Id": "3",
       "Descripcion": "Consta de una estructura electromecánica capaz de mover objetos de poco peso. Emplea dos motores servos para ejecutar el movimiento y un Arduino como modo de control.",
-      "Imagen": "../images/motor.png",
+      "Imagen": "images/mot.png",
       "CantidadComponentes": ["1","2","3"],
       "Components": [
         "Arduino Uno",
@@ -93,7 +93,7 @@
   "Generador" : {
       "Id": "4",
       "Descripcion": "Consta de una estructura electromecánica capaz de mover objetos de poco peso. Emplea dos motores servos para ejecutar el movimiento y un Arduino como modo de control.",
-      "Imagen": "../images/generador.png",
+      "Imagen": "images/generador.png",
       "CantidadComponentes": ["1","2","3"],
       "Components": [
         "Arduino Uno",
