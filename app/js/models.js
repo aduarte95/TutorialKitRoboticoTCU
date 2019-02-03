@@ -35,8 +35,9 @@ function init() {
             document.getElementById('message').innerHTML = kitModel.Descripcion;
 
             let text="";
+            let size = kitModel.Componentes.length;
 
-            for (let i = 0; i < 5; i++) {
+            for (let i = 0; i < size; i++) {
                 text += "<a class=\"list-group-item-action\" href=\"ComponentDescription.html\">" +
                     "<li class=\"list-group-item d-flex justify-content-between align-items-center\" >" + kitModel.Componentes[i] +
                     "<span class=\"badge badge-primary badge-pill\">"+ kitModel.Cantidad[i]+"</span>" +
