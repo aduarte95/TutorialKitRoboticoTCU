@@ -26,43 +26,43 @@ function init() {
         // Parse JSON string into object
         localStorage.setItem("json",response);
 
-        let y = localStorage.getItem("model");
-        if( y == "1")
+        let modelType = localStorage.getItem("model");
+        if( modelType == "1")
         {
-            document.getElementById('desc-model-title').innerHTML = x.LED.Foto;
-            document.getElementById('message').innerHTML = x.LED.Descripcion;
+            document.getElementById('desc-model-title').innerHTML = result.LED.Foto;
+            document.getElementById('message').innerHTML = result.LED.Descripcion;
         }
-        else if( y =="2")
+        else if( modelType =="2")
         {
-            document.getElementById('desc-model-title').innerHTML = x.Resistencia.Titulo;
-            document.getElementById('message').innerHTML = x.LED.Descripcion;
+            document.getElementById('desc-model-title').innerHTML = result.Resistencia.Titulo;
+            document.getElementById('message').innerHTML = result.LED.Descripcion;
         }
-        else if( y == "3")
+        else if( modelType == "3")
         {
-            document.getElementById('desc-model-title').innerHTML = x.Resistencia.Titulo;
-            document.getElementById('message').innerHTML = x.Resistencia.Descripcion;
+            document.getElementById('desc-model-title').innerHTML = result.Resistencia.Titulo;
+            document.getElementById('message').innerHTML = result.Resistencia.Descripcion;
         }
-        else if( y == "4")
+        else if( modelType == "4")
         {
-            document.getElementById('desc-model-title').innerHTML = x.Resistencia.Titulo;
-            document.getElementById('message').innerHTML = x.Resistencia.Descripcion;
+            document.getElementById('desc-model-title').innerHTML = result.Resistencia.Titulo;
+            document.getElementById('message').innerHTML = result.Resistencia.Descripcion;
         }
-        else if( y == "5")
+        else if( modelType == "5")
         {
-            document.getElementById('desc-model-title').innerHTML = x.Resistencia.Titulo;
-            document.getElementById('message').innerHTML = x.Resistencia.Descripcion;
+            document.getElementById('desc-model-title').innerHTML = result.Resistencia.Titulo;
+            document.getElementById('message').innerHTML = result.Resistencia.Descripcion;
         }
-        else if( y == "6")
+        else if( modelType == "6")
         {
-            document.getElementById('desc-model-title').innerHTML = x.Resistencia.Titulo;
-            document.getElementById('message').innerHTML = x.Resistencia.Descripcion;
+            document.getElementById('desc-model-title').innerHTML = result.Resistencia.Titulo;
+            document.getElementById('message').innerHTML = result.Resistencia.Descripcion;
         }
         else
         {
-            document.getElementById('desc-model-title').innerHTML = x.Resistencia.Titulo;
-            document.getElementById('message').innerHTML = x.Resistencia.Descripcion;
+            document.getElementById('desc-model-title').innerHTML = result.Resistencia.Titulo;
+            document.getElementById('message').innerHTML = result.Resistencia.Descripcion;
         }
     });
 
 }
-var x = JSON.parse(localStorage.getItem("json"));
+var result = JSON.parse(localStorage.getItem("json"));
