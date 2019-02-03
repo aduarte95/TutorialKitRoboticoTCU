@@ -119,10 +119,10 @@
       ]
   },
 
-  "Flor" : {
+  "Girabot" : {
     "Id": "5",
     "Descripcion": "Consta de una estructura electromecánica capaz de mover objetos de poco peso. Emplea dos motores servos para ejecutar el movimiento y un Arduino como modo de control.",
-    "Imagen": "../images/girabot.png",
+    "Imagen": "images/nvl3.png",
     "CantidadComponentes": ["1","2","3"],
     "Components": [
       "Arduino Uno",
@@ -148,10 +148,10 @@
     ]
   },
 
-  "Brazo" : {
+  "BrazoMecanico" : {
     "Id": "6",
     "Descripcion": "Consta de una estructura electromecánica capaz de mover objetos de poco peso. Emplea dos motores servos para ejecutar el movimiento y un Arduino como modo de control.",
-    "Imagen": "../images/brazo.png",
+    "Imagen": "images/brazo.png",
     "CantidadComponentes": ["1","2","3"],
     "Components": [
       "Arduino Uno",
@@ -180,7 +180,7 @@
   "Carro" : {
     "Id": "7",
     "Descripcion": "El carro que se propone es un dispositivo móvil de tres ruedas con sensor ultrasónico, dos de las ruedas son impulsados por motor. Los movimientos del vehículo serán controlados desde una aplicación.",
-    "Imagen": "../images/carro.png",
+    "Imagen": "images/carro.png",
     "CantidadComponentes": ["1","2","3"],
     "Components": [
       "Arduino Uno",

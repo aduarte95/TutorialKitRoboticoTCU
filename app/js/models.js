@@ -5,10 +5,7 @@ function setModel(model)
 
 function loadLvl() {
     let lvl = localStorage.getItem("level"); //El modelo que se debe cargar
-    let title1;
-    let title2;
-    let src1;
-    let src2;
+    let title1, title2, src1, src2;
 
     console.log(lvl);
     if(lvl == "1") {
@@ -76,6 +73,20 @@ function init() {
         localStorage.setItem("json",response);
 
         loadModelInfo();
+
+        let lvl = localStorage.getItem("level");
+        let back;
+
+        if(lvl == "3") {
+            back = "models.html";
+        }
+        else {
+            back = "multipleLvls.html";
+        }
+
+        document.getElementById('desc-back').innerHTML = "<a href=\"" + back + "\">" +
+            "<img src=\"images/atras.png\" width=\"35\" height=\"35\">" +
+            "</a>";
     });
 }
 
@@ -100,14 +111,14 @@ function loadModelInfo() {
         case "Motor":
             kitModel = result.Motor ;
             break;
-        case "5":
-            //kitModel = result. ;
+        case "Girabot":
+            kitModel = result.Girabot;
             break;
-        case "6":
-            //kitModel = result. ;
+        case "Brazo Mecánico":
+            kitModel = result.BrazoMecanico ;
             break;
         default:
-        //kitModel = result. ;
+            kitModel = result.Carro;
         };
 
     img = "<img class=\"image-size\" src=\"" + kitModel.Imagen + "\" alt=\"" + modelType +"\">";
