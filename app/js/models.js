@@ -27,40 +27,54 @@ function init() {
         localStorage.setItem("json",response);
 
         let modelType = localStorage.getItem("model");
+        let kitModel = result.Resistencia;
+
         if( modelType == "1")
         {
-            document.getElementById('desc-model-title').innerHTML = result.LED.Foto;
-            document.getElementById('message').innerHTML = result.LED.Descripcion;
+            document.getElementById('desc-model-title').innerHTML = kitModel.Foto;
+            document.getElementById('message').innerHTML = kitModel.Descripcion;
+
+            let text="";
+
+            for (let i = 0; i < 5; i++) {
+                text += "<a class=\"list-group-item-action\" href=\"ComponentDescription.html\">" +
+                    "<li class=\"list-group-item d-flex justify-content-between align-items-center\" >" + kitModel.Componentes[i] +
+                    "<span class=\"badge badge-primary badge-pill\">"+ kitModel.Cantidad[i]+"</span>" +
+                    "</li>" +
+                    "</a>"
+            }
+            document.getElementById('desc-model-component').innerHTML = text;
+
         }
         else if( modelType =="2")
         {
-            document.getElementById('desc-model-title').innerHTML = result.Resistencia.Titulo;
-            document.getElementById('message').innerHTML = result.LED.Descripcion;
+            document.getElementById('desc-model-title').innerHTML = kitModel.Titulo;
+            document.getElementById('message').innerHTML = kitModel.Descripcion;
         }
         else if( modelType == "3")
         {
-            document.getElementById('desc-model-title').innerHTML = result.Resistencia.Titulo;
-            document.getElementById('message').innerHTML = result.Resistencia.Descripcion;
+            document.getElementById('desc-model-title').innerHTML =kitModel.Titulo;
+            document.getElementById('message').innerHTML =kitModel.Descripcion;
         }
         else if( modelType == "4")
         {
-            document.getElementById('desc-model-title').innerHTML = result.Resistencia.Titulo;
-            document.getElementById('message').innerHTML = result.Resistencia.Descripcion;
+            document.getElementById('desc-model-title').innerHTML =kitModel.Titulo;
+            document.getElementById('message').innerHTML =kitModel.Descripcion;
         }
         else if( modelType == "5")
         {
-            document.getElementById('desc-model-title').innerHTML = result.Resistencia.Titulo;
-            document.getElementById('message').innerHTML = result.Resistencia.Descripcion;
+            document.getElementById('desc-model-title').innerHTML =kitModel.Titulo;
+            document.getElementById('message').innerHTML =kitModel.Descripcion;
         }
         else if( modelType == "6")
         {
-            document.getElementById('desc-model-title').innerHTML = result.Resistencia.Titulo;
-            document.getElementById('message').innerHTML = result.Resistencia.Descripcion;
+            document.getElementById('desc-model-title').innerHTML =kitModel.Titulo;
+            document.getElementById('message').innerHTML =kitModel.Descripcion;
         }
         else
         {
-            document.getElementById('desc-model-title').innerHTML = result.Resistencia.Titulo;
-            document.getElementById('message').innerHTML = result.Resistencia.Descripcion;
+            document.getElementById('desc-model-title').innerHTML =kitModel.Titulo;
+            document.getElementById('message').innerHTML =kitModel.Descripcion;
         }
     });
 
