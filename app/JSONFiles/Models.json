@@ -13,7 +13,7 @@
         {
           "Encabezado": "Paso 1",
           "Descripcion": "Con este proyecto se pretende abarcar el tema de movimiento, fuerza y trabajo del MEP.",
-          "Image": "../images/brazo.png"
+          "Image": "images/brazo.png"
         },
         {
           "Encabezado": "Paso 2",

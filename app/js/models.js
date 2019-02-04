@@ -139,11 +139,6 @@ function loadModelInfo() {
 var result = JSON.parse(localStorage.getItem("json"));
 let kitModel;
 
-function setFirstStep(first)
-{
-    localStorage.setItem("isFirstStep", first);
-}
-
 function setModelType() {
     let modelType = localStorage.getItem("model"); //El modelo que se debe cargar
 
@@ -171,24 +166,45 @@ function setModelType() {
     };
 }
 
-function loadSteps(step) {
-    let firstStep = localStorage.getItem("isFirstStep"); //Verifica si es el primer paso.
-    let count = 0;
+let count = 0;
 
-    count += step;
+function loadSteps(step) {
+    let anterior;
+    let bottom;
 
     setModelType();
 
-    if(kitModel.Pasos.length() <= count) {
-        localStorage.setItem("isFirstStep", "1");
-        if (firstStep != "1") {
-            setFirstStep("0");
-        } else {
-            setFirstStep("1");
-        }
+    count += step;
 
-        document.getElementById('step-title').innerHTML = "Paso " + count.toString();
-        document.getElementById('step-desc').innerHTML = kitModel.Pasos[count - 1].Descripcion;
-        document.getElementById('step-image').innerHTML = "<img class=\"image-size\" src=\"" + kitModel.Pasos[count - 1].Image + "\" alt=\"Paso " + count.toString() + "\">";
+    if (count != 1) {
+        anterior = "<a class=\"btn btn-primary\" href=\"#\" onclick=\"loadSteps(-1)\" ";
+    } else {
+        count = 1;
+        anterior = "<a class=\"btn btn-primary\" href=\"description.html\" ";
     }
+
+    let width = (count/kitModel.Pasos.length)*100;
+
+
+    bottom = "<div class=\"col-md-auto\">" +
+        anterior + "role=\"button\"> &laquo; Anterior</a>" +
+        "</div>" +
+        "<div class=\"col\">" +
+        "<div class=\"progress progress-position\">" +
+        "<div class=\"progress-bar progress-bar-striped\" role=\"progressbar\" style=\"width: " + width + "%\" aria-valuenow=\"" + width + "\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>" +
+        "</div>" +
+        "</div>";
+
+    if(count < kitModel.Pasos.length) {
+        bottom += "<div class=\"col-md-auto text-right\">" +
+            "<a class=\"btn btn-primary\" href=\"#\" role=\"button\" onclick=\"loadSteps(1)\">Siguiente &raquo;</a>" +
+            "</div>";
+    }
+
+
+
+    document.getElementById('step-title').innerHTML = "Paso " + count.toString();
+    document.getElementById('step-desc').innerHTML = kitModel.Pasos[count - 1].Descripcion;
+    document.getElementById('step-image').innerHTML = "<img class=\"image-size\" src=\"" + kitModel.Pasos[count - 1].Image + "\" alt=\"Paso " + count.toString() + "\">";
+    document.getElementById('step-bottom').innerHTML = bottom;
 }
