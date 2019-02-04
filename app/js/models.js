@@ -7,7 +7,6 @@ function loadLvl() {
     let lvl = localStorage.getItem("level"); //El modelo que se debe cargar
     let title1, title2, src1, src2;
 
-    console.log(lvl);
     if(lvl == "1") {
         title1="Micropiano";
         src1 ="images/piano.png";
@@ -15,7 +14,6 @@ function loadLvl() {
         src2 ="images/horse.png";
     }
     else {
-        console.log(lvl);
         title1="Generador";
         src1 ="images/generador.png";
         title2 ="Motor";
@@ -92,7 +90,6 @@ function init() {
 
 function loadModelInfo() {
     let modelType = localStorage.getItem("model"); //El modelo que se debe cargar
-    let kitModel; //Modelo escogido en el json.
     let componentText=""; //Texto de los componentes del modelo (nombre y cantidad)
     let size;//Número de componentes del modelo.
     let title; //Titulo
@@ -140,3 +137,58 @@ function loadModelInfo() {
 }
 
 var result = JSON.parse(localStorage.getItem("json"));
+let kitModel;
+
+function setFirstStep(first)
+{
+    localStorage.setItem("isFirstStep", first);
+}
+
+function setModelType() {
+    let modelType = localStorage.getItem("model"); //El modelo que se debe cargar
+
+    switch(modelType) {
+        case "Micropiano":
+            kitModel = result.Micropiano;
+            break;
+        case "Caballo":
+            kitModel = result.Caballo;
+            break;
+        case "Generador":
+            kitModel = result.Generador ;
+            break;
+        case "Motor":
+            kitModel = result.Motor ;
+            break;
+        case "Girabot":
+            kitModel = result.Girabot;
+            break;
+        case "Brazo Mecánico":
+            kitModel = result.BrazoMecanico ;
+            break;
+        default:
+            kitModel = result.Carro;
+    };
+}
+
+function loadSteps(step) {
+    let firstStep = localStorage.getItem("isFirstStep"); //Verifica si es el primer paso.
+    let count = 0;
+
+    count += step;
+
+    setModelType();
+
+    if(kitModel.Pasos.length() <= count) {
+        localStorage.setItem("isFirstStep", "1");
+        if (firstStep != "1") {
+            setFirstStep("0");
+        } else {
+            setFirstStep("1");
+        }
+
+        document.getElementById('step-title').innerHTML = "Paso " + count.toString();
+        document.getElementById('step-desc').innerHTML = kitModel.Pasos[count - 1].Descripcion;
+        document.getElementById('step-image').innerHTML = "<img class=\"image-size\" src=\"" + kitModel.Pasos[count - 1].Image + "\" alt=\"Paso " + count.toString() + "\">";
+    }
+}
