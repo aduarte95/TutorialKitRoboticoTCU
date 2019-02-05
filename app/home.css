@@ -20,8 +20,8 @@ button_robot_face {
     position:absolute;
     left:15%;
     bottom:60%;
-    height:16%;
-    width:10%;
+    height:130px;
+    width:135px;
 
 }
 .button_image, button_robot_face{
@@ -32,6 +32,7 @@ button_robot_face {
 
 .circle_begin iniciar{
     color:#fff;
+    font-family: 'Quicksand', sans-serif;
     text-decoration:none;
     position: relative;
     float: left;
@@ -47,10 +48,10 @@ div.circle_begin {
     border-radius: 50%;
     position: absolute;
     z-index: 1;
-    height:10%;
-    width:5.5%;
-    left: 59.6%;
-    top: 27%;
+    height:13%;
+    width:10%;
+    left: 59%;
+    top: 26%;
     cursor: pointer;
 }
 
@@ -62,6 +63,7 @@ div.circle_begin {
 
 .circle_exit salir{
     color:#fff;
+    font-family: 'Quicksand', sans-serif;
     text-decoration:none;
     position: relative;
     float: left;
@@ -76,10 +78,10 @@ div.circle_exit {
     border-radius: 50%;
     position: absolute;
     z-index: 1;
-    height:13%;
-    width:6.9%;
-    left: 45.7%;
-    top: 49%;
+    height:15%;
+    width:11%;
+    left: 38.1%;
+    top: 52%;
     cursor: pointer;
 }
 .circle_exit:active {
@@ -90,10 +92,10 @@ div.circle_exit {
 
 div.gear_image {
     content:url('images/gears.png');
-    width: 40%;
-    height: 70%;
-    left: 35%;
-    top: 10%;
+    width: 60%;
+    height: 80%;
+    left: 22.5%;
+    top: 7.5%;
     position: fixed;
 }​
 
