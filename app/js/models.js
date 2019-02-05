@@ -161,6 +161,8 @@ function setModelType() {
         case "Brazo Mecánico":
             kitModel = result.BrazoMecanico ;
             break;
+        case "nivel0":
+            kitModel = result.Nivel0 ;
         default:
             kitModel = result.Carro;
     };

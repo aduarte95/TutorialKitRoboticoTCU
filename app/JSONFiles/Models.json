@@ -28,6 +28,35 @@
       ]
   },
 
+  "Nivel0" : {
+    "Id": "1",
+    "Descripcion": "Consta de una estructura electromecánica capaz de mover objetos de poco peso. Emplea dos motores servos para ejecutar el movimiento y un Arduino como modo de control.",
+    "Imagen": "images/micropiano.jpg",
+    "CantidadComponentes": ["1","2","3"],
+    "Components": [
+      "Arduino Uno",
+      "Servo Motor",
+      "Led"
+    ],
+    "Pasos": [
+      {
+        "Encabezado": "Paso 1",
+        "Descripcion": "Con este proyecto se pretende abarcar el tema de movimiento, fuerza y trabajo del MEP.",
+        "Image": "images/brazo.png"
+      },
+      {
+        "Encabezado": "Paso 2",
+        "Descripcion": "Can este proyecto se pretende abarcar el tema de movimiento, fuerza y trabajo del MEP.",
+        "Image": "../images/brazo.png"
+      },
+      {
+        "Encabezado": "Paso 3",
+        "Descripcion": "Cen este proyecto se pretende abarcar el tema de movimiento, fuerza y trabajo del MEP.",
+        "Image": "../images/brazo.png"
+      }
+    ]
+  },
+
   "Caballo" : {
     "Id": "2",
     "Descripcion": "Consta de una estructura electromecánica capaz de mover objetos de poco peso. Emplea dos motores servos para ejecutar el movimiento y un Arduino como modo de control.",
