@@ -7,7 +7,6 @@ function loadLvl() {
     let lvl = localStorage.getItem("level"); //El modelo que se debe cargar
     let title1, title2, src1, src2;
 
-    console.log(lvl);
     if(lvl == "1") {
         title1="Micropiano";
         src1 ="images/piano.png";
@@ -15,7 +14,6 @@ function loadLvl() {
         src2 ="images/horse.png";
     }
     else {
-        console.log(lvl);
         title1="Generador";
         src1 ="images/generador.png";
         title2 ="Motor";
@@ -92,7 +90,6 @@ function init() {
 
 function loadModelInfo() {
     let modelType = localStorage.getItem("model"); //El modelo que se debe cargar
-    let kitModel; //Modelo escogido en el json.
     let componentText=""; //Texto de los componentes del modelo (nombre y cantidad)
     let size;//Número de componentes del modelo.
     let title; //Titulo
@@ -140,3 +137,76 @@ function loadModelInfo() {
 }
 
 var result = JSON.parse(localStorage.getItem("json"));
+let kitModel;
+
+function setModelType() {
+    let modelType = localStorage.getItem("model"); //El modelo que se debe cargar
+
+    switch(modelType) {
+        case "Micropiano":
+            kitModel = result.Micropiano;
+            break;
+        case "Caballo":
+            kitModel = result.Caballo;
+            break;
+        case "Generador":
+            kitModel = result.Generador ;
+            break;
+        case "Motor":
+            kitModel = result.Motor ;
+            break;
+        case "Girabot":
+            kitModel = result.Girabot;
+            break;
+        case "Brazo Mecánico":
+            kitModel = result.BrazoMecanico ;
+            break;
+        case "nivel0":
+            kitModel = result.Nivel0 ;
+        default:
+            kitModel = result.Carro;
+    };
+}
+
+let count = 0;
+
+function loadSteps(step) {
+    let anterior;
+    let bottom;
+
+    setModelType();
+
+    count += step;
+
+    if (count != 1) {
+        anterior = "<a class=\"btn btn-primary\" href=\"#\" onclick=\"loadSteps(-1)\" ";
+    } else {
+        count = 1;
+        anterior = "<a class=\"btn btn-primary\" href=\"description.html\" ";
+    }
+
+    let width = (count/kitModel.Pasos.length)*100;
+
+
+    bottom = "<div class=\"col-md-auto\">" +
+        anterior + "role=\"button\"> &laquo; Anterior</a>" +
+        "</div>" +
+        "<div class=\"col\">" +
+        "<div class=\"progress progress-position\">" +
+        "<div class=\"progress-bar progress-bar-striped\" role=\"progressbar\" style=\"width: " + width + "%\" aria-valuenow=\"" + width + "\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>" +
+        "</div>" +
+        "</div>";
+
+    if(count < kitModel.Pasos.length) {
+        bottom += "<div class=\"col-md-auto text-right\">" +
+            "<a class=\"btn btn-primary\" href=\"#\" role=\"button\" onclick=\"loadSteps(1)\">Siguiente &raquo;</a>" +
+            "</div>";
+    }
+
+
+
+    document.getElementById('step-title').innerHTML = "Paso " + count.toString();
+    document.getElementById('step-desc').innerHTML = kitModel.Pasos[count - 1].Descripcion;
+    document.getElementById('step-image').innerHTML = "<img class=\"image-size\" src=\"" + kitModel.Pasos[count - 1].Image + "\" alt=\"Paso " + count.toString() + "\">";
+    document.getElementById('step-bottom').innerHTML = bottom;
+}

@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <link href="home.css" rel="stylesheet" type="text/css" >
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <script>
+        function quit() {
+            const remote = require('electron').remote
+            let w = remote.getCurrentWindow()
+            w.close()
+        }
+    </script>
     <head>
         <meta charset="UTF-8">
         <title>Tutorial Kit Robótico</title>
@@ -27,7 +35,7 @@
                 </a>
             </div>
             <div class="circle_exit">
-                <salir>Salir</salir>
+                <salir onclick="quit()">Salir</salir>
             </div>
         </div>
     </body>

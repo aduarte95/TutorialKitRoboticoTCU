@@ -11,7 +11,11 @@ function createWindow() {
       pathname: path.join(__dirname, 'home.html'),
       protocol: 'file:', 
       slashes: true 
-   })) 
+   }))
 }  
 
-app.on('ready', createWindow) 
+app.on('ready', createWindow)
+
+app.on('window-all-closed', () => {
+   app.quit()
+})
