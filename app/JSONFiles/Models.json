@@ -1,29 +1,42 @@
 {
   "Micropiano" : {
       "Id": "1",
-      "Descripcion": "Consta de una estructura electromecánica capaz de mover objetos de poco peso. Emplea dos motores servos para ejecutar el movimiento y un Arduino como modo de control.",
+      "Descripcion": "<br><b> Metas </b></br> &bull; Elaborar un instrumento electrónico para las clases de música/tecnología.<br> &bull; Ayudar en el aprendizaje de los jóvenes respecto a programación. <br> &bull; Explicar la creación de sonidos por medio de la frecuencia. <br> <br><b>Funcionamiento </b></br> Construcción de un micro piano utilizando Arduino, el cual permita la creación de sonidos con base en los intereses del usuario. El alcance de producción de sonido depende de la cantidad de botones que se añadan (mínimo 7)." ,
       "Imagen": "images/micropiano.jpg",
-      "CantidadComponentes": ["1","2","3"],
+      "CantidadComponentes": ["1","7","1","10","10","1"],
       "Components": [
         "Arduino Uno",
-        "Servo Motor",
-        "Led"
+        "Botones",
+        "Buzzer",
+        "Resistencias",
+        "Cable",
+        "Placa de Pruebas"
       ],
       "Pasos": [
         {
-          "Encabezado": "Paso 1",
-          "Descripcion": "Con este proyecto se pretende abarcar el tema de movimiento, fuerza y trabajo del MEP.",
-          "Image": "images/brazo.png"
+          "Encabezado": "<br><b>Paso 1: Conectar circuito de energía a riel lateral del breadboard.</b></br> ",
+          "Descripcion": "<br><b>Conectar circuito de energía a riel lateral del breadboard.</b></br> <br>&bull; Conectar la salida de 5V al riel marcado como positivo en el breadboard. <br> &bull; Conectar cualquiera de las tres tierras (GRND) al riel marcado como negativo en el breadboard.<br>",
+          "Image": "images/guiaPiano.jpg"
         },
         {
           "Encabezado": "Paso 2",
-          "Descripcion": "Can este proyecto se pretende abarcar el tema de movimiento, fuerza y trabajo del MEP.",
-          "Image": "../images/brazo.png"
+          "Descripcion": "<br><b> Conectar la bocina. </b></br> <br> &bull; Conectar cualquiera de los conectores a un pin digital (pin 12 en el ejemplo). <br> &bull; Conectar el otro conector al riel de tierra. <br>",
+          "Image": "images/guiaPiano.jpg"
         },
         {
           "Encabezado": "Paso 3",
-          "Descripcion": "Cen este proyecto se pretende abarcar el tema de movimiento, fuerza y trabajo del MEP.",
-          "Image": "../images/brazo.png"
+          "Descripcion": "<br><b> Conectar los botones (repetir 7 veces, una para cada botón).</b></br> <br> &bull; Colocar el botón con dos de sus patas en una mitad de la breadboard y las otras dos en la otra mitad. <br> &bull; De las primeras dos patas conectar una a una resistencia de 10K Ω y la resistencia a su vez al riel de 5V, la otra pata conectarse al riel de tierra. <br> &bull; Conectar una de las patas del otro extremo a un pin digital (en el caso del ejemplo se coloca el botón correspondiente a la nota Do al pin 2, Re al pin 3 y así hasta la nota Si en el pin 8).<br> ",
+          "Image": "images/guiaPiano.jpg"
+        },
+        {
+          "Encabezado": "Paso 4",
+          "Descripcion": "<br><b> Si se está usando Arduino IDE ingresar el siguiente codigo al arduino: </b></br> <br> <pre><code>const int boton_0 = 2; // se establece una constante entera “boton_0” en el pin 2\nconst int boton_1 = 3;\nconst int boton_2 = 4;\nconst int boton_3 = 5;\nconst int boton_4 = 6;\nconst int boton_5 = 7;\nconst int boton_6 = 8;\nconst int zumbador = 12;\n\nvoid setup () {\n\tpinMode (boton_0, INPUT); // se establece “boton_0” (equivalente al pin 2) como entrada\n\tpinMode (boton_1, INPUT);\n\tpinMode (boton_2, INPUT);\n\tpinMode (boton_3, INPUT);\n\tpinMode (boton_4, INPUT);\n\tpinMode (boton_5, INPUT);\n\tpinMode (boton_6, INPUT);\n\tpinMode (zumbador, OUTPUT); // se establece “zumbador” (pin 12) como una salida\n}\n\nvoid loop () {\n\tif (digitalRead (boton_0) == false) { // si se presiona el boton_0 se corren las instrucciones\n\t\ttone (zumbador, 261, 100); // el 261 es la frecuencia que equivale a la nota Do\n\t\tdelay (100); // espera de 100 milisegundos que equivalen a 0,1 segundos\n\t}\n\tif (digitalRead (boton_1) == true) { \n\t\ttone (zumbador, 293, 100); // el 293 es la frecuencia que equivale a la nota Re\n\t\tdelay (100);\n\t}\n\tif (digitalRead (boton_2) == true) { \n\t\ttone (zumbador, 329, 100); // el 329 es la frecuencia que equivale a la nota Mi\n\t\tdelay (100);\n\t}\n\tif (digitalRead (boton_3) == true) { \n\t\ttone (zumbador, 349, 100); // el 349 es la frecuencia que equivale a la nota Fa\n\t\tdelay (100);\n\t}\n\tif (digitalRead (boton_4) == true) { \n\t\ttone (zumbador, 392, 100); // el 392 es la frecuencia que equivale a la nota Sol\n\t\tdelay (100);\n\t}\n\tif (digitalRead (boton_5) == true) { \n\t\ttone (zumbador, 440, 100); // el 440 es la frecuencia que equivale a la nota La\n\t\tdelay (100);\n\t}\n\tif (digitalRead (boton_6) == true) { \n\t\ttone (zumbador, 494, 100); // el 494 es la frecuencia que equivale a la nota Si\n\t\tdelay (100);\n\t}\n}\n </code></pre>",
+          "Image": "images/arduinoLogo.jpg"
+        },
+        {
+          "Encabezado": "Paso 5",
+          "Descripcion": "<br><b> Si se esta usando BitBlog, el los bloques se deben ver de esta manera</b></br> <br> ",
+          "Image": "images/bitblogPiano.jpg"
         }
       ]
   },
