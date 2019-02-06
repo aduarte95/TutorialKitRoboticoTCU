@@ -6,9 +6,9 @@
       "CantidadComponentes": ["1","7","1","10","10","1"],
       "Components": [
         "Arduino Uno",
-        "Botones",
+        "Botón",
         "Buzzer",
-        "Resistencias",
+        "Resistencia",
         "Cable",
         "Placa de Pruebas"
       ],

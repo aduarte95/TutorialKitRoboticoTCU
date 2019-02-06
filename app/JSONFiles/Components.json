@@ -61,7 +61,7 @@
     },
 
 
-  "ArduinoUno":
+  "Arduino Uno":
 
     {
       "Descripcion": "El Arduino UNO es un tablero microcontrolador de código abierto basado en el microcontrolador Microchip ATmega328P y desarrollado por Arduino.cc. La tarjeta está equipada con un conjunto de pines de entrada y salida digitales y analógicos que pueden conectarse a uno o varios circuitos. La placa tiene 14 pines digitales y 6 pines analógicos programables con el Arduino IDE a través de un cable USB tipo B. Puede ser alimentado por un cable USB o por una batería externa de 9 voltios, aunque acepta voltajes entre 7 y 20 voltios.\n",

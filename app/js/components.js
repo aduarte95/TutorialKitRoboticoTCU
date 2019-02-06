@@ -23,7 +23,7 @@ function init() {
 function loadComponentInfo() {
     let componentType = localStorage.getItem("component"); //El modelo que se debe cargar
     document.getElementById('desc-component-title').innerHTML = componentType; //Carga la lista
-    
+
     document.getElementById('componentDescription').innerHTML = result[componentType].Descripcion;
 }
 
