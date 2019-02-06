@@ -15,11 +15,9 @@ function loadComponentInfo() {
             localStorage.setItem("Components",xobj.responseText);
         }
     };
-
-    let components= JSON.parse(localStorage.getItem("Components"));
+    let components = JSON.parse(localStorage.getItem("Components"));
     console.log(components);
-    //console.log(components)
-    document.getElementById('componentDescription').innerHTML = components.componentType.Descripcion;
-    xobj.send(null);
-
+    console.log(componentType);
+    alert(components[componentType].Descripcion);
+    document.getElementById('componentDescription').innerHTML = components[componentType].Descripcion;
 }
