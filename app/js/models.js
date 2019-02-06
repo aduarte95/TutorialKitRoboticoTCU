@@ -114,6 +114,9 @@ function loadModelInfo() {
         case "Brazo Mecánico":
             kitModel = result.BrazoMecanico ;
             break;
+        case "Tutoriales Básicos":
+            kitModel = result.Nivel0 ;
+            break;
         default:
             kitModel = result.Carro;
         };
@@ -161,8 +164,9 @@ function setModelType() {
         case "Brazo Mecánico":
             kitModel = result.BrazoMecanico ;
             break;
-        case "nivel0":
+        case "Tutoriales Básicos":
             kitModel = result.Nivel0 ;
+            break;
         default:
             kitModel = result.Carro;
     };
@@ -205,8 +209,8 @@ function loadSteps(step) {
 
 
 
-    document.getElementById('step-title').innerHTML = "Paso " + count.toString();
+    document.getElementById('step-title').innerHTML = kitModel.Pasos[count - 1].Encabezado;
     document.getElementById('step-desc').innerHTML = kitModel.Pasos[count - 1].Descripcion;
-    document.getElementById('step-image').innerHTML = "<img class=\"image-size\" src=\"" + kitModel.Pasos[count - 1].Image + "\" alt=\"Paso " + count.toString() + "\">";
+    document.getElementById('step-image').innerHTML = "<img class=\"image-size\" src=\"" + kitModel.Pasos[count - 1].Image + "\" alt=\""+ kitModel.Pasos[count - 1].Encabezado + "\">";
     document.getElementById('step-bottom').innerHTML = bottom;
 }

@@ -43,30 +43,99 @@
 
   "Nivel0" : {
     "Id": "1",
-    "Descripcion": "Consta de una estructura electromecánica capaz de mover objetos de poco peso. Emplea dos motores servos para ejecutar el movimiento y un Arduino como modo de control.",
-    "Imagen": "images/micropiano.jpg",
-    "CantidadComponentes": ["1","2","3"],
+    "Descripcion": "<b>Metas</b><br> &bull; Aprender el funcionamiento básico de los materiales a utilizar en el kit.<br> &bull; Comprender la programación en Arduino mediante el programa Arduino IDE y por medio de bloques en Bitbloq.<br> &bull; Conocer la estructura básica de una programación de Arduino, así como las distintas funciones para dar instrucciones.<br> &bull; Realizar ejercicios para visualizar el funcionamiento de los distintos materiales y estructuras creadas con estos, mediante un código de programación. <br><br> <b>Funcionamiento</b><br>Los tutoriales básicos pretenden enseñar al alumno los conceptos básicos de programación en Arduino con el fin de que se comprenda la importancia de la programación, ya que esta representa en menor escala, la automatización que se puede reproducir en un futuro para cumplir diversos objetivos.",
+    "Imagen": "images/gears.png",
+    "CantidadComponentes": ["1","1","1","1","1","1","1","1","1","1","1"],
     "Components": [
-      "Arduino Uno",
-      "Servo Motor",
-      "Led"
+      "Resistencia",
+      "Cable",
+      "LED",
+      "Botón",
+      "Potenciómetro",
+      "Sensor ultrasónico",
+      "Fotoresistencia",
+      "Servomotor",
+      "Zumbador",
+      "Placa de pruebas",
+      "Arduino Uno"
     ],
     "Pasos": [
       {
+        "Encabezado": "Uso de Arduino Uno",
+        "Descripcion": "&bull; Explicar los pasos básicos iniciales de introducción al programa Arduino IDE, así como la programación en bloques en el programa Bitbloq. <br> &bull; Comprender la estructura básica de la programación de Arduino mediante las funciones “setup” y “loop”. <br> &bull; Llevar a cabo el ejercicio de encender y apagar una LED. <br> &bull; Utilizar un servo, y posteriormente incorporarle a este un potenciómetro. <br> &bull; Observar el funcionamiento de una fotoresistencia mediante un ejercicio de lectura de luminosidad. <br> &bull; Realizar un ejercicio con un sensor ultrasónico de medición de distancias. <br> &bull; Para cada uno de los ejercicios, se cuenta con una breve explicación, las variables y funciones detalladas, el código tanto en Arduino IDE comentado, como por bloques, un diagrama de flujo de las operaciones secuenciales y lógicas que sigue la programación, y las instrucciones para armar las respectivas estructuras, acompañadas de su correspondiente esquema de conexiones eléctricas.",
+        "Image": "images/arduino.jpg"
+      },
+      {
+        "Encabezado": "Pasos básicos iniciales – Arduino IDE",
+        "Descripcion" : "El software de código abierto Arduino IDE (Integrated Development Environment, o en español Entorno de Desarrollo Integrado) facilita escribir código y cargarlo en la placa de Arduino. Este IDE permite a los desarrolladores escribir código, configurar tableros y crear proyectos. Es decir, es una plataforma de hardware libre, basada en una placa con un microcontrolador y un entorno de desarrollo, diseñada para facilitar el uso de la electrónica en proyectos multidisciplinarios.",
+        "Image": "images/arduino.jpg"
+      },
+      {
         "Encabezado": "Paso 1",
-        "Descripcion": "Con este proyecto se pretende abarcar el tema de movimiento, fuerza y trabajo del MEP.",
-        "Image": "images/brazo.png"
+        "Descripcion": "Conectar el Arduino Uno a la computadora mediante el cable USB.",
+        "Image": "images/taller0-paso1.png"
       },
       {
         "Encabezado": "Paso 2",
-        "Descripcion": "Can este proyecto se pretende abarcar el tema de movimiento, fuerza y trabajo del MEP.",
-        "Image": "../images/brazo.png"
+        "Descripcion": " <style type=\"text/css\"> ol {list-style: none; counter-reset: li} li::before {content: counter(li); color: red;   display: inline-block; width: 1em;   margin-left: -1em} li {counter-increment: li}</style>Abrir el programa Arduino IDE.<br><br><b>Partes del IDE</b> <ol type=\"1\"> <li>VERIFICAR: Compila y aprueba el código. Atrapará los errores en la sintaxis (como los puntos y comas o paréntesis faltantes).</li> <li>CARGAR: Envía el código a la placa Arduino. Cuando se hace clic en él, se deberían ver las luces en el tablero parpadear rápidamente.</li> <li>NUEVO: Este botón abre una nueva pestaña de ventana de código.</li> <li>ABRIR: Este botón permitirá abrir un sketch existente.</li> <li>GUARDAR: Esto guarda el sketch actualmente activo.</li> <li>MONITOR DE SERIE: Esto abrirá una ventana que muestra cualquier información en serie que el Arduino está transmitiendo. Es muy útil para la depuración. </li> <li>NOMBRE DEL SKETCH: Esto muestra el nombre del sketch en el que se está trabajando actualmente.</li> <li>ÁREA DE CÓDIGO: Esta es el área donde se compone el código para el sketch.</li> <li>ÁREA DE MENSAJE: Aquí es donde el IDE indica si hubo algún error en el código. </li>  </ol>",
+        "Image": "images/taller0-paso2.png"
       },
       {
         "Encabezado": "Paso 3",
-        "Descripcion": "Cen este proyecto se pretende abarcar el tema de movimiento, fuerza y trabajo del MEP.",
-        "Image": "../images/brazo.png"
+        "Descripcion": "Seleccionar la placa: Arduino Uno.",
+        "Image": "images/taller0-paso3.png"
+      },
+      {
+        "Encabezado": "Paso 4",
+        "Descripcion": "Seleccionar el puerto.",
+        "Image": "images/taller0-paso4.png"
+      },
+      {
+        "Encabezado": "Pasos básicos iniciales – Bitbloq",
+        "Descripcion": "Bitbloq es una herramienta online que permite crear programas para un microcontrolador y cargarlos en el mismo de forma sencilla y sin tener necesariamente conocimientos de programación. Es de código abierto y puede usarse de forma gratuita, se requiere de un explorador basado en Chromium (Google Chrome, por ejemplo) para acceder a la herramienta. ",
+        "Image": "images/bitbloq.jpg"
+      },
+      {
+        "Encabezado": "Paso 1",
+        "Descripcion": "Crear una cuenta en Bitbloq, todo es almacenado en la nube, puede ser compartido con otras cuentas o descargado para tener un respaldo local.",
+        "Image": "images/taller0-bitbloq1.png"
+      },
+      {
+        "Encabezado": "Paso 2",
+        "Descripcion": "Página principal – Crear proyecto: La página principal muestra todos los proyectos asociados a una cuenta y permite la creación de nuevos proyectos.",
+        "Image": "images/taller0-bitbloq2.png"
+      },
+      {
+        "Encabezado": "Paso 3",
+        "Descripcion": "Al seleccionar “Nuevo proyecto” la página te redirige a un proyecto en blanco, es una buena práctica darle al proyecto un nombre apropiado haciendo clic sobre “Proyecto sin título”,  los proyectos tienen tres secciones principales que pueden accederse en los íconos al lado izquierdo de la pantalla. Las secciones son hardware, en donde se seleccionan los componentes a utilizar, la sección software, en donde se crea el código de nuestro proyecto y la sección de información, en esta se le da una descripción al proyecto, se puede agregar un video del proyecto y cambiar los colores de los bloques de programación (opcional).",
+        "Image": "images/taller0-bitbloq3.png"
+      },
+      {
+        "Encabezado": "Paso 4",
+        "Descripcion": "Una vez creado un proyecto lo primero que debe hacerse es agregar el microcontrolador a ser usado en el proyecto (en la sección “Placas”) para agregarlo solo debe arrastrarlo al área de trabajo, en el caso del Robokit se hace uso de un Arduino Uno, luego deben conectarse a este todos los componentes a usar en el proyecto (sección “Componentes”). \n",
+        "Image": "images/taller0-bitbloq4.png"
+      },
+      {
+        "Encabezado": "Paso 5",
+        "Descripcion": "Una vez que todos los componentes están conectados a la placa, pasamos a la sección de software, en esta puede trabajarse mediante bloques o código de programación y también puede iniciar un proyecto en bloques y luego cambiar unos detalles en el código. El código se divide en tres secciones al igual que en un programa de código (ver sección “Estructura de un programa”) y en el panel derecho están todos los comandos que pueden ser agregados al código representados por bloques.",
+        "Image": "images/taller0-bitbloq5.png"
+      },
+      {
+        "Encabezado": "Paso 6",
+        "Descripcion": "En la sección componentes aparecen todos los dispositivos que conectamos al Arduino en la sección de hardware, nótese que ciertos bloques usados en estos tutoriales se acceden haciendo clic en “Avanzados”, las demás secciones son equivalentes a lo expuesto en la sección de “Estructura de un programa”; para cargar un programa solamente debe hacer clic en la flecha en la parte superior derecha.",
+        "Image": "images/taller0-bitbloq6.png"
+      },
+      {
+        "Encabezado": "Estructura de un programa",
+        "Descripcion": "La estructura básica en el lenguaje de programación de Arduino se compone de mínimo dos funciones específicas “setup” y “loop”. Ambas funciones encierran bloques que contienen declaraciones o instrucciones, como se muestra a continuación:",
+        "Image": "images/programa.png"
+      },
+      {
+        "Encabezado": "Paso 4",
+        "Descripcion": "Seleccionar el puerto.",
+        "Image": "images/taller0-paso4.png"
       }
+
     ]
   },
 
