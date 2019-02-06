@@ -24,7 +24,7 @@
 }
 
 .image-size {
-    width: 100%
+    max-width: 600px;
 }
 
 .card-horizontal {
@@ -43,5 +43,5 @@
 }
 
 .sizecard {
-    max-width: 60%;
+    color: #000;
 }
