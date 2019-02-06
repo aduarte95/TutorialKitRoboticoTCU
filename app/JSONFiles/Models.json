@@ -30,7 +30,7 @@
         },
         {
           "Encabezado": "Paso 4",
-          "Descripcion": "<br><b> Si se está usando Arduino IDE ingresar el siguiente codigo al arduino: </b></br> <br> <pre><code>const int boton_0 = 2; // se establece una constante entera “boton_0” en el pin 2\nconst int boton_1 = 3;\nconst int boton_2 = 4;\nconst int boton_3 = 5;\nconst int boton_4 = 6;\nconst int boton_5 = 7;\nconst int boton_6 = 8;\nconst int zumbador = 12;\n\nvoid setup () {\n\tpinMode (boton_0, INPUT); // se establece “boton_0” (equivalente al pin 2) como entrada\n\tpinMode (boton_1, INPUT);\n\tpinMode (boton_2, INPUT);\n\tpinMode (boton_3, INPUT);\n\tpinMode (boton_4, INPUT);\n\tpinMode (boton_5, INPUT);\n\tpinMode (boton_6, INPUT);\n\tpinMode (zumbador, OUTPUT); // se establece “zumbador” (pin 12) como una salida\n}\n\nvoid loop () {\n\tif (digitalRead (boton_0) == false) { // si se presiona el boton_0 se corren las instrucciones\n\t\ttone (zumbador, 261, 100); // el 261 es la frecuencia que equivale a la nota Do\n\t\tdelay (100); // espera de 100 milisegundos que equivalen a 0,1 segundos\n\t}\n\tif (digitalRead (boton_1) == true) { \n\t\ttone (zumbador, 293, 100); // el 293 es la frecuencia que equivale a la nota Re\n\t\tdelay (100);\n\t}\n\tif (digitalRead (boton_2) == true) { \n\t\ttone (zumbador, 329, 100); // el 329 es la frecuencia que equivale a la nota Mi\n\t\tdelay (100);\n\t}\n\tif (digitalRead (boton_3) == true) { \n\t\ttone (zumbador, 349, 100); // el 349 es la frecuencia que equivale a la nota Fa\n\t\tdelay (100);\n\t}\n\tif (digitalRead (boton_4) == true) { \n\t\ttone (zumbador, 392, 100); // el 392 es la frecuencia que equivale a la nota Sol\n\t\tdelay (100);\n\t}\n\tif (digitalRead (boton_5) == true) { \n\t\ttone (zumbador, 440, 100); // el 440 es la frecuencia que equivale a la nota La\n\t\tdelay (100);\n\t}\n\tif (digitalRead (boton_6) == true) { \n\t\ttone (zumbador, 494, 100); // el 494 es la frecuencia que equivale a la nota Si\n\t\tdelay (100);\n\t}\n}\n </code></pre>",
+          "Descripcion": "<br><b> Si se está usando Arduino IDE ingresar el siguiente codigo al arduino: </b></br> <br> <pre><code>const int boton_0 = 2; // se establece una constante entera “boton_0” en el pin 2 const int boton_1 = 3; const int boton_2 = 4; const int boton_3 = 5; const int boton_4 = 6; const int boton_5 = 7; const int boton_6 = 8; const int zumbador = 12;  void setup () { \tpinMode (boton_0, INPUT); // se establece “boton_0” (equivalente al pin 2) como entrada \tpinMode (boton_1, INPUT); \tpinMode (boton_2, INPUT); \tpinMode (boton_3, INPUT); \tpinMode (boton_4, INPUT); \tpinMode (boton_5, INPUT); \tpinMode (boton_6, INPUT); \tpinMode (zumbador, OUTPUT); // se establece “zumbador” (pin 12) como una salida }  void loop () { \tif (digitalRead (boton_0) == false) { // si se presiona el boton_0 se corren las instrucciones \t\ttone (zumbador, 261, 100); // el 261 es la frecuencia que equivale a la nota Do \t\tdelay (100); // espera de 100 milisegundos que equivalen a 0,1 segundos \t} \tif (digitalRead (boton_1) == true) {  \t\ttone (zumbador, 293, 100); // el 293 es la frecuencia que equivale a la nota Re \t\tdelay (100); \t} \tif (digitalRead (boton_2) == true) {  \t\ttone (zumbador, 329, 100); // el 329 es la frecuencia que equivale a la nota Mi \t\tdelay (100); \t} \tif (digitalRead (boton_3) == true) {  \t\ttone (zumbador, 349, 100); // el 349 es la frecuencia que equivale a la nota Fa \t\tdelay (100); \t} \tif (digitalRead (boton_4) == true) {  \t\ttone (zumbador, 392, 100); // el 392 es la frecuencia que equivale a la nota Sol \t\tdelay (100); \t} \tif (digitalRead (boton_5) == true) {  \t\ttone (zumbador, 440, 100); // el 440 es la frecuencia que equivale a la nota La \t\tdelay (100); \t} \tif (digitalRead (boton_6) == true) {  \t\ttone (zumbador, 494, 100); // el 494 es la frecuencia que equivale a la nota Si \t\tdelay (100); \t} }  </code></pre>",
           "Image": "images/arduinoLogo.jpg"
         },
         {
@@ -112,7 +112,7 @@
       },
       {
         "Encabezado": "Paso 4",
-        "Descripcion": "Una vez creado un proyecto lo primero que debe hacerse es agregar el microcontrolador a ser usado en el proyecto (en la sección “Placas”) para agregarlo solo debe arrastrarlo al área de trabajo, en el caso del Robokit se hace uso de un Arduino Uno, luego deben conectarse a este todos los componentes a usar en el proyecto (sección “Componentes”). \n",
+        "Descripcion": "Una vez creado un proyecto lo primero que debe hacerse es agregar el microcontrolador a ser usado en el proyecto (en la sección “Placas”) para agregarlo solo debe arrastrarlo al área de trabajo, en el caso del Robokit se hace uso de un Arduino Uno, luego deben conectarse a este todos los componentes a usar en el proyecto (sección “Componentes”).",
         "Image": "images/taller0-bitbloq4.png"
       },
       {
@@ -127,15 +127,29 @@
       },
       {
         "Encabezado": "Estructura de un programa",
-        "Descripcion": "La estructura básica en el lenguaje de programación de Arduino se compone de mínimo dos funciones específicas “setup” y “loop”. Ambas funciones encierran bloques que contienen declaraciones o instrucciones, como se muestra a continuación:",
-        "Image": "images/programa.png"
+        "Descripcion": "La estructura básica en el lenguaje de programación de Arduino se compone de mínimo dos funciones específicas “setup” y “loop”. Ambas funciones encierran bloques que contienen declaraciones o instrucciones, como se muestra a continuación:<br><br><code>void setup ()</code><br> <code>{</code><br> <em>&nbsp;&nbsp;instrucciones</em><br> <code>}</code><br> <code>void loop ()</code><br> <code>{</code><br> <em>&nbsp;&nbsp;instrucciones</em><br> <code>}</code><br><br> Ambas funciones corren de manera automática cada vez que se enciende el Arduino o se reinicia, y son necesarias para que trabaje el programa.",
+        "Image": "images/tutorial0-estructura.png"
       },
       {
-        "Encabezado": "Paso 4",
-        "Descripcion": "Seleccionar el puerto.",
-        "Image": "images/taller0-paso4.png"
+        "Encabezado": "Entre llaves {}",
+        "Descripcion": "Estas llaves “{}” tienen como objetivo definir el inicio y final de un bloque de instrucciones. Siempre deben aparecer ambas llaves, es decir, la de apertura y la de cierre; en caso contrario, el programa presenta errores. <br>Para asegurarse de que cada llave de apertura tiene su correspondiente de cierre, se debe hacer clic en el punto de inserción de la llave abierta y de manera inmediata se marca la llave de cierre relacionada a ese bloque.",
+        "Image": "images/no-image.png"
+      },
+      {
+        "Encabezado": "Punto y coma ;",
+        "Descripcion": "El punto y coma “;” es utilizado para separar instrucciones. En caso de olvidar poner fin a una línea con un punto y coma, se obtendrá un error en la compilación.",
+        "Image": "images/no-image.png"
+      },
+      {
+        "Encabezado": "Linea de comentario //",
+        "Descripcion": "<p>Para introducir un comentario o nota dentro del programa, se empieza la línea con “//”. Al escribirlo de esta manera, esa línea completa es ignorada por el programa (se encuentra deshabilitada).</p><p>Una línea de comentario es comúnmente utilizada después de una instrucción a manera de recordatorio sobre lo que hace esta. A manera de ejemplo se tiene:</p><em><b>// esto es un comentario</b></em>",
+        "Image": "images/no-image.png"
+      },
+      {
+        "Encabezado": "Bloque de comentarios /*...*/",
+        "Descripcion": "<p>Estos bloques de comentarios son áreas completas de texto que son ignoradas por el programa, es decir, está conformada por un conjunto de líneas de comentario. Un ejemplo de esto:</p> <em><b>/*<br> esto es un bloque de comentario<br> no olvidar cerrar siempre los comentarios<br>*/</b></em>",
+        "Image": "images/no-image.png"
       }
-
     ]
   },
 

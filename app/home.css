@@ -18,14 +18,15 @@ button_robot_face {
     overflow: hidden;
     outline:none;
     position:absolute;
-    left:15%;
-    bottom:60%;
-    height:130px;
-    width:135px;
+    z-index: 2;
+    left:6%;
+    bottom:57%;
+    height:30%;
+    width:35%;
 
 }
 .button_image, button_robot_face{
-    background-image: url('images/robotFace.png');
+    background-image: url('images/logo.png');
     background-size: 100% 100%;
 }
 
