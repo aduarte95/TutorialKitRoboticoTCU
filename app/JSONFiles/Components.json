@@ -1,5 +1,5 @@
 {
-  "Resistencias":
+  "Resistencia":
 
             {
               "Descripcion": "Se denomina resistencia eléctrica a la oposición que se le genera al flujo de electrones cuando se mueven a través de un material conductor; es decir, es la capacidad eléctrica que posee un dispositivo para contrarrestar el efecto de la corriente eléctrica, con el objetivo de controlar el grado en que se disipa dicha corriente. Un resistor es un componente electrónico diseñado para introducir una resistencia eléctrica determinada entre dos puntos de un circuito eléctrico.",
@@ -22,14 +22,14 @@
     },
 
 
-  "Botones":
+  "Botón":
 
     {
       "Descripcion": "Un botón o pulsador es una tecla utilizada para activar alguna función de un dispositivo. Los botones son de diversas formas y tamaños y se encuentran en todo tipo de dispositivos, aunque principalmente en aparatos eléctricos y electrónicos.\n Los botones son, por lo general, activados al ser pulsados con un dedo. Permiten el flujo de corriente mientras son accionados. Cuando ya no se presiona sobre él vuelve a su posición de reposo. \n El botón se utiliza en calculadoras, teléfonos, electrodomésticos, y varios otros dispositivos mecánicos y electrónicos, del hogar y comerciales.\n",
       "Foto":"../images/Components/boton.jpg"
     },
 
-  "Sensor Ultrasónico":
+  "Sensor ultrasónico":
 
     {
       "Descripcion": "Los sensores de ultrasonidos o sensores ultrasónicos son dispositivos que detectan objetos a distancias que van desde pocos centímetros hasta varios metros. El sensor emite un sonido y mide el tiempo que la señal tarda en regresar. El sensor recibe el eco producido y lo convierte en señales eléctricas, las cuales son elaboradas en otro aparato.\n Estos sensores trabajan solamente donde se tiene presencia de aire (no pueden trabajar en el vacío, necesitan medio de propagación), y pueden detectar objetos con diferentes formas, diferentes colores, superficies y de diferentes materiales. Los materiales pueden ser sólidos, líquidos o polvorientos, sin embargo, deben ser necesariamente deflectores de sonido.\n El problema que presentan estos dispositivos son las zonas ciegas, las cuales son comprendidas entre el lado sensible del detector y el alcance mínimo en el que ningún objeto puede detectarse de forma segura.",
