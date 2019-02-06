@@ -12,12 +12,14 @@ function loadComponentInfo() {
         if (xobj.readyState == 4 && xobj.status == "200") {
             // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
             //callback(xobj.responseText);
-            localStorage.setItem("Components",xobj.responseText)
+            localStorage.setItem("Components",xobj.responseText);
         }
     };
-    let components= JSON.parse(localStorage.getItem("Components"))
-    console.log(localStorage)
-    document.getElementById('componentDescription').innerHTML = components.componentType.Descipcion;
+
+    let components= JSON.parse(localStorage.getItem("Components"));
+    console.log(components);
+    //console.log(components)
+    document.getElementById('componentDescription').innerHTML = components.componentType.Descripcion;
     xobj.send(null);
 
 }

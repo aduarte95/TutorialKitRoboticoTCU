@@ -2,7 +2,7 @@
   "Resistencias":
 
             {
-              "Descripcion": "Se denomina resistencia eléctrica a la oposición que se le genera al flujo de electrones cuando se mueven a través de un material conductor; es decir, es la capacidad eléctrica que posee un dispositivo para contrarrestar el efecto de la corriente eléctrica, con el objetivo de controlar el grado en que se disipa dicha corriente. Un resistor es un componente electrónico diseñado para introducir una resistencia eléctrica determinada entre dos puntos de un circuito eléctrico.\n               \"Descripcion\": \"Se denomina resistencia eléctrica a la oposición que se le genera al flujo de electrones cuando se mueven a través de un material conductor; es decir, es la capacidad eléctrica que posee un dispositivo para contrarrestar el efecto de la corriente eléctrica, con el objetivo de controlar el grado en que se disipa dicha corriente. Un resistor es un componente electrónico diseñado para introducir una resistencia eléctrica determinada entre dos puntos de un circuito eléctrico.\n",
+              "Descripcion": "Se denomina resistencia eléctrica a la oposición que se le genera al flujo de electrones cuando se mueven a través de un material conductor; es decir, es la capacidad eléctrica que posee un dispositivo para contrarrestar el efecto de la corriente eléctrica, con el objetivo de controlar el grado en que se disipa dicha corriente. Un resistor es un componente electrónico diseñado para introducir una resistencia eléctrica determinada entre dos puntos de un circuito eléctrico.",
               "Foto":"../images/Components/resistencia.jpg"
             },
 
@@ -28,15 +28,6 @@
       "Descripcion": "Un botón o pulsador es una tecla utilizada para activar alguna función de un dispositivo. Los botones son de diversas formas y tamaños y se encuentran en todo tipo de dispositivos, aunque principalmente en aparatos eléctricos y electrónicos.\n Los botones son, por lo general, activados al ser pulsados con un dedo. Permiten el flujo de corriente mientras son accionados. Cuando ya no se presiona sobre él vuelve a su posición de reposo. \n El botón se utiliza en calculadoras, teléfonos, electrodomésticos, y varios otros dispositivos mecánicos y electrónicos, del hogar y comerciales.\n",
       "Foto":"../images/Components/boton.jpg"
     },
-
-
-  "Potenciómetro":
-
-    {
-      "Descripcion": "El potenciómetro se comporta como un interruptor que modifica el valor de la resistencia con el objetivo de disminuir, si se acciona para un lado, o aumentar, si se acciona para el otro lado, la potencia que se disipa.\n Son adecuados para su uso como elemento de control de la tensión (resistencia) en los aparatos electrónicos. El usuario acciona sobre ellos para cambiar los parámetros normales de funcionamiento, por ejemplo, el volumen de un aparato de audio.\n",
-      "Foto":"../images/Components/potenciometro.jpg"
-    },
-
 
   "Sensor Ultrasónico":
 
