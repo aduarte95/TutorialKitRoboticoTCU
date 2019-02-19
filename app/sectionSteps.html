@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="sp">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link rel="stylesheet" href="CSS/bootstrap.min.css">
+<script scr="js/bootstrap.min.js"></script>
+<link href="CSS/global-styles.css" rel="stylesheet" type="text/css" >
+<script src="js/levelZero.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tutorial Kit Robótico</title>
+</head>
+
+<body onload="loadSectionSteps(1)">
+<div>
+    <!-- Top of the screen. Contains a home button and an option's text-->
+    <div class="top">
+        <div class="row no-gutters">
+            <div class="col-0">
+                &nbsp;
+                <a href="home.html">
+                    <img src="images/home.png" width="35" height="35">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Display the models description -->
+    <section class="center-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 mt-3">
+                    <div class="card">
+                        <div class="card-horizontal">
+                            <div class="img-square-wrapper" id="section-step-image">
+
+                            </div>
+                            <div class="card-body sizecard">
+                                <h4 class="card-title" id="section-step-title"></h4>
+                                <p class="card-text" id="section-step-desc"></p>
+                            </div>
+                        </div>
+                    </div>  <!-- Card termination-->
+                </div>
+            </div>
+        </div>  <!-- Container termination-->
+    </section> <!-- Section termination-->
+
+    <!-- Bottom -->
+    <section class="bottom-bar max-size">
+        <div class="container-fluid">
+            <div class="row" id="section-step-bottom">
+            </div>
+        </div>
+    </section> <!-- Bottom section termination-->
+</div>
+</body>
+</html>
