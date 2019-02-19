@@ -1,0 +1,93 @@
+{
+  "MetasYFuncionamiento" : {
+    "Descripcion": "<br><b> Metas </b></br> &bull; Aprender el funcionamiento básico de los materiales a utilizar en el kit. <br> &bull; Comprender la programación en Arduino mediante el programa Arduino IDE y por medio de bloques en Bitbloq.  <br> &bull; Conocer la estructura básica de una programación de Arduino, así como las distintas funciones para dar instrucciones. <br> &bull; Realizar ejercicios para visualizar el funcionamiento de los distintos materiales y estructuras creadas con estos, mediante un código de programación. <br><b>Funcionamiento </b></br> Los tutoriales básicos pretenden enseñar al alumno los conceptos básicos de programación en Arduino con el fin de que se comprenda la importancia de la programación, ya que esta representa en menor escala, la automatización que se puede reproducir en un futuro para cumplir diversos objetivos." ,
+    "Imagen": "images/micropiano.jpg",
+    "SubSecciones": []
+
+  },
+
+  "Actividades" : {
+    "Descripcion": "<br><b> Actividades </b></br> &bull; Explicar los pasos básicos iniciales de introducción al programa Arduino IDE, así como la programación en bloques en el programa Bitbloq. <br> &bull; Comprender la estructura básica de la programación de Arduino mediante las funciones “setup” y “loop”. <br> &bull; Llevar a cabo el ejercicio de encender y apagar una LED. <br> &bull; Utilizar un servo, y posteriormente incorporarle a este un potenciómetro. <br> &bull; Observar el funcionamiento de una fotoresistencia mediante un ejercicio de lectura de luminosidad. <br> &bull; Realizar un ejercicio con un sensor ultrasónico de medición de distancias. <br> &bull; Para cada uno de los ejercicios, se cuenta con una breve explicación, las variables y funciones detalladas, el código tanto en Arduino IDE comentado, como por bloques, un diagrama de flujo de las operaciones secuenciales y lógicas que sigue la programación, y las instrucciones para armar las respectivas estructuras, acompañadas de su correspondiente esquema de conexiones eléctricas." ,
+    "Imagen": "images/micropiano.jpg",
+    "SubSecciones": []
+  },
+
+  "Parte1" : {
+    "Descripcion": "<br><b> Introducción y Conceptos Básicos </b></br> Introducción básica al microcontrolador Arduino y el programa Arduino IDE. Explicación de la estructura de un programa, la variable “int”, y de las funciones setup y loop, pinMode (pin, modo), digitalWrite (pin, valor) y delay (ms). La primera parte termina con el ejercicio “Hello World” de encender y apagar una LED con un delay. ",
+    "Imagen": "images/micropiano.jpg",
+    "SubSecciones": [
+      {
+        "Descripcción": "<br><b> Pasos básicos iniciales – Arduino IDE </b></br> El software de código abierto Arduino IDE (Integrated Development Environment, o en español Entorno de Desarrollo Integrado) facilita escribir código y cargarlo en la placa de Arduino. Este IDE permite a los desarrolladores escribir código, configurar tableros y crear proyectos. Es decir, es una plataforma de hardware libre, basada en una placa con un microcontrolador y un entorno de desarrollo, diseñada para facilitar el uso de la electrónica en proyectos multidisciplinarios.",
+        "Imagen": "",
+        "Pasos": [
+          {
+            "Descripción": "<br>Conectar el Arduino Uno a la computadora mediante el cable USB.</br>",
+            "Imagen": "images/Taller0/paso1Arduino.png"
+          },
+          {
+            "Descripción": "<br> Abrir el programa Arduino IDE.</br> 1. VERIFICAR: Compila y aprueba el código. Atrapará los errores en la sintaxis (como los puntos y comas o paréntesis faltantes).<br> 2. CARGAR: Envía el código a la placa Arduino. Cuando se hace clic en él, se deberían ver las luces en el tablero parpadear rápidamente.<br> 3. NUEVO: Este botón abre una nueva pestaña de ventana de código.<br> 4. ABRIR: Este botón permitirá abrir un sketch existente. <br> 5. GUARDAR: Esto guarda el sketch actualmente activo. <br> 6. MONITOR DE SERIE: Esto abrirá una ventana que muestra cualquier información en serie que el Arduino está transmitiendo. Es muy útil para la depuración. <br> 7. NOMBRE DEL SKETCH: Esto muestra el nombre del sketch en el que se está trabajando actualmente. <br> 8. ÁREA DE CÓDIGO: Esta es el área donde se compone el código para el sketch. <br> 9. ÁREA DE MENSAJE: Aquí es donde el IDE indica si hubo algún error en el código. ",
+            "Imagen": "images/Taller0/paso2Arduino.png"
+          },
+          {
+            "Descripción": "<br> Seleccionar la placa: Arduino Uno. </br>",
+            "Imagen": "images/Taller0/paso3Arduino.png"
+          },
+          {
+            "Descripción": "<br> Seleccionar el puerto. </br>",
+            "Imagen": "images/Taller0/paso4Arduino.png"
+          }
+        ]
+      },
+
+      {
+        "Descripcción": "<br><b> Pasos básicos iniciales – Bitbloq </b></br> Bitbloq es una herramienta online que permite crear programas para un microcontrolador y cargarlos en el mismo de forma sencilla y sin tener necesariamente conocimientos de programación. Es de código abierto y puede usarse de forma gratuita, se requiere de un explorador basado en Chromium (Google Chrome, por ejemplo) para acceder a la herramienta.",
+        "Imagen": "",
+        "Pasos": [
+          {
+            "Descripción": "<br>Crear una cuenta en Bitbloq, todo es almacenado en la nube, puede ser compartido con otras cuentas o descargado para tener un respaldo local.</br>",
+            "Imagen": "images/Taller0/parte1Bitbloq.png"
+          },
+          {
+            "Descripción": "<br>Página principal – Crear proyecto: La página principal muestra todos los proyectos asociados a una cuenta y permite la creación de nuevos proyectos. </br> ",
+            "Imagen": "images/Taller0/parte2Bitbloq.png"
+          },
+          {
+            "Descripción": "<br> Al seleccionar “Nuevo proyecto” la página te redirige a un proyecto en blanco, es una buena práctica darle al proyecto un nombre apropiado haciendo clic sobre “Proyecto sin título”,  los proyectos tienen tres secciones principales que pueden accederse en los íconos al lado izquierdo de la pantalla. Las secciones son hardware, en donde se seleccionan los componentes a utilizar, la sección software, en donde se crea el código de nuestro proyecto y la sección de información, en esta se le da una descripción al proyecto, se puede agregar un video del proyecto y cambiar los colores de los bloques de programación (opcional). </br>",
+            "Imagen": "images/Taller0/parte3Bitbloq.png"
+          },
+          {
+            "Descripción": "<br> Una vez creado un proyecto lo primero que debe hacerse es agregar el microcontrolador a ser usado en el proyecto (en la sección “Placas”) para agregarlo solo debe arrastrarlo al área de trabajo, en el caso del Robokit se hace uso de un Arduino Uno, luego deben conectarse a este todos los componentes a usar en el proyecto (sección “Componentes”). </br>",
+            "Imagen": "images/Taller0/parte4Bitbloq.png"
+          },
+          {
+            "Descripción": "<br> Una vez que todos los componentes están conectados a la placa, pasamos a la sección de software, en esta puede trabajarse mediante bloques o código de programación y también puede iniciar un proyecto en bloques y luego cambiar unos detalles en el código. El código se divide en tres secciones al igual que en un programa de código (ver sección “Estructura de un programa”) y en el panel derecho están todos los comandos que pueden ser agregados al código representados por bloques. </br>",
+            "Imagen": "images/Taller0/parte5Bitbloq.png"
+          },
+          {
+            "Descripción": "<br> En la sección componentes aparecen todos los dispositivos que conectamos al Arduino en la sección de hardware, nótese que ciertos bloques usados en estos tutoriales se acceden haciendo clic en “Avanzados”, las demás secciones son equivalentes a lo expuesto en la sección de “Estructura de un programa”; para cargar un programa solamente debe hacer clic en la flecha en la parte superior derecha. </br>",
+            "Imagen": "images/Taller0/parte6Bitbloq.png"
+          }
+        ]
+      },
+
+      {
+        "Descripcción": "<br><b> Estructura de un programa </b></br> La estructura básica en el lenguaje de programación de Arduino se compone de mínimo dos funciones específicas “setup” y “loop”. Ambas funciones encierran bloques que contienen declaraciones o instrucciones, como se muestra a continuación: <b> \n\nvoid setup ()\n{\ninstrucciones;\n}\nvoid loop ()\n{\ninstrucciones;\n}\n\n </b> Ambas funciones corren de manera automática cada vez que se enciende el Arduino o se reinicia, y son necesarias para que trabaje el programa.",
+        "Imagen": "",
+        "Pasos": [
+          {
+            "Descripción": "<br>&bull; <b> {} entre llaves </b> <br> Estas llaves “{}” tienen como objetivo definir el inicio y final de un bloque de instrucciones. Siempre deben aparecer ambas llaves, es decir, la de apertura y la de cierre; en caso contrario, el programa presenta errores. Para asegurarse de que cada llave de apertura tiene su correspondiente de cierre, se debe hacer clic en el punto de inserción de la llave abierta y de manera inmediata se marca la llave de cierre relacionada a ese bloque. <br> &bull; <b> ; punto y coma </b> <br> El punto y coma “;” es utilizado para separar instrucciones. En caso de olvidar poner fin a una línea con un punto y coma, se obtendrá un error en la compilación. <br> &bull; <b> // línea de comentario </b> <br> Para introducir un comentario o nota dentro del programa, se empieza la línea con “//”. Al escribirlo de esta manera, esa línea completa es ignorada por el programa (se encuentra deshabilitada). <br> Una línea de comentario es comúnmente utilizada después de una instrucción a manera de recordatorio sobre lo que hace esta. A manera de ejemplo se tiene:<br> <b>// esto es un comentario</b> <br> &bull; <b> /*…*/ bloque de comentarios </b> <br> Estos bloques de comentarios son áreas completas de texto que son ignoradas por el programa, es decir, está conformada por un conjunto de líneas de comentario. Un ejemplo de esto:<br> <b> /*\n esto es un bloque de comentario\nno olvidar cerrar siempre los comentarios\n*/</b></br>",
+            "Imagen": ""
+          },
+          {
+            "Descripción": "<br> <b> Variables </b> </br> &bull; int: <br> Enteros son un tipo de datos primarios que almacenan valores numéricos de 16 bits sin decimales comprendidos en el rango 32.767 hasta -32.768. <br> <b> int unaVariable </b> = 1500; // declara 'unaVariable' como una variable de tipo entero <br> <b>Nota:</b> Las variables de tipo entero “int” pueden sobrepasar su valor máximo o mínimo como consecuencia de una operación. Por ejemplo, si x = 32.767 y una posterior declaración agrega 1 a x, x = x + 1 entonces el valor se x pasará a ser -32.768. (algo así como que el valor da la vuelta). ",
+            "Imagen": ""
+          },
+          {
+            "Descripción": "<br> <b> Funciones </b> </br> Una “función” en el programa de Arduino es un bloque de código con un nombre y un conjunto de declaraciones o instrucciones que se ejecutan una vez que se llama a la función. <br> <b> void setup </b> <br> La función “setup” empieza a correr cuando se inicia el sketch o programa. Dentro de esta función se escribe todo lo que se requiera hacer una única vez inicial. Es utilizada para dar inicio al modo de trabajo de los pines o el puerto serie. Tiene que estar incluido en el programa aun cuando no exista una declaración que ejecutar. <br> <b> void loop </b> <br> Esta función se coloca y se corre después del “setup”. Es la función que lleva a cabo la mayor parte del trabajo. \nEl “loop” (en español conocido como “bucle”) corre las funciones establecidas, de manera cíclica sin parar o hasta que se toque el botón de reinicio “Reset” o se apague el Arduino.<br> <b> pinMode (pin, modo) </b> <br> El Arduino tiene 13 pines digitales que se pueden usar como Entradas o Salidas (INPUT/OUTPUT). Para poder establecer si el pin es una entrada o salida, se utiliza la función pinMode (pin, modo), donde “pin” y “modo” corresponden a dos argumentos, respectivamente al número del pin que se va a utilizar y si este es OUTPUT o INTPUT. Esta instrucción se utiliza en la parte de configuración setup (). <br> <b>Nota:</b> Los terminales de Arduino, por defecto, están configurados como entradas, por lo tanto, no es necesario definirlos en el caso de que vayan a trabajar como entradas.<br> <b> void setup ()\n{\npinMode (13, OUTPUT); // se establece el pin 13 como una salida\n}</b> <br> <b> digitalWrite (pin, valor)</b> <br>La función digitalWrite (pin, valor) envía al número de pin definido (pin) como OUTPUT, el valor de “HIGH” o “LOW” (valor), lo cual pone en 1 (alto) o 0 (bajo) la salida. El pin se puede especificar ya sea como una variable o como una constante (0-13). Se muestra a continuación un ejemplo:<br> <b>void loop ()\n{\ndigitalWrite (13, HIGH); // se tiene en el pin 13 un valor de HIGH (alto o 1)\n}</b> <br> <b> delay (ms) </b> <br> Esta función detiene la ejecución del programa, o la pone en pausa, por un tiempo determinado en milisegundos (ms). De esta manera se tiene por ejemplo que 1000 milisegundos equivalen a 1 segundo. Como ejemplo se tiene: <br> <b>void loop ()\n{\ndelay (1000); // espera de 1 segundo\n}</b>",
+            "Imagen": "images/Taller0/paso3Arduino.png"
+          }
+        ]
+      }
+    ]
+  }
+}
