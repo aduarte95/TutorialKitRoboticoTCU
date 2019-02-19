@@ -77,6 +77,8 @@ function init() {
 
         if(lvl == "3") {
             back = "models.html";
+        } else if(lvl == "2") {
+            back = "levelZero.html"; //TODO: Revisar bien
         }
         else {
             back = "multipleLvls.html";
