@@ -42,16 +42,9 @@ function loadSection() {
         section = result[index];
         sectionTitle = section["Titulo"];
         src = section["Imagen"];
+        ref = "section.html";
 
-
-        if (section["SubSecciones"].length != 0) {//Verifica si seccion tiene subsecciones.
-            ref = "subsection.html";
-        } else {
-            ref = "section.html";
-        }
-
-        sectionCard += doCard(sectionTitle, src, ref);
-
+        sectionCard += doCard(sectionTitle, src) + setRef(ref, sectionTitle);
         ++index;
     }
     document.getElementById('zero-sections').innerHTML = sectionCard; //Carga la lista
@@ -76,43 +69,59 @@ function loadSubsections() {
         subsectionTitle = sectionType["Titulo"];
         src = sectionType["Imagen"];
 
-        subsectionCard += doCard(subsectionTitle, src, ref);
-
+        subsectionCard += doCard(subsectionTitle, src) + setSubRef(ref, section, index);
         ++index;
     }
     document.getElementById('zero-subsections').innerHTML = subsectionCard; //Carga la lista
 
 }
 
-    function doCard(sectionTitle, src, ref) {
+    function doCard(sectionTitle, src) {
         return "<div class=\"card text-center\">" +
         "<div class=\"card-body\">" +
         "<img class=\"card-img-top\" src=\"" + src +"\"  alt=\"" + sectionTitle + "\">" +
         "<h5 class=\"card-title\">" + sectionTitle + "</h5>" +
         "</div>" +
-        "<div class=\"card-footer\">" +
-        "<a href=\""+ ref +"\" class=\"btn btn-primary\" onclick=\"setSection('" + sectionTitle + "')\">Comenzar</a>" +
-        "</div>" +
-        "</div>";
+        "<div class=\"card-footer\">";
     }
+
+function setRef(ref, sectionTitle) {
+    return "<a href=\""+ ref +"\" class=\"btn btn-primary\" onclick=\"setSection('" + sectionTitle + "')\">Comenzar</a>" +
+    "</div>" +
+    "</div>";
+}
+
+function setSubRef(ref, section, index) {
+    return "<a href=\""+ ref +"\" class=\"btn btn-primary\" onclick=\"setSection('" + section + "');setSubsection('" + index + "');\">Comenzar</a>" +
+    "</div>" +
+    "</div>";
+}
 
 let count = 0;
 
 function loadSectionDescription() {
     let sectionName = localStorage.getItem("section") //La sección que se debe cargar
     let sectionType = result[sectionName];
-
-    console.log(result[sectionName]);
-    console.log("section " +sectionName);
-
     let title = sectionType["Titulo"];
     let description = sectionType["Descripcion"];
     let img = "<img class=\"image-size\" src=\"" + sectionType["Imagen"] + "\" alt=\"" + title +"\">";
+    let next;
+    let ref;
+
+    if (sectionType["SubSecciones"].length != 0) {//Verifica si seccion tiene subsecciones.
+        ref = "subsection.html";
+    } else {
+        ref = "sectionSteps.html";
+    }
+
+    next = "<section class=\"next-button\">" +
+        "<a class=\"btn btn-primary\" href=\"" + ref + "\" role=\"button\">Siguiente &raquo;</a>" +
+        "</section>";
 
     document.getElementById('section-desc-img').innerHTML = img; //Imagen del modelo
-
     document.getElementById('section-desc-model-title').innerHTML = title; //Titulo del modelo
     document.getElementById('section-message').innerHTML = description; //Descripción
+    document.getElementById('section-button-next').innerHTML = next; //Descripción
 }
 
 function loadSectionSteps(step) {
