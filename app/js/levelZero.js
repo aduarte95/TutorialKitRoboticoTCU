@@ -15,7 +15,7 @@ function init() {
 function loadJSON(callback) {
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("JSONFiles");
-    xobj.open('GET', 'JSONFiles/NivelCero.json', false); // Replace 'my_data' with the path to your file
+    xobj.open('GET', 'JSONFiles/Nivel0.json', false); // Replace 'my_data' with the path to your file
     xobj.onreadystatechange = function () {
         if (xobj.readyState == 4 && xobj.status == "200") {
             // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
@@ -62,14 +62,15 @@ function loadSectionVariable() {
     let sectionName = localStorage.getItem("section") //La sección que se debe cargar
     return result[sectionName];
 }
-function loadSubsection() {
+function loadSubsections() {
     let subsectionTitle;
     let src;
     let subsectionCard = "";
     let subsection;
-    let ref = section.html;
+    let ref = "section.html";
     let sectionType = loadSectionVariable()["SubSecciones"];
 
+    console.log(sectionType);
     for (index in sectionType) {
         subsection = sectionType[index];
         subsectionTitle = sectionType["Titulo"];

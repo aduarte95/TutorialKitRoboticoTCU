@@ -39,6 +39,13 @@
     transform: translate(-50%, -60%);
   }
 
+.section-option {
+    width: 90%;
+    left: 50%;
+    position: absolute;
+    top: 60%;
+    transform: translate(-50%, -60%);
+}
 
   .work {
     height: 300px;
