@@ -17,6 +17,7 @@
     "Imagen": "images/micropiano.jpg",
     "SubSecciones": [
       {
+        "Titulo": "Pasos básicos iniciales – Arduino IDE",
         "Descripcción": "<br><b> Pasos básicos iniciales – Arduino IDE </b></br> El software de código abierto Arduino IDE (Integrated Development Environment, o en español Entorno de Desarrollo Integrado) facilita escribir código y cargarlo en la placa de Arduino. Este IDE permite a los desarrolladores escribir código, configurar tableros y crear proyectos. Es decir, es una plataforma de hardware libre, basada en una placa con un microcontrolador y un entorno de desarrollo, diseñada para facilitar el uso de la electrónica en proyectos multidisciplinarios.",
         "Imagen": "",
         "Pasos": [
@@ -40,6 +41,7 @@
       },
 
       {
+        "Titulo": "Pasos básicos iniciales – Bitbloq",
         "Descripcción": "<br><b> Pasos básicos iniciales – Bitbloq </b></br> Bitbloq es una herramienta online que permite crear programas para un microcontrolador y cargarlos en el mismo de forma sencilla y sin tener necesariamente conocimientos de programación. Es de código abierto y puede usarse de forma gratuita, se requiere de un explorador basado en Chromium (Google Chrome, por ejemplo) para acceder a la herramienta.",
         "Imagen": "",
         "Pasos": [
@@ -71,6 +73,7 @@
       },
 
       {
+        "Titulo": "Estructura de un programa",
         "Descripcción": "<br><b> Estructura de un programa </b></br> La estructura básica en el lenguaje de programación de Arduino se compone de mínimo dos funciones específicas “setup” y “loop”. Ambas funciones encierran bloques que contienen declaraciones o instrucciones, como se muestra a continuación: <b> \n\nvoid setup ()\n{\ninstrucciones;\n}\nvoid loop ()\n{\ninstrucciones;\n}\n\n </b> Ambas funciones corren de manera automática cada vez que se enciende el Arduino o se reinicia, y son necesarias para que trabaje el programa.",
         "Imagen": "",
         "Pasos": [
@@ -85,6 +88,36 @@
           {
             "Descripción": "<br> <b> Funciones </b> </br> Una “función” en el programa de Arduino es un bloque de código con un nombre y un conjunto de declaraciones o instrucciones que se ejecutan una vez que se llama a la función. <br> <b> void setup </b> <br> La función “setup” empieza a correr cuando se inicia el sketch o programa. Dentro de esta función se escribe todo lo que se requiera hacer una única vez inicial. Es utilizada para dar inicio al modo de trabajo de los pines o el puerto serie. Tiene que estar incluido en el programa aun cuando no exista una declaración que ejecutar. <br> <b> void loop </b> <br> Esta función se coloca y se corre después del “setup”. Es la función que lleva a cabo la mayor parte del trabajo. \nEl “loop” (en español conocido como “bucle”) corre las funciones establecidas, de manera cíclica sin parar o hasta que se toque el botón de reinicio “Reset” o se apague el Arduino.<br> <b> pinMode (pin, modo) </b> <br> El Arduino tiene 13 pines digitales que se pueden usar como Entradas o Salidas (INPUT/OUTPUT). Para poder establecer si el pin es una entrada o salida, se utiliza la función pinMode (pin, modo), donde “pin” y “modo” corresponden a dos argumentos, respectivamente al número del pin que se va a utilizar y si este es OUTPUT o INTPUT. Esta instrucción se utiliza en la parte de configuración setup (). <br> <b>Nota:</b> Los terminales de Arduino, por defecto, están configurados como entradas, por lo tanto, no es necesario definirlos en el caso de que vayan a trabajar como entradas.<br> <b> void setup ()\n{\npinMode (13, OUTPUT); // se establece el pin 13 como una salida\n}</b> <br> <b> digitalWrite (pin, valor)</b> <br>La función digitalWrite (pin, valor) envía al número de pin definido (pin) como OUTPUT, el valor de “HIGH” o “LOW” (valor), lo cual pone en 1 (alto) o 0 (bajo) la salida. El pin se puede especificar ya sea como una variable o como una constante (0-13). Se muestra a continuación un ejemplo:<br> <b>void loop ()\n{\ndigitalWrite (13, HIGH); // se tiene en el pin 13 un valor de HIGH (alto o 1)\n}</b> <br> <b> delay (ms) </b> <br> Esta función detiene la ejecución del programa, o la pone en pausa, por un tiempo determinado en milisegundos (ms). De esta manera se tiene por ejemplo que 1000 milisegundos equivalen a 1 segundo. Como ejemplo se tiene: <br> <b>void loop ()\n{\ndelay (1000); // espera de 1 segundo\n}</b>",
             "Imagen": "images/Taller0/paso3Arduino.png"
+          }
+        ]
+      },
+
+      {
+        "Titulo": "Encender una LED",
+        "Descripcción": "<br><b> Encender una LED </b></br> Para realizar el ejercicio de encender una LED, se hace uso de los pines digitales. Estos son 13 en total y pueden ser OUTPUT o INPUT, señales que a su vez van a encontrarse encendidas (ON) o apagadas (OFF). <br> &bull; Si la señal se encuentra HIGH, está ON, lo que indica que está recibiendo 5 voltios. <br> &bull; Si la señal se encuentra en LOW, está OFF, es decir, recibiendo 0 voltios. <br> &bull; Es necesario utilizar resistencias entre los LED y el Arduino para que estos no se quemen debido a que hay demasiada corriente para ellos.",
+        "Imagen": "",
+        "Pasos": [
+          {
+            "Descripción": "<br> <b> Diagrama de flujo  </b> <br> ",
+            "Imagen": "images/Taller0/paso1EncenderLed.jpg"
+          },
+          {
+            "Descripción": "<br> <b> Instrucciones para armar la estructura </b> </br> &bull; Conectar un LED y una resistencia al pin 13. <br> a. La pata corta del LED se conecta a la resistencia de 330 OHMS. <br> b. La pata larga del LED se conecta a tierra (GRND). <br> c. El otro extremo de la resistencia se conecta al pin 13. ",
+            "Imagen": ""
+          },
+          {
+            "Descripción": "<br> <b> Esquema de conexiones eléctricas </b> </br> ",
+            "Imagen": "images/Taller0/paso3EncenderLed.png"
+          },
+
+          {
+            "Descripción": "<br> <b> Código en Arduino IDE </b> </br> const int led = 13; // se declara el pin 13 como un entero constante llamado “led”\n\nvoid setup ()\n{\npinMode (led, OUTPUT); // se establece el pin 13 como una salida\n}\n\nvoid loop ()\n{\ndigitalWrite (led, HIGH); // la LED se enciende\ndelay (1000); // espera de 1 segundo\ndigitalWrite (led, LOW); // la LED se apaga\ndelay (1000); // espera de 1 segundo\n}\n",
+            "Imagen": "images/Taller0/paso3Arduino.png"
+          },
+
+          {
+            "Descripción": "<br> <b> Código en Bitbloq </b> </br> ",
+            "Imagen": "images/Taller0/paso5EncenderLed.png"
           }
         ]
       }
