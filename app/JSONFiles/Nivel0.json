@@ -93,6 +93,36 @@
             "Imagen": "images/Taller0/paso3Arduino.png"
           }
         ]
+      },
+
+      {
+        "Titulo": "Encender una LED",
+        "Descripcción": "<br><b> Encender una LED </b></br> Para realizar el ejercicio de encender una LED, se hace uso de los pines digitales. Estos son 13 en total y pueden ser OUTPUT o INPUT, señales que a su vez van a encontrarse encendidas (ON) o apagadas (OFF). <br> &bull; Si la señal se encuentra HIGH, está ON, lo que indica que está recibiendo 5 voltios. <br> &bull; Si la señal se encuentra en LOW, está OFF, es decir, recibiendo 0 voltios. <br> &bull; Es necesario utilizar resistencias entre los LED y el Arduino para que estos no se quemen debido a que hay demasiada corriente para ellos.",
+        "Imagen": "",
+        "Pasos": [
+          {
+            "Descripción": "<br> <b> Diagrama de flujo  </b> <br> ",
+            "Imagen": "images/Taller0/paso1EncenderLed.jpg"
+          },
+          {
+            "Descripción": "<br> <b> Instrucciones para armar la estructura </b> </br> &bull; Conectar un LED y una resistencia al pin 13. <br> a. La pata corta del LED se conecta a la resistencia de 330 OHMS. <br> b. La pata larga del LED se conecta a tierra (GRND). <br> c. El otro extremo de la resistencia se conecta al pin 13. ",
+            "Imagen": ""
+          },
+          {
+            "Descripción": "<br> <b> Esquema de conexiones eléctricas </b> </br> ",
+            "Imagen": "images/Taller0/paso3EncenderLed.png"
+          },
+
+          {
+            "Descripción": "<br> <b> Código en Arduino IDE </b> </br> const int led = 13; // se declara el pin 13 como un entero constante llamado “led”\n\nvoid setup ()\n{\npinMode (led, OUTPUT); // se establece el pin 13 como una salida\n}\n\nvoid loop ()\n{\ndigitalWrite (led, HIGH); // la LED se enciende\ndelay (1000); // espera de 1 segundo\ndigitalWrite (led, LOW); // la LED se apaga\ndelay (1000); // espera de 1 segundo\n}\n",
+            "Imagen": "images/Taller0/paso3Arduino.png"
+          },
+
+          {
+            "Descripción": "<br> <b> Código en Bitbloq </b> </br> ",
+            "Imagen": "images/Taller0/paso5EncenderLed.png"
+          }
+        ]
       }
     ]
   }
