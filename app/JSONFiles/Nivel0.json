@@ -1,5 +1,6 @@
 {
   "Nivel 0": {
+    "Nombre": "Nivel 0",
     "Tarjetas": [
       {
         "Titulo": "Metas y Funcionamiento",
@@ -16,6 +17,7 @@
     ]
   },
   "Ambientes de Desarrollo": {
+    "Nombre": "Ambientes de Desarrollo",
     "Tarjetas": [
       {
         "Titulo:": "Arduino IDE",
@@ -47,11 +49,11 @@
             "Imagen": ""
           },
           {
-            "Descripción": "<br> <b> Variables </b> </br> &bull; int: <br> Enteros son un tipo de datos primarios que almacenan valores numéricos de 16 bits sin decimales comprendidos en el rango 32.767 hasta -32.768. <br> <b> int unaVariable </b> = 1500; // declara 'unaVariable' como una variable de tipo entero <br> <b>Nota:</b> Las variables de tipo entero “int” pueden sobrepasar su valor máximo o mínimo como consecuencia de una operación. Por ejemplo, si x = 32.767 y una posterior declaración agrega 1 a x, x = x + 1 entonces el valor se x pasará a ser -32.768. (algo así como que el valor da la vuelta). ",
+            "Descripción": "<br> <b> Variables </b> </br> <b> &bull; int: </b> <br> Enteros son un tipo de datos primarios que almacenan valores numéricos de 16 bits sin decimales comprendidos en el rango 32.767 hasta -32.768. <br> <b> int unaVariable </b> = 1500; // declara 'unaVariable' como una variable de tipo entero <br> <b>Nota:</b> Las variables de tipo entero “int” pueden sobrepasar su valor máximo o mínimo como consecuencia de una operación. Por ejemplo, si x = 32.767 y una posterior declaración agrega 1 a x, x = x + 1 entonces el valor se x pasará a ser -32.768. (algo así como que el valor da la vuelta). <br> <b> &bull; float </b> <br> El formato de dato del tipo “punto flotante” “float” se aplica a los números con decimales. Los números de punto flotante tienen una mayor resolución que los de 32 bits con un rango comprendido 3.4028235E +38 a +38-3.4028235E. <br> <b> float unaVariable = 3.14;</b> // declara 'unaVariable' como tipo flotante <br> <b> Nota: </b> Los números de punto flotante no son exactos, y pueden producir resultados extraños en las comparaciones. Los cálculos matemáticos de punto flotante son también mucho más lentos que los del tipo de números enteros, por lo que debe evitarse su uso si es posible. ",
             "Imagen": ""
           },
           {
-            "Descripción": "<br> <b> Funciones </b> </br> Una “función” en el programa de Arduino es un bloque de código con un nombre y un conjunto de declaraciones o instrucciones que se ejecutan una vez que se llama a la función. <br> <b> void setup </b> <br> La función “setup” empieza a correr cuando se inicia el sketch o programa. Dentro de esta función se escribe todo lo que se requiera hacer una única vez inicial. Es utilizada para dar inicio al modo de trabajo de los pines o el puerto serie. Tiene que estar incluido en el programa aun cuando no exista una declaración que ejecutar. <br> <b> void loop </b> <br> Esta función se coloca y se corre después del “setup”. Es la función que lleva a cabo la mayor parte del trabajo. \nEl “loop” (en español conocido como “bucle”) corre las funciones establecidas, de manera cíclica sin parar o hasta que se toque el botón de reinicio “Reset” o se apague el Arduino.<br> <b> pinMode (pin, modo) </b> <br> El Arduino tiene 13 pines digitales que se pueden usar como Entradas o Salidas (INPUT/OUTPUT). Para poder establecer si el pin es una entrada o salida, se utiliza la función pinMode (pin, modo), donde “pin” y “modo” corresponden a dos argumentos, respectivamente al número del pin que se va a utilizar y si este es OUTPUT o INTPUT. Esta instrucción se utiliza en la parte de configuración setup (). <br> <b>Nota:</b> Los terminales de Arduino, por defecto, están configurados como entradas, por lo tanto, no es necesario definirlos en el caso de que vayan a trabajar como entradas.<br> <b> void setup ()\n{\npinMode (13, OUTPUT); // se establece el pin 13 como una salida\n}</b> <br> <b> digitalWrite (pin, valor)</b> <br>La función digitalWrite (pin, valor) envía al número de pin definido (pin) como OUTPUT, el valor de “HIGH” o “LOW” (valor), lo cual pone en 1 (alto) o 0 (bajo) la salida. El pin se puede especificar ya sea como una variable o como una constante (0-13). Se muestra a continuación un ejemplo:<br> <b>void loop ()\n{\ndigitalWrite (13, HIGH); // se tiene en el pin 13 un valor de HIGH (alto o 1)\n}</b> <br> <b> delay (ms) </b> <br> Esta función detiene la ejecución del programa, o la pone en pausa, por un tiempo determinado en milisegundos (ms). De esta manera se tiene por ejemplo que 1000 milisegundos equivalen a 1 segundo. Como ejemplo se tiene: <br> <b>void loop ()\n{\ndelay (1000); // espera de 1 segundo\n}</b>",
+            "Descripción": "<br> <b> Funciones </b> </br> Una “función” en el programa de Arduino es un bloque de código con un nombre y un conjunto de declaraciones o instrucciones que se ejecutan una vez que se llama a la función. <br> <b> &bull; void setup </b> <br> La función “setup” empieza a correr cuando se inicia el sketch o programa. Dentro de esta función se escribe todo lo que se requiera hacer una única vez inicial. Es utilizada para dar inicio al modo de trabajo de los pines o el puerto serie. Tiene que estar incluido en el programa aun cuando no exista una declaración que ejecutar. <br> <b> %bull; void loop </b> <br> Esta función se coloca y se corre después del “setup”. Es la función que lleva a cabo la mayor parte del trabajo. \nEl “loop” (en español conocido como “bucle”) corre las funciones establecidas, de manera cíclica sin parar o hasta que se toque el botón de reinicio “Reset” o se apague el Arduino.<br> <b> &bull; pinMode (pin, modo) </b> <br> El Arduino tiene 13 pines digitales que se pueden usar como Entradas o Salidas (INPUT/OUTPUT). Para poder establecer si el pin es una entrada o salida, se utiliza la función pinMode (pin, modo), donde “pin” y “modo” corresponden a dos argumentos, respectivamente al número del pin que se va a utilizar y si este es OUTPUT o INTPUT. Esta instrucción se utiliza en la parte de configuración setup (). <br> <b>Nota:</b> Los terminales de Arduino, por defecto, están configurados como entradas, por lo tanto, no es necesario definirlos en el caso de que vayan a trabajar como entradas.<br> <b> void setup ()\n{\npinMode (13, OUTPUT); // se establece el pin 13 como una salida\n}</b> <br> <b> &bull; digitalWrite (pin, valor)</b> <br>La función digitalWrite (pin, valor) envía al número de pin definido (pin) como OUTPUT, el valor de “HIGH” o “LOW” (valor), lo cual pone en 1 (alto) o 0 (bajo) la salida. El pin se puede especificar ya sea como una variable o como una constante (0-13). Se muestra a continuación un ejemplo:<br> <b>void loop ()\n{\ndigitalWrite (13, HIGH); // se tiene en el pin 13 un valor de HIGH (alto o 1)\n}</b> <br> <b> &bull; delay (ms) </b> <br> Esta función detiene la ejecución del programa, o la pone en pausa, por un tiempo determinado en milisegundos (ms). De esta manera se tiene por ejemplo que 1000 milisegundos equivalen a 1 segundo. Como ejemplo se tiene: <br> <b>void loop ()\n{\ndelay (1000); // espera de 1 segundo\n}</b>  <br> <b> &bull; Serial.begin (velocidad) </b> <br> Abre el puerto serie y fija la velocidad en baudios para la transmisión de datos en serie. El valor típico de velocidad para comunicarse con el ordenador es 9600, aunque otras velocidades pueden ser soportadas.\n\nvoid setup ()\n{\nSerial.begin (9600); // abre el Puerto serie\n} // configurando la velocidad en 9600 bps  <br> <b> analogRead (pin) </b> <br> Lee el valor de un determinado pin definido como entrada analógica con una resolución de 10 bits. Esta instrucción sólo funciona en los pines (0-5). El rango de valor que podemos leer oscila de 0 a 1023.\n\nvalor = analogRead (pin); // asigna a valor lo que lee en la entrada ´pin'\n\nNota: Los pins analógicos (0-5) a diferencia de los pines digitales, no necesitan ser declarados como INPUT u OUPUT ya que son siempre INPUT. <br> <b>Serial.printIn (data) </b> <br> Imprime los datos en el puerto serie, seguido por un retorno de carro automático y salto de línea. Este comando toma la misma forma que Serial.print (), pero es más fácil para la lectura de los datos en el Monitor Serie del software.\n\nSerial.println (analogValue); // envía el valor 'analogValue' al puerto\n\nEl siguiente ejemplo toma de una lectura analógica pin 0 y envía estos datos al ordenador cada 1 segundo.\n\nvoid setup ()\n{\nSerial.begin (9600); // configura el puerto serie a 9600bps\n}\nvoid loop ()\n{\nSerial.println (analogRead (0)); // envía valor analógico\ndelay (1000); // espera 1 segundo\n}\n",
             "Imagen": "images/Taller0/paso3Arduino.png"
           }
         ]
@@ -91,6 +93,7 @@
     ]
   },
   "Practica": {
+    "Nombre": "Practica",
     "Tarjetas": [
       {
         "Titulo": "Encender una LED",
@@ -103,6 +106,33 @@
           },
           {
             "Descripción": "<br> <b> Instrucciones para armar la estructura </b> </br> &bull; Conectar un LED y una resistencia al pin 13. <br> a. La pata corta del LED se conecta a la resistencia de 330 OHMS. <br> b. La pata larga del LED se conecta a tierra (GRND). <br> c. El otro extremo de la resistencia se conecta al pin 13. ",
+            "Imagen": ""
+          },
+          {
+            "Descripción": "<br> <b> Esquema de conexiones eléctricas </b> </br> ",
+            "Imagen": "images/Taller0/paso3EncenderLed.png"
+          },
+          {
+            "Descripción": "<br> <b> Código en Arduino IDE </b> </br> const int led = 13; // se declara el pin 13 como un entero constante llamado “led”\n\nvoid setup ()\n{\npinMode (led, OUTPUT); // se establece el pin 13 como una salida\n}\n\nvoid loop ()\n{\ndigitalWrite (led, HIGH); // la LED se enciende\ndelay (1000); // espera de 1 segundo\ndigitalWrite (led, LOW); // la LED se apaga\ndelay (1000); // espera de 1 segundo\n}\n",
+            "Imagen": "images/Taller0/paso3Arduino.png"
+          },
+          {
+            "Descripción": "<br> <b> Código en Bitbloq </b> </br> ",
+            "Imagen": "images/Taller0/paso5EncenderLed.png"
+          }
+        ]
+      },
+      {
+        "Titulo": "Lectura de luminosidad",
+        "Descripcción": "<br><b> Lectura de luminosidad </b></br> Se realiza un ejercicio simple con una fotoresistencia, la cual va a medir un valor de luminosidad. Explicación de la variable de tipo float, y las funciones Serial.begin (velocidad), analogRead (pin) y Serial.printIn (data). Para finalizar se realiza el ejercicio de lectura de luminosidad, donde se puede observar el valor leído por la fotoresistencia en el monitor serial de la computadora.",
+        "Imagen": "",
+        "Pasos": [
+          {
+            "Descripción": "<br> <b> Diagrama de flujo  </b> <br> ",
+            "Imagen": ""
+          },
+          {
+            "Descripción": "<br> <b> Instrucciones para armar la estructura </b> </br> &bull; Conectar circuito de energía a riel lateral del breadboard (la mayoría de los proyectos requieren de este circuito para conectar más de un componente, ya sea sensor o actuador).\nConectar la salida de 5V al riel marcado como positivo en el breadboard.\nConectar cualquiera de las tres tierras (GRND) al riel marcado como negativo en el breadboard.",
             "Imagen": ""
           },
           {
