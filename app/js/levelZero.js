@@ -76,14 +76,6 @@ function loadSubsections() {
 
 }
 
-    function doCard(sectionTitle, src) {
-        return "<div class=\"card text-center\">" +
-        "<div class=\"card-body\">" +
-        "<img class=\"card-img-top\" src=\"" + src +"\"  alt=\"" + sectionTitle + "\">" +
-        "<h5 class=\"card-title\">" + sectionTitle + "</h5>" +
-        "</div>" +
-        "<div class=\"card-footer\">";
-    }
 
 function setRef(ref, sectionTitle) {
     return "<a href=\""+ ref +"\" class=\"btn btn-primary\" onclick=\"setSection('" + sectionTitle + "')\">Comenzar</a>" +
@@ -165,5 +157,50 @@ function loadSectionSteps(step) {
     document.getElementById('section-step-desc').innerHTML = sectionType.Pasos[count - 1].Descripcion;
     document.getElementById('section-step-image').innerHTML = "<img class=\"image-size\" src=\"" + sectionType.Pasos[count - 1].Imagen + "\" alt=\""+ kitModel.Pasos[count - 1].Encabezado + "\">";
     document.getElementById('section-step-bottom').innerHTML = bottom;
+}
+
+function card(sectionTitle, src) {
+    return "<div class=\"card text-center\">" +
+        "<div class=\"card-body\">" +
+        "<img class=\"card-img-top\" src=\"" + src +"\"  alt=\"" + sectionTitle + "\">" +
+        "<h5 class=\"card-title\">" + sectionTitle + "</h5>" +
+        "</div>" +
+        "<div class=\"card-footer\">";
+}
+
+function card1(sectionTitle, src, ref) {
+    return "<div class=\"col s12 m4\" >" +
+        "<div class=\"card text-center\" >" +
+           "<div class=\"card-horizontal\">" +
+                "<div class=\"card-body sizecard\">" +
+                    "<h4 class=\"card-title\">" +sectionTitle+ "</h4>" +
+                    "<div class=\"img-square-wrapper\">" +
+                        "<img src=\""+src+"\"width=\"10%\" height=\"10%\">"+
+                    "</div>" +
+                "</div>" +
+           "</div>" +
+           "<div class=\"card-footer\">"+
+                "<a href=\""+ ref +"\" class=\"btn btn-primary\" onclick=\"setSection('" + sectionTitle + "')\">Comenzar</a>" +
+           "</div>" +
+        "</div>"+
+    "</div>";
+}
+
+function cardRow() {
+    var x = "";
+    for (i = 0; i < 3; i++) {
+        x += card1("contador"+i,'images/bitblogPiano.png','Aqui');
+    }
+    document.getElementById('cartita').innerHTML =
+        "<div class=\"row \" align=\"left\">"+
+            "<div class=\"w3-bar w3-border w3-light-grey\">"+
+                "<p align=\"center\">Nivel Cero</p>"+
+            "</div>"+
+            x+
+        "<\div> ";
+}
+function chargeCards()
+{
+
 }
 
