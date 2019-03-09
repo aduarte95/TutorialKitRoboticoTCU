@@ -41,9 +41,10 @@ function card1(sectionTitle, src, ref) {
 
 function cardRow(tittleBar,cards) {
     var x = "";
+    var t ;
     for (i = 0; i < cards.length; i++) {
-        console.log(cards[i]);
-        x += card1(cards[i].Titulo,cards[i].Imagen,'Aqui');
+        t = Object.keys(cards[i])[0];
+        x += card1(cards[i][t],cards[i].Imagen,'Aqui');
     }
     return "<div class=\"row \" align=\"left\">"+
             "<div class=\"w3-bar w3-border w3-light-grey\">"+
