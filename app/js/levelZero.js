@@ -65,12 +65,14 @@ function cardRow(tittleBar,cards) {
         t = Object.keys(cards[i])[0];
         x += card1(cards[i][t],cards[i].Imagen,'sectionSteps.html');
     }
-    return "<div class=\"row \" align=\"left\">"+
-            "<div class=\"w3-bar w3-border w3-light-grey\">"+
-                "<p align=\"center\">"+tittleBar+"</p>"+
-            "</div>"+
-            x+
-        "<\div> ";
+    return "<div class=\"row \" align=\"center\" >"+
+                "<div class=\"w3-bar w3-border w3-light-grey\">"+
+                    "<p align=\"center\">"+tittleBar+"</p>"+
+                "</div>"+
+            "<\div> "+
+            "<div class=\"row\">"+
+                x+
+            "</div>";
 }
 function chargeGrid()
 {
