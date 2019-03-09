@@ -155,33 +155,74 @@
 
   "Caballo" : {
     "Id": "2",
-    "Descripcion": "Consta de una estructura electromecánica capaz de mover objetos de poco peso. Emplea dos motores servos para ejecutar el movimiento y un Arduino como modo de control.",
+    "Descripcion": "Es un mecanismo de una sola entrada de moviemiento mediante el cual se simula el galope de un caballo. Su objetivo es básicamente ilustrar la anatomía del animal y como otros mamíferos se mueven de forma similar.",
     "Imagen": "images/theo.png",
     "CantidadComponentes": [
       "1",
+      "1",
       "2",
-      "3"
+      "4",
+      "2",
+      "2",
+      "2",
+      "1",
+      "2",
+      "1",
+      "2"
     ],
     "Components": [
-      "Arduino Uno",
-      "Servo Motor",
-      "Led"
+      "Cuerpo del caballo",
+      "Cabeza del caballo",
+      "Unión larga",
+      "Unión corta",
+      "Unión mediana",
+      "Sección inferior de la patas",
+      "Sección superior de la pata",
+      "Motor DC",
+      "Cables",
+      "Porta batería",
+      "Batería"
     ],
     "Pasos": [
       {
         "Encabezado": "Paso 1",
-        "Descripcion": "Con este proyecto se pretende abarcar el tema de movimiento, fuerza y trabajo del MEP.",
-        "Image": "../images/brazo.png"
+        "Descripcion": "Primeo debe ensamblarse el caballo según lo muestran las imágenes.",
+        "Image": "images/cab1.jpg"
       },
       {
         "Encabezado": "Paso 2",
-        "Descripcion": "Can este proyecto se pretende abarcar el tema de movimiento, fuerza y trabajo del MEP.",
-        "Image": "../images/brazo.png"
+        "Descripcion": "",
+        "Image": "images/cab2.jpg"
       },
       {
         "Encabezado": "Paso 3",
-        "Descripcion": "Cen este proyecto se pretende abarcar el tema de movimiento, fuerza y trabajo del MEP.",
-        "Image": "../images/brazo.png"
+        "Descripcion": "",
+        "Image": "images/cab3.jpg"
+      },
+      {
+        "Encabezado": "Paso 4",
+        "Descripcion": "",
+        "Image": "images/cab4.jpg"
+      },
+      {
+        "Encabezado": "Paso 5",
+        "Descripcion": "",
+        "Image": "images/cab5.jpg"
+      },
+      {
+        "Encabezado": "Paso 6",
+        "Descripcion": "",
+        "Image": "images/cab6.jpg"
+      },
+      {
+        "Encabezado": "Paso 7",
+        "Descripcion": "",
+        "Image": "images/cab7.jpg"
+      },
+      {
+        "Encabezado": "Paso 8",
+        "Descripcion": "Conecte el circuito al motor",
+        "Image": "images/circuitocab.jpg"
       }
     ]
   },
