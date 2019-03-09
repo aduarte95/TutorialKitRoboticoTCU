@@ -21,6 +21,25 @@ function loadJSON(callback) {
 }
 var result = JSON.parse(localStorage.getItem("jsonSection"));
 
+function loadJSONStepSection(callback) {
+    var xobj = new XMLHttpRequest();
+    xobj.overrideMimeType("JSONFiles");
+    xobj.open('GET', 'JSONFiles/Nivel0Sections.json', false); // Replace 'my_data' with the path to your file
+    xobj.onreadystatechange = function () {
+        if (xobj.readyState == 4 && xobj.status == "200") {
+            // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
+            callback(xobj.responseText);
+        }
+    };
+    xobj.send(null);
+}
+var stepResult = JSON.parse(localStorage.getItem("jsonStepSection"));
+
+function setSection(lvlZSection)
+{
+    localStorage.setItem("section", lvlZSection);
+}
+
 function card1(sectionTitle, src, ref) {
     return "<div class=\"col s12 m4\" >" +
         "<div class=\"card text-center\" >" +
@@ -71,14 +90,22 @@ let count = 0; //To know the next or previous step.
 const SECTION = -1;
 
 function loadSectionSteps(step) { //Step is an integer that adds or rest from the gloabal count
+    loadJSONStepSection(function(response) {
+        // Parse JSON string into object
+        localStorage.setItem("jsonStepSection",response);
+    });
+
     let sectionName = localStorage.getItem("section") //La sección que se debe cargar
-    let sectionType = result["Tarjetas"][sectionName]; //Json result
+    let sectionType = stepResult[sectionName].Description; //Json result
     let title = "";
     let description;
     let imageSrc;
     let bottom; //Bottom of the step
     let previous;
 
+    console.log("Section name:" + sectionName);
+    console.log("Result:" + sectionType);
+    /*
     if(step == SECTION) { //Its the description of title and needs to go back to section's section
         title = sectionName;
         description = sectionType["Descripcion"];
@@ -114,6 +141,6 @@ function loadSectionSteps(step) { //Step is an integer that adds or rest from th
     document.getElementById('section-step-title').innerHTML = title;
     document.getElementById('section-step-desc').innerHTML = description;
     document.getElementById('section-step-image').innerHTML = "<img class=\"image-size\" src=\"" + imageSrc + "\">";
-    document.getElementById('section-step-bottom').innerHTML = bottom;
+    document.getElementById('section-step-bottom').innerHTML = bottom;*/
 }
 
