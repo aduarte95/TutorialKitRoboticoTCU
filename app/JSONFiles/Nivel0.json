@@ -20,7 +20,7 @@
     "Nombre": "Ambientes de Desarrollo",
     "Tarjetas": [
       {
-        "Titulo:": "Arduino IDE",
+        "Titulo": "Arduino IDE",
         "Descripción": "<br><b> Pasos básicos iniciales – Arduino IDE </b></br> El software de código abierto Arduino IDE (Integrated Development Environment, o en español Entorno de Desarrollo Integrado) facilita escribir código y cargarlo en la placa de Arduino. Este IDE permite a los desarrolladores escribir código, configurar tableros y crear proyectos. Es decir, es una plataforma de hardware libre, basada en una placa con un microcontrolador y un entorno de desarrollo, diseñada para facilitar el uso de la electrónica en proyectos multidisciplinarios.",
         "Imagen": "",
         "Pasos": [
@@ -59,7 +59,7 @@
         ]
       },
       {
-        "Titulo:": "Bitbloq",
+        "Titulo": "Bitbloq",
         "Descripcción": "<br><b> Pasos básicos iniciales – Bitbloq </b></br> Bitbloq es una herramienta online que permite crear programas para un microcontrolador y cargarlos en el mismo de forma sencilla y sin tener necesariamente conocimientos de programación. Es de código abierto y puede usarse de forma gratuita, se requiere de un explorador basado en Chromium (Google Chrome, por ejemplo) para acceder a la herramienta.",
         "Imagen": "",
         "Pasos": [
