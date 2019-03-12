@@ -16,6 +16,17 @@
       }
     ]
   },
+  "Materiales": {
+    "Nombre": "Materiales",
+    "Tarjetas": [
+      {
+        "Titulo": "Materiales",
+        "Descripcion": "<br><b> Metas </b></br> &bull; Aprender el funcionamiento básico de los materiales a utilizar en el kit. <br> &bull; Comprender la programación en Arduino mediante el programa Arduino IDE y por medio de bloques en Bitbloq.  <br> &bull; Conocer la estructura básica de una programación de Arduino, así como las distintas funciones para dar instrucciones. <br> &bull; Realizar ejercicios para visualizar el funcionamiento de los distintos materiales y estructuras creadas con estos, mediante un código de programación. <br><b>Funcionamiento </b></br> Los tutoriales básicos pretenden enseñar al alumno los conceptos básicos de programación en Arduino con el fin de que se comprenda la importancia de la programación, ya que esta representa en menor escala, la automatización que se puede reproducir en un futuro para cumplir diversos objetivos.",
+        "Imagen": "images/micropiano.jpg",
+        "Pasos": []
+      }
+    ]
+  },
   "Ambientes de Desarrollo": {
     "Nombre": "Ambientes de Desarrollo",
     "Tarjetas": [

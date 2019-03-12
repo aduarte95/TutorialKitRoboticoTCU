@@ -40,6 +40,11 @@ function setSection(lvlZSection)
     localStorage.setItem("section", lvlZSection);
 }
 
+function setComponent(component)
+{
+    localStorage.setItem("component", component);
+}
+
 function setSectionStep(step)
 {
     localStorage.setItem("sectionStep", step);
@@ -111,6 +116,7 @@ function loadSectionSteps(step) { //Step is an integer that adds or rest from th
     let width;
     let progressBar = "";
     let totalSections = sectionType.Pasos.length + 1;
+    let optionalFooter;
 
     count += parseInt(step);
 
@@ -129,36 +135,59 @@ function loadSectionSteps(step) { //Step is an integer that adds or rest from th
         }
     }
 
-    if(sectionType.Pasos.length != 0) {
-        width = ((count+2)/(sectionType.Pasos.length+1))*100;
+    if(sectionName !== "Materiales") {
 
-        progressBar = "<div class=\"progress progress-position\">" +
-            "<div class=\"progress-bar progress-bar-striped\" role=\"progressbar\" style=\"width: " + width + "%\" aria-valuenow=\"" + width + "\" aria-valuemin=\"0\" aria-valuemax=\"100\">" +
-            "</div>" +
-            "</div>";
-    }
+        if (sectionType.Pasos.length != 0) {
+            width = ((count + 2) / (sectionType.Pasos.length + 1)) * 100;
 
-    bottom = "<div class=\"col-md-auto\">" +
-                    previous + "role=\"button\"> &laquo; Anterior</a>" +
+            progressBar = "<div class=\"progress progress-position\">" +
+                "<div class=\"progress-bar progress-bar-striped\" role=\"progressbar\" style=\"width: " + width + "%\" aria-valuenow=\"" + width + "\" aria-valuemin=\"0\" aria-valuemax=\"100\">" +
+                "</div>" +
+                "</div>";
+        }
+
+        bottom = "<div class=\"col-md-auto\">" +
+            previous + "role=\"button\"> &laquo; Anterior</a>" +
             "</div>" +
             "<div class=\"col\">" +
-                progressBar +
+            progressBar +
             "</div>";
 
-//For button next
-    if(count + 1 < sectionType.Pasos.length) { //Tamaño array de pasos.
-        bottom += "<div class=\"col-md-auto text-right\">" +
-            "<a class=\"btn btn-primary\" href=\"#\" role=\"button\" onclick=\"loadSectionSteps(1)\">Siguiente &raquo;</a>" +
+        //For button next
+        if (count + 1 < sectionType.Pasos.length) { //Tamaño array de pasos.
+            bottom += "<div class=\"col-md-auto text-right\">" +
+                "<a class=\"btn btn-primary\" href=\"#\" role=\"button\" onclick=\"loadSectionSteps(1)\">Siguiente &raquo;</a>" +
+                "</div>";
+        } else if (count + 1 < totalSections) {
+            bottom += "<div class=\"col-md-auto text-right\">" +
+                "<a class=\"btn btn-primary\" href=\"section.html\" role=\"button\"> Finalizar &raquo;</a>" +
+                "</div>";
+        }
+
+        document.getElementById('section-step-bottom').innerHTML = bottom;
+    } else {
+        optionalFooter =
+            "<div class=\"card-footer\">" +
+            "<ul class=\"list-group\">" ;
+
+        for(let i = 0; i < sectionType.Pasos.length; ++i) {
+            optionalFooter +=
+                "<a class=\"list-group-item-action\" href=\"ComponentDescription.html\" onclick=\"setComponent('"+ sectionType.Pasos[i].Componente + "')\">" +
+                "<li class=\"list-group-item d-flex justify-content-between align-items-center\" >" + sectionType.Pasos[i].Componente +
+                "</li>" +
+                "</a>"
+        }
+
+        optionalFooter +=
+            "</ul>" +
             "</div>";
-    } else if (count + 1 < totalSections){
-        bottom += "<div class=\"col-md-auto text-right\">" +
-            "<a class=\"btn btn-primary\" href=\"section.html\" role=\"button\"> Finalizar &raquo;</a>" +
-            "</div>";
+
+        document.getElementById('optional-footer').innerHTML = optionalFooter;
     }
 
     document.getElementById('section-step-title').innerHTML = title;
     document.getElementById('section-step-desc').innerHTML = description;
     document.getElementById('section-step-image').innerHTML = "<img class=\"image-size\" src=\"" + imageSrc + "\">";
-    document.getElementById('section-step-bottom').innerHTML = bottom;
+
 }
 

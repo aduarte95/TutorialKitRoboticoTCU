@@ -48,6 +48,49 @@
       }
     ]
   },
+  "Materiales": {
+    "Titulo": "Materiales",
+    "Descripcion": "Dale click a cada componente para ver su descripción.",
+    "Imagen": "images/no-image.png",
+    "Pasos": [
+      {
+        "Componente": "Resistencia"
+      },
+      {
+        "Componente": "Cable"
+      },
+      {
+        "Componente": "LED"
+      },
+      {
+        "Componente": "Botón"
+      },
+      {
+        "Componente": "Potenciómetro"
+      },
+      {
+        "Componente": "Sensor ultrasónico"
+      },
+      {
+        "Componente": "Fotoresistencia"
+      },
+      {
+        "Componente": "Servomotor"
+      },
+      {
+        "Componente": "Buzzer"
+      },
+      {
+        "Componente": "Breadboard"
+      },
+      {
+        "Componente": "Arduino Uno"
+      },
+      {
+        "Componente": "Cubierta de micropiano"
+      }
+    ]
+  },
   "Bitbloq": {
     "Titulo": "Bitbloq",
     "Descripcion": "<br><b> Pasos básicos iniciales – Bitbloq </b></br> Bitbloq es una herramienta online que permite crear programas para un microcontrolador y cargarlos en el mismo de forma sencilla y sin tener necesariamente conocimientos de programación. Es de código abierto y puede usarse de forma gratuita, se requiere de un explorador basado en Chromium (Google Chrome, por ejemplo) para acceder a la herramienta.",
