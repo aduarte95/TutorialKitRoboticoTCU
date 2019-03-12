@@ -23,7 +23,7 @@ function init() {
 function loadComponentInfo() {
     let componentType = localStorage.getItem("component"); //El modelo que se debe cargar
     document.getElementById('desc-component-title').innerHTML = componentType; //Carga la lista
-
+    document.getElementById('component-img').innerHTML = "<img class=\"left\" src=\"" + result[componentType].Foto +"\"/>"; //Carga la lista
     document.getElementById('componentDescription').innerHTML = result[componentType].Descripcion;
 }
 

@@ -9,7 +9,7 @@ function loadLvl() {
 
     if(lvl == "1") {
         title1="Micropiano";
-        src1 ="images/piano.png";
+        src1 ="images/pianoLvl.png";
         title2 ="Caballo";
         src2 ="images/horse.png";
     }
