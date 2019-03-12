@@ -73,6 +73,7 @@ function cardRow(tittleBar,cards) {
     var t ;
     for (i = 0; i < cards.length; i++) {
         t = Object.keys(cards[i])[0];
+        console.log("Imagen:" +cards[i].Imagen);
         x += card1(cards[i][t],cards[i].Imagen,'sectionSteps.html');
     }
     return "<nav class=\"navbar navbar-light bg-light justify-content-center\" >"+

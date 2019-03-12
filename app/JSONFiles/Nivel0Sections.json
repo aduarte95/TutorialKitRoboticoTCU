@@ -123,8 +123,8 @@
 
     ]
   },
-  "Encender una LED": {
-    "Descripcion": "<br><b> Encender una LED </b></br> Para realizar el ejercicio de encender una LED, se hace uso de los pines digitales. Estos son 13 en total y pueden ser OUTPUT o INPUT, señales que a su vez van a encontrarse encendidas (ON) o apagadas (OFF). <br> &bull; Si la señal se encuentra HIGH, está ON, lo que indica que está recibiendo 5 voltios. <br> &bull; Si la señal se encuentra en LOW, está OFF, es decir, recibiendo 0 voltios. <br> &bull; Es necesario utilizar resistencias entre los LED y el Arduino para que estos no se quemen debido a que hay demasiada corriente para ellos.",
+  "Encender una LED<br><br>": {
+    "Descripcion": "<b> Encender una LED </b></br> Para realizar el ejercicio de encender una LED, se hace uso de los pines digitales. Estos son 13 en total y pueden ser OUTPUT o INPUT, señales que a su vez van a encontrarse encendidas (ON) o apagadas (OFF). <br> &bull; Si la señal se encuentra HIGH, está ON, lo que indica que está recibiendo 5 voltios. <br> &bull; Si la señal se encuentra en LOW, está OFF, es decir, recibiendo 0 voltios. <br> &bull; Es necesario utilizar resistencias entre los LED y el Arduino para que estos no se quemen debido a que hay demasiada corriente para ellos.",
     "Imagen": "",
     "Pasos": [
       {
