@@ -170,24 +170,22 @@
       "4",
       "2",
       "2",
-      "2",
       "1",
       "2",
       "1",
       "2"
     ],
     "Components": [
-      "Cuerpo del caballo",
-      "Cabeza del caballo",
+      "Cuerpo del Caballo",
+      "Cabeza del Caballo",
       "Unión larga",
       "Unión corta",
       "Unión mediana",
-      "Sección inferior de la patas",
-      "Sección superior de la pata",
-      "Motor DC",
-      "Cables",
-      "Porta batería",
-      "Batería"
+      "Patas del Caballo",
+      "Motor DC con su rueda",
+      "Cable",
+      "Porta baterías",
+      "Baterías AAA"
     ],
     "Pasos": [
       {

@@ -183,5 +183,41 @@
   {
     "Descripcion": "Elemento impreso en 3D.",
     "Foto": "images/Components/3.jpg"
+  },
+
+  "Cabeza del Caballo":
+  {
+    "Descripcion": "Elemento impreso en 3D.",
+    "Foto": "images/Components/cabezaCaballo.jpg"
+  },
+
+  "Cuerpo del Caballo":
+  {
+    "Descripcion": "Elemento impreso en 3D.",
+    "Foto": "images/Components/cuerpoCaballo.jpg"
+  },
+
+  "Patas del Caballo":
+  {
+    "Descripcion": "Elemento impreso en 3D.",
+    "Foto": "images/Components/pata.jpg"
+  },
+
+  "Unión larga":
+  {
+    "Descripcion": "Elemento impreso en 3D.",
+    "Foto": "images/Components/unionGrandeCaballo.jpg"
+  },
+
+  "Unión mediana":
+  {
+    "Descripcion": "Elemento impreso en 3D.",
+    "Foto": "images/Components/unionMedianaCaballo.jpg"
+  },
+
+  "Unión corta":
+  {
+    "Descripcion": "Elemento impreso en 3D.",
+    "Foto": "images/Components/unionPequeñaCaballo.jpg"
   }
 }
