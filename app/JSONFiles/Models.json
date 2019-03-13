@@ -263,59 +263,75 @@
   },
 
   "Generador" : {
-      "Id": "4",
-      "Descripcion": "Consta de una estructura electromecánica capaz de mover objetos de poco peso. Emplea dos motores servos para ejecutar el movimiento y un Arduino como modo de control.",
-      "Imagen": "images/generador.png",
-      "CantidadComponentes": ["1","2","3"],
-      "Components": [
-        "Arduino Uno",
-        "Servo Motor",
-        "Led"
-      ],
-      "Pasos": [
-        {
-          "Encabezado": "Paso 1",
-          "Descripcion": "Con este proyecto se pretende abarcar el tema de movimiento, fuerza y trabajo del MEP.",
-          "Image": "../images/brazo.png"
-        },
-        {
-          "Encabezado": "Paso 2",
-          "Descripcion": "Can este proyecto se pretende abarcar el tema de movimiento, fuerza y trabajo del MEP.",
-          "Image": "../images/brazo.png"
-        },
-        {
-          "Encabezado": "Paso 3",
-          "Descripcion": "Cen este proyecto se pretende abarcar el tema de movimiento, fuerza y trabajo del MEP.",
-          "Image": "../images/brazo.png"
-        }
-      ]
-  },
-
-  "Flor" : {
-    "Id": "5",
-    "Descripcion": "Consta de una estructura electromecánica capaz de mover objetos de poco peso. Emplea dos motores servos para ejecutar el movimiento y un Arduino como modo de control.",
-    "Imagen": "../images/girabot.png",
-    "CantidadComponentes": ["1","2","3"],
+    "Id": "4",
+    "Descripcion": "<br><b> Metas </b></br> &bull; Introducir el concepto de energía y motores DC.<br> &bull; Introducir el concepto de valor medio de señales. <br> &bull; Introducir el concepto de regulación de velocidad. <br> <br><b>Funcionamiento </b></br> Dispositivo capaz de transformar energía eléctrica en energía mecánica (movimiento). Este proceso se realiza por medio de la acción de los campos magnéticos que generan las bobinas que están dentro del motor.",
+    "Imagen": "images/Taller2/generador2.jpg",
+    "CantidadComponentes": ["4","1","1","1","1","1","1", "7"],
     "Components": [
+      "Baterías AAA",
+      "Porta baterías",
+      "Motor",
+      "Protoboard",
+      "Turbina",
       "Arduino Uno",
-      "Servo Motor",
-      "Led"
+      "Potenciómetro",
+      "Cable"
     ],
     "Pasos": [
       {
-        "Encabezado": "Paso 1",
-        "Descripcion": "Con este proyecto se pretende abarcar el tema de movimiento, fuerza y trabajo del MEP.",
-        "Image": "../images/brazo.png"
+        "Encabezado": "Armado del circuito",
+        "Descripcion": "<br>Arme el ciurcuito mostrado en la figura.",
+        "Image": "images/Taller2/Circuito.jpg"
+      },
+      {
+        "Encabezado": "Armado",
+        "Descripcion": "<br>Conectar la rueda al motor como se muestra.",
+        "Image": "images/Taller2/Generador.png"
+      },
+      {
+        "Encabezado": "Código",
+        "Descripcion": "<br>Elaborar el siguiente código en Arduino.",
+        "Image": "images/Taller2/CodigoG.png"
+      }
+    ]
+  },
+
+  "Girabot" : {
+    "Id": "3",
+    "Descripcion": "Consta de una estructura electromecánica capaz de mover objetos de poco peso. Emplea dos motores servos para ejecutar el movimiento y un Arduino como modo de control.",
+    "Imagen": "images/Taller3/girabot.jpg",
+    "CantidadComponentes": ["1","1","1","1","1","1","1","1","1"],
+    "Components": [
+      "Arduino Uno",
+      "Servo Motor",
+      "Fotoresistencias",
+      "Tallo",
+      "Flor",
+      "Cables",
+      "Protoboard",
+      "Uniones para cable",
+      "Resistencias"
+    ],
+    "Pasos": [
+      {
+        "Encabezado": "Ensamble de la flor",
+        "Descripcion": "Conecte la flor al tallo conectándolas en las uniones que ambas piezas presentan",
+        "Image": "images/Taller3/piezasflor.JPG"
       },
       {
         "Encabezado": "Paso 2",
-        "Descripcion": "Can este proyecto se pretende abarcar el tema de movimiento, fuerza y trabajo del MEP.",
-        "Image": "../images/brazo.png"
+        "Descripcion": "Por debajo del tallo haga pasar 4 cables distintos hasta que sobresalgan 2 por cada rama del tallo. Con ayuda de uniones conecte cada par de cables a una fotoresistencia, con el fin de que sobresalgn una de cada de cada lado de la flor.",
+        "Image": "images/Taller3/flor.JPG"
       },
       {
         "Encabezado": "Paso 3",
-        "Descripcion": "Cen este proyecto se pretende abarcar el tema de movimiento, fuerza y trabajo del MEP.",
-        "Image": "../images/brazo.png"
+        "Descripcion": "Arme el circuito como muestra la figura, en el cual se conectan el arduino con el protoboard y este a su vez con los cables de la flor. Note que el servo también se encuentra presente.",
+        "Image": "images/Taller3/circuitoflor.jpg"
+      },
+      {
+        "Encabezado": "Paso 4",
+        "Descripcion": "Digite (o copie y pegue) en Arduino el siguiente código: ",
+        "Image": "images/Taller3/codflor.jpg"
       }
     ]
   },
