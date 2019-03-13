@@ -2,7 +2,7 @@
   "Micropiano" : {
     "Id": "1",
     "Descripcion": "<br><b> Metas </b></br> &bull; Elaborar un instrumento electrónico para las clases de música/tecnología.<br> &bull; Ayudar en el aprendizaje de los jóvenes respecto a programación. <br> &bull; Explicar la creación de sonidos por medio de la frecuencia. <br> <br><b>Funcionamiento </b></br> Construcción de un micro piano utilizando Arduino, el cual permita la creación de sonidos con base en los intereses del usuario. El alcance de producción de sonido depende de la cantidad de botones que se añadan (mínimo 7)." ,
-    "Imagen": "images/micropiano.jpg",
+    "Imagen": "images/paso4micropiano.jpg",
     "CantidadComponentes": ["1","1","1","1","1","1", "1"],
     "Components": [
       "Arduino Uno",
@@ -10,7 +10,7 @@
       "Buzzer",
       "Resistencia",
       "Cable",
-      "Placa de Pruebas",
+      "Breadboard",
       "Cubierta de micropiano"
     ],
     "Pasos": [
@@ -271,7 +271,7 @@
       "Baterías AAA",
       "Porta baterías",
       "Motor",
-      "Protoboard",
+      "Breadboard",
       "Turbina",
       "Arduino Uno",
       "Potenciómetro",
@@ -300,7 +300,7 @@
     "Id": "3",
     "Descripcion": "Consta de una estructura electromecánica capaz de mover objetos de poco peso. Emplea dos motores servos para ejecutar el movimiento y un Arduino como modo de control.",
     "Imagen": "images/Taller3/girabot.jpg",
-    "CantidadComponentes": ["1","1","1","1","1","1","1","1","1"],
+    "CantidadComponentes": ["1","1","2","1","1","1","1","1","1"],
     "Components": [
       "Arduino Uno",
       "Servo Motor",

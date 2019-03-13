@@ -183,5 +183,11 @@
   {
     "Descripcion": "Elemento impreso en 3D.",
     "Foto": "images/Components/3.jpg"
+  },
+
+  "Breadboard":
+  {
+    "Descripcion": "La placa de pruebas (breadboard en inglés) es un tablero con orificios que se encuentran conectados eléctricamente entre sí de manera interna, en el cual se pueden insertar componentes electrónicos y cables para el armado y prototipado de circuitos electrónicos y sistemas similares. Está hecho de dos materiales, un aislante, generalmente un plástico, y un conductor que conecta los diversos orificios entre sí. Uno de sus usos principales es la creación y comprobación de prototipos de circuitos electrónicos antes de llegar a la impresión mecánica del circuito en sistemas de producción comercial.<br><br> La breadboard es muy común para el desarrollo de los circuitos en conjunto con Arduino, ya que posee la capacidad de conectar los distintos dispositivos que se programan en el microcontrolador con el fin de poner en funcionamiento dicho circuito.",
+    "Foto": "images/Components/breadboard.jpg"
   }
 }

@@ -13,12 +13,6 @@ function loadLvl() {
         title2 ="Caballo";
         src2 ="images/horse.png";
     }
-    else {
-        title1="Generador";
-        src1 ="images/generador.png";
-        title2 ="Motor";
-        src2 ="images/mot.png";
-    }
 
     let modelText = "<div class=\"card text-center\">" +
        "<div class=\"card-body\">" +
@@ -104,7 +98,7 @@ function loadModelInfo() {
         case "Caballo":
             kitModel = result.Caballo;
             break;
-        case "Generador":
+        case "Generador Mecánico":
             kitModel = result.Generador ;
             break;
         case "Motor":
@@ -154,7 +148,7 @@ function setModelType() {
         case "Caballo":
             kitModel = result.Caballo;
             break;
-        case "Generador":
+        case "Generador Mecánico":
             kitModel = result.Generador ;
             break;
         case "Motor":
