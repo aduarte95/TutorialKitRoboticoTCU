@@ -207,9 +207,11 @@ function loadSteps(step) {
         bottom += "<div class=\"col-md-auto text-right\">" +
             "<a class=\"btn btn-primary\" href=\"#\" role=\"button\" onclick=\"loadSteps(1)\">Siguiente &raquo;</a>" +
             "</div>";
+    } else {
+        bottom += "<div class=\"col-md-auto text-right\">" +
+            "<a class=\"btn btn-primary\" href=\"models.html \" role=\"button\">Finalizar</a>" +
+            "</div>";
     }
-
-
 
     document.getElementById('step-title').innerHTML = kitModel.Pasos[count - 1].Encabezado;
     document.getElementById('step-desc').innerHTML = kitModel.Pasos[count - 1].Descripcion;

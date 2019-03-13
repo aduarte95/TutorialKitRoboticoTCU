@@ -351,29 +351,78 @@
 
   "Carro" : {
     "Id": "7",
-    "Descripcion": "El carro que se propone es un dispositivo móvil de tres ruedas con sensor ultrasónico, dos de las ruedas son impulsados por motor. Los movimientos del vehículo serán controlados desde una aplicación.",
-    "Imagen": "../images/carro.png",
-    "CantidadComponentes": ["1","2","3"],
+    "Descripcion": "<br><b> Metas </br></b> &bull; Incorporar la robótica en los centros educativos como una herramienta para incentivar a los y las estudiantes a interesarse en las áreas de ciencia y tecnología de una forma eficiente y motivadora que les permita obtener un aprendizaje más significativo. <br> &bull; Mostrar los componentes básicos del carro y su funcionamiento. <br> &bull; Brindar los contenidos necesarios para que los y las alumnas se capaciten de una mejor manera para un futuro cada vez más tecnológico. <br> <br><b> Funcionamiento </b></br> Este taller tiene la finalidad de brindar tanto al docente como al alumnado de educación básica algunas herramientas esenciales y necesarias para la incorporación de la ciencia y tecnología en los métodos de enseñanza. Ya que el vehículo propuesto es controlado de manera remota este taller puede ser el primer paso hacia la construcción de robots de busqueda." ,
+    "Imagen": "images/Taller5/Carro1.jpg",
+    "CantidadComponentes": ["1","1","2","2","1","x","1","1","1","1","1","1","4","x"],
     "Components": [
       "Arduino Uno",
-      "Servo Motor",
-      "Led"
+      "Servomotor",
+      "Motor DC con su rueda",
+      "Porta baterías",
+      "Shield motor",
+      "Cable",
+      "Módulo bluetooth",
+      "Sensor ultrasónico",
+      "Soporte 1 del sensor ultrasónico",
+      "Soporte 2 del sensor ultrasónico",
+      "Rueda loca",
+      "Chasís",
+      "Baterías AAA",
+      "Tornillos 3m"
     ],
     "Pasos": [
       {
-        "Encabezado": "Paso 1",
-        "Descipción": "Este proyecto se sitúa dentro de la ejecución del proyecto de robótica educativa del MEP, con el objetivo de identificar los procesos metodológicos que utiliza la ciencia para generar conocimientos.",
-        "Image": "../images/carro.png"
+        "Encabezado": "Paso 1: Conexión del shield motor y control de los motores DC.<br>",
+        "Descripcion": "La conexión es muy sencilla, se dispone de 2 conectores en M1, M2, M3 y M4 para el vivo y el neutro del motor. Solo se debe conectar al que se desee y listo. Se de tener cuidado con la polaridad. Si es conectado al revés, es decir el vivo en el neutro y viceversa, cuando el comando sea que vaya hacia adelante irá hacia atrás. Lo mismo sucedería con la colocación del motor.",
+        "Image": "images/Taller5/ConexionShieldMotor.jpg"
       },
       {
-        "Encabezado": "Paso 2",
-        "Descipción": "Aste proyecto se sitúa dentro de la ejecución del proyecto de robótica educativa del MEP, con el objetivo de identificar los procesos metodológicos que utiliza la ciencia para generar conocimientos.",
-        "Image": "../images/carro.png"
+        "Encabezado": "Paso 1.1: Código<br>",
+        "Descripcion":  "Para controlar el motor se necesita utilizar el siguiente código:<br><br> <pre><code> <i>// Incluir librerias y crear una instancia del objeto Adafruit_MotorShield.\n // Seleccionar el puerto M1 , M2 , M3 or M4. En este caso , M1</i></pre></code> <pre><code>Adafruit_DCMotor * myMotor = AFMS . getMotor (1);</pre></code> <pre><code><i>// Tambien se puede conectar otro motor en el puerto M2 con:\n // (Adafruit_DCMotor * myOtherMotor = AFMS . getMotor (2);).\n // En esta ocasion utilizamos motores DC por lo tanto tenemos que hacer uso del metodo\n // AFMS .getMotor (n), donde n es el numero de puerto donde este conectado el motor.\n // Para M1 sera 1, M2 sera 2, M3 sera 3 y M4 sera 4.</i></pre></code> <pre><code> void setup () { </pre></code>  <pre><code> Serial . begin (9600) ; </pre></code> <pre><code> Serial . println (“ Adafruit Motorshield v2 - DC Motor test !“); </code></pre> <pre><code> AFMS . begin (); </pre></code> <code><pre><i> // Las tres primeras lineas son para iniciar el monitor serie e iniciar el Adafruit Motor Shield con la\n // frecuencia por defecto . 1.6 KHz.\n // Recuerda que puedes cambiar dicha frecuencia por otra . 1KHz (AFMS . begin (1000) ;).\n // Lo siguiente que hace es indicar la velocidad de inicio con el metodo setSpeed ( velocidad ).\n // La velocidad debe ser un entero de 8- bit es decir , solo admite valores de 0 a 255.</i></pre></code> <pre><code> myMotor -> setSpeed (150) ; </code></pre>  <code><pre><i> // Con el metodo run( direccion ) le decimos para donde tiene que moverse . \n// Direccion puede tomar tres valores FOWARD = rotacion hacia adelante , \n// REVERSE = rotacion en sentido contrario, \n// REALEASE = parar la rotacion , no es un freno , simplemente corta la corriente del motor.  </i></pre></code> <pre><code> myMotor ->run( FORWARD ); <i> // turn on motor </i> </code></pre> <pre><code><i>// En la funcion loop () hace una serie de movimientos utilizando los metodos setSpeed ( )\n // para la velocidad y run( ) para indicar hacia donde se tiene que mover .\n // Los dos primeros bucles for ( ) hace un movimiento hacia adelante ( FORWARD )\n // con una aceleracion progresiva y luego una desaceleracion progresiva .\n // Cambia la direccion hacia atras ( BACKWARD ) y hace lo mismo , aceleracion y desaceleracion progresiva .\n // Por ultimo para el motor ( RELEASE ). </i></pre></code> <pre><code> void loop () { </code></pre> <pre><code> \tuint8_t i; </code></pre> <pre><code> \tSerial . print (“ tick “); </code></pre> <pre><code> \tmyMotor ->run( FORWARD ); </code></pre> <pre><code> \tfor (i = 0; i < 255; i ++) { </code></pre> <pre><code> \t\tmyMotor -> setSpeed (i); </code></pre> <pre><code> \t\tdelay (10) ; \t} </code></pre> <pre><code> \tfor (i = 255; i != 0; i --) { </pre></code> <pre><code> \t\tmyMotor -> setSpeed (i); </pre></code> <pre><code> \t\tdelay (10) ; </pre></code> <pre><code> \t} </pre></code> <pre><code> \tSerial . print ( “tock“); </pre></code> <pre><code> \tmyMotor ->run( BACKWARD ); </pre></code> <pre><code> \tfor (i = 0; i < 255; i ++) { </pre></code> <pre><code> \t\tmyMotor -> setSpeed (i); </pre></code> <pre><code> \t\tdelay (10); </pre></code> <pre><code> \t} </pre></code> <pre><code> \tfor (i = 255; i != 0; i --) {  </pre></code> <pre><code> \t\tmyMotor -> setSpeed (i); </pre></code> <pre><code> \t\tdelay (10) ; </pre></code> <pre><code>  \t} </pre></code> <pre><code> \tSerial . print (“ tech “); </pre></code> <pre><code> \tmyMotor ->run( RELEASE ); </pre></code> <pre><code> \tdelay (1000) ; </pre></code> <pre><code> } </pre></code>",
+        "Image": "images/no-image.png"
       },
       {
-        "Encabezado": "Paso 3",
-        "Descipción": "Oste proyecto se sitúa dentro de la ejecución del proyecto de robótica educativa del MEP, con el objetivo de identificar los procesos metodológicos que utiliza la ciencia para generar conocimientos.",
-        "Image": "../images/carro.png"
+        "Encabezado": "Paso 2: Construcción mecánica del carro<br>",
+        "Descripcion": "En esta sección se dará el paso a paso de como ensamblar el carro.",
+        "Image": "images/Taller5/Carro1.jpg"
+      },
+      {
+        "Encabezado": "Paso 2.1: Construcción mecánica del carro<br>",
+        "Descripcion": "Como se ilustra en la imagen se deben unir al sensor ultrasónico con el soporte 2.",
+        "Image": "images/Taller5/paso21.jpg"
+      },{
+        "Encabezado": "Paso 2.2: Construcción mecánica del carro<br>",
+        "Descripcion": "Ahora se debe conectar el soporte 2 con el soporte 1 y pegarlo al servomotor (con el servomotor ya unido al chasís).",
+        "Image": "images/Taller5/Carro2.jpg"
+      },{
+        "Encabezado": "Paso 2.3: Construcción mecánica del carro<br>",
+        "Descripcion": "Como se muestra en la imagen se debe tomar el motor dc y acoplarlo al chasís.",
+        "Image": "images/Taller5/paso23.jpg"
+      },
+      {
+        "Encabezado": "Paso 2.4: Construcción mecánica del carro<br>",
+        "Descripcion": "Seguidamente con un tornillo se ensambla la rueda loca en la parte trasera del chasís.",
+        "Image": "images/Taller5/paso24.jpg"
+      },
+      {
+        "Encabezado": "Paso 2.5: Construcción mecánica del carro<br>",
+        "Descripcion": "Con ayuda de tornillos o bandas sujetadoras unir el Shiel motor (ensamblado al Arduino) con la parte frontal del chasís.",
+        "Image": "images/Taller5/Carro1.jpg"
+      },
+      {
+        "Encabezado": "Paso 2.6: Construcción mecánica del carro<br>",
+        "Descripcion": "Con ayuda de bandas sujetadoras unir el porta baterías con el chasís justo detrás de los motores.",
+        "Image": "images/Taller5/Carro2.jpg"
+      },
+      {
+        "Encabezado": "Paso 3: Conexión eléctrica del carro</br></b>",
+        "Descripcion": "Para esta secciónn se necesitara hacer uso de los conocimientos adquiridos en los talleres anteriores y en este taller (Parte 1). El carro que se propone es un dispositivo móvil de tres ruedas con sensor ultrasónico, dos de las ruedas son impulsados por un motor DC (un motor por cada rueda), mientras que la tercer rueda sería una rueda loca. Los motores del vehículo serán controlados desde una aplicación la cual les dirá a los motores cuando girar o no y en qué sentido hacerlo, para esto se hará uso de un módulo bluetooth que comunicará al teléfono con el Arduino y un puente H (integrado en el shield motor) que defina la dirección de giro de las ruedas.",
+        "Image": "images/Taller5/ConexionCarro.png"
+      },
+      {
+        "Encabezado": "Paso 3.1: El código requerido para controlar el carro es el siguiente:<br>",
+        "Descripcion": "<pre><code> # include < SoftwareSerial .h> </pre></code> <pre><code> # include <Wire .h> </pre></code> <pre><code> # include < Adafruit_MotorShield .h> </pre></code> <pre><code> Adafruit_MotorShield AFMS = Adafruit_MotorShield (); </pre></code> <pre><code> Adafruit_DCMotor * motor1 = AFMS . getMotor (1); </pre></code> <pre><code> Adafruit_DCMotor * motor2 = AFMS . getMotor (2); </pre></code> <pre><code> SoftwareSerial BT (10 ,11) ; // RX y TX </pre></code> <pre><code> char command ; </pre></code> <pre><code> void setup () { </pre></code> <pre><code> \tBT. begin (9600) ; </pre></code> // Serial . begin (9600) ; // DEBUG <pre><code> AFMS . begin (); </pre></code> // Usa la frecuencia por defecto de 1.6KHz ó puedes cambiar dicha frecuencia por otra . 1KHz (AFMS . begin (1000) ;) <pre><code> \tmotor1 -> setSpeed (150) ;  </pre></code> <pre><code> \tmotor2 -> setSpeed (150) ; </pre></code> // Set the speed to start , from 0 ( off ) to 255 ( max speed ) <pre><code> \tmotor1 ->run( FORWARD ); </pre></code> <pre><code> \tmotor2 ->run( FORWARD ); </pre></code> // turn on motor <pre><code> \tmotor1 ->run( RELEASE ); </pre></code> <pre><code> \tmotor2 ->run( RELEASE ); </pre></code> <pre><code> } </pre></code> <pre><code> void loop () { </pre></code> <pre><code> \tif(BT. available () > 0){ </pre></code> <pre><code> \t\tcommand = BT. read ();  </pre></code> <pre><code> \t\tmotor1 ->run( RELEASE ); </pre></code> <pre><code> \t\tmotor2 ->run( RELEASE ); </pre></code> <pre><code> \t\tswitch ( command ){ </pre></code> <pre><code> \t\tcase 'u ': </pre></code> <pre><code> \t\t\tmotor1 ->run( FORWARD ); </pre></code> <pre><code> \t\t\tmotor2 ->run( FORWARD ); </pre></code> <pre><code> \t\t\tbreak ; </pre></code> <pre><code> \t\tcase 'd ': </pre></code> <pre><code> \t\t\tmotor1 ->run( BACKWARD ); </pre></code> <pre><code> \t\t\tmotor2 ->run( BACKWARD ); </pre></code> <pre><code> \t\t\tbreak ; </pre></code> <pre><code> \t\tcase 'l ': </pre></code> <pre><code> \t\t\tmotor1 ->run( FORWARD ); </pre></code> <pre><code> \t\t\tmotor2 ->run( BACKWARD ); </pre></code> <pre><code> \t\t\tbreak ; </pre></code> <pre><code> \t\tcase 'r ': </pre></code> <pre><code> \t\t\tmotor1 ->run( BACKWARD ); </pre></code> <pre><code> \t\t\tmotor2 ->run( FORWARD ); </pre></code> <pre><code> \t\t\tbreak ; </pre></code> <pre><code> \t\tcase 's ': </pre></code> <pre><code> \t\t\tmotor1 ->run( RELEASE ); </pre></code> <pre><code> \t\t\tmotor2 ->run( RELEASE ); </pre></code> <pre><code> \t\t\tbreak ; </pre></code> <pre><code> \t} </pre></code> <pre><code>// DEBUG.</pre></code> <pre><code> // Serial . print (“ Dato recibido : “); </pre></code> <pre><code> // Serial . println ( command );</pre></code> <pre><code> } </pre></code> <pre><code> }. </pre></code>",
+        "Image": "images/no-image.png"
       }
     ]
   }

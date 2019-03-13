@@ -79,6 +79,74 @@
   {
     "Descripcion": "Zumbador (buzzer en inglés) es un dispositivo que produce un sonido o zumbido de un mismo tono (generalmente agudo). Su construcción consta de dos elementos, un electroimán y una lámina metálica de acero. Puede ser conectado a circuitos integrados especiales para así lograr distintos tonos. Cuando se acciona, la corriente pasa por el electroimán y produce un campo magnético que hace vibrar la lámina de acero sobre la armadura lo cual genera sonidos.\nSirve como mecanismo de aviso y se utiliza en múltiples sistemas, como en automóviles, microondas, despertadores, celulares, entre otras cosas.",
     "Foto": "images/Components/zumbador.jpg"
+  },
+  "Motor DC con su rueda":
+
+  {
+    "Descripcion": "Es una máquina que convierte la energía eléctrica en mecánica, provocando un movimiento rotatorio. En algunas modificaciones, ejercen tracción sobre un riel. Estos motores se conocen como motores lineales. Se compone principalmente de dos partes, un estator que da soporte mecánico al aparato y tiene un hueco en el centro generalmente de forma cilíndrica. En el estator además se encuentran los polos, que pueden ser de imanes permanentes o devanados con hilo de cobre sobre núcleo de hierro. El rotor es generalmente de forma cilíndrica, también devanado y con núcleo, al que llega la corriente mediante dos escobillas.",
+    "Foto":"images/Components/MotorDC.jpg"
+  },
+
+  "Shield motor":
+
+  {
+    "Descripcion": "El Arduino motor shield está diseñado para cargas inductivas como relés, solenoides y motores DC. Que permite manejar dos motores DC controlando las velocidad y dirección de cada motor de forma independiente. También permite medir la corriente absorbida por cada motor entre otras características. Puede ser alimentado por una fuente externa, por lo tanto debemos alimentar al Arduino conectado al motor shield mediante el alimentador y no alimentarlo por USB porque la corriente del motor puede exceder la corriente máxima del estándar USB.",
+    "Foto": "images/Components/ShieldMotor.jpg"
+  },
+
+  "Porta baterías":
+
+  {
+    "Descripcion": "Como su nombre lo indica es un portador de baterías que permite alimentar los circuitos de manera remota, donde el cable de color negro representa la tierra (negativo) y el rojo la alimentación (positivo).",
+    "Foto": "images/Components/BatteryHolder.jpg"
+  },
+
+  "Chasís":
+
+  {
+    "Descripcion": "Armazón que sostiene el motor y la carrocería de un vehículo",
+    "Foto": "images/Components/Chasis.jpg"
+  },
+
+  "Soporte 1 del sensor ultrasónico":
+
+  {
+    "Descripcion": "Elemento impreso en 3D que sirve como soporte para el sensor ultrasónico (complementado con el soporte 2).",
+    "Foto": "images/Components/SoporteUltra.jpg"
+  },
+
+  "Soporte 2 del sensor ultrasónico":
+
+  {
+    "Descripcion": "Elemento impreso en 3D que sirve como soporte para el sensor ultrasónico (complementado con el soporte 1).",
+    "Foto": "images/Components/Soporte2Ultra.jpg"
+  },
+
+  "Rueda loca":
+
+  {
+    "Descripcion": "Es una rueda sin tracción, simple o doble, que puede girar libremente",
+    "Foto": "images/Components/ruedaLoca.jpg"
+  },
+
+  "Baterías AAA":
+
+  {
+    "Descripcion": "",
+    "Foto": "images/Components/baterias.jpg"
+  },
+
+  "Tornillos 3m":
+
+  {
+    "Descripcion": "",
+    "Foto": "images/Components/tornillo.jpg"
+  },
+
+  "Módulo bluetooth":
+  {
+    "Descripcion": "Este módulo da la posibilidad al Arduino de comunicarse sin cables con otros dispositivos. El módulo Bluetotth HC-06 se comporta como esclavo, , esperando peticiones de conexión, Si algún dispositivo se conecta, el HC-06 transmite a este todos los datos que recibe del Arduino y viceversa.",
+    "Foto": "images/Components/moduloBluetooth.png"
   }
 
 }
