@@ -225,5 +225,17 @@
   {
     "Descripcion": "Elemento impreso en 3D.",
     "Foto": "images/Components/unionPequeñaCaballo.jpg"
+  },
+
+  "Motor DC":
+  {
+    "Descripcion": "Es una máquina que convierte la energía eléctrica en mecánica, provocando un movimiento rotatorio. En algunas modificaciones, ejercen tracción sobre un riel. Estos motores se conocen como motores lineales. Se compone principalmente de dos partes, un estator que da soporte mecánico al aparato y tiene un hueco en el centro generalmente de forma cilíndrica. En el estator además se encuentran los polos, que pueden ser de imanes permanentes o devanados con hilo de cobre sobre núcleo de hierro. El rotor es generalmente de forma cilíndrica, también devanado y con núcleo, al que llega la corriente mediante dos escobillas.",
+    "Foto": "images/Components/motor.jpg"
+  },
+
+  "Turbina":
+  {
+    "Descripcion": "Elemento impreso en 3D",
+    "Foto": "images/Components/turbina.jpg"
   }
 }
