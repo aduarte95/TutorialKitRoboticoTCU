@@ -136,17 +136,52 @@
     "Foto": "images/Components/baterias.jpg"
   },
 
-  "Tornillos 3m":
+  "Tornillos 3M":
 
   {
     "Descripcion": "",
     "Foto": "images/Components/tornillo.jpg"
   },
 
-  "Módulo bluetooth":
+  "Módulo Bluetooth":
   {
     "Descripcion": "Este módulo da la posibilidad al Arduino de comunicarse sin cables con otros dispositivos. El módulo Bluetotth HC-06 se comporta como esclavo, , esperando peticiones de conexión, Si algún dispositivo se conecta, el HC-06 transmite a este todos los datos que recibe del Arduino y viceversa.",
     "Foto": "images/Components/moduloBluetooth.png"
-  }
+  },
 
+  "Base de brazo":
+  {
+    "Descripcion": "Elemento impreso en 3D.",
+    "Foto": "images/Components/2.jpg"
+  },
+
+  "Unión entre base y eje primario":
+  {
+    "Descripcion": "Elemento impreso en 3D.",
+    "Foto": "images/Components/2.jpg"
+  },
+
+  "Eje primario":
+  {
+    "Descripcion": "Elemento impreso en 3D.",
+    "Foto": "images/Components/4.jpg"
+  },
+
+  "Eje secundario":
+  {
+    "Descripcion": "Elemento impreso en 3D.",
+    "Foto": "images/Components/5.jpg"
+  },
+
+  "Base para pinza":
+  {
+    "Descripcion": "Elemento impreso en 3D.",
+    "Foto": "images/Components/6.jpg"
+  },
+
+  "Pinza":
+  {
+    "Descripcion": "Elemento impreso en 3D.",
+    "Foto": "images/Components/3.jpg"
+  }
 }

@@ -320,32 +320,83 @@
     ]
   },
 
-  "Brazo" : {
-    "Id": "6",
-    "Descripcion": "Consta de una estructura electromecánica capaz de mover objetos de poco peso. Emplea dos motores servos para ejecutar el movimiento y un Arduino como modo de control.",
-    "Imagen": "../images/brazo.png",
-    "CantidadComponentes": ["1","2","3"],
+  "BrazoMecanico" : {
+    "Id" : "6",
+    "Descripcion" :"<br><b> Metas </b></br> &bull; Introducir el concepto de sistema electromecánico. <br> &bull; Demostrar la interacción de diferente fuerzas en un sistema mecánico. <br> &bull; Enseñar a las y los estudiantes la importancia de la automatización de procesos.",
+    "Imagen" : "images/Taller4/7.png",
+    "CantidadComponentes" : ["1", "1", "1", "2", "Los necesarios", "1", "1", "1", "1", "1", "1", "1", "Los necesarios"],
     "Components": [
-      "Arduino Uno",
-      "Servo Motor",
-      "Led"
+    "Arduino Uno",
+    "Servomotor",
+    "Porta baterías",
+    "Baterías AAA",
+    "Cable",
+    "Módulo Bluetooth",
+    "Base de brazo",
+    "Unión entre base y eje primario",
+    "Eje primario",
+    "Eje secundario",
+    "Base para pinza",
+    "Pinza",
+    "Tornillos 3M"
     ],
     "Pasos": [
-      {
-        "Encabezado": "Paso 1",
-        "Descripcion": "Con este proyecto se pretende abarcar el tema de movimiento, fuerza y trabajo del MEP.",
-        "Image": "../images/brazo.png"
-      },
-      {
-        "Encabezado": "Paso 2",
-        "Descripcion": "Can este proyecto se pretende abarcar el tema de movimiento, fuerza y trabajo del MEP.",
-        "Image": "../images/brazo.png"
-      },
-      {
-        "Encabezado": "Paso 3",
-        "Descripcion": "Cen este proyecto se pretende abarcar el tema de movimiento, fuerza y trabajo del MEP.",
-        "Image": "../images/brazo.png"
-      }
+    {
+    "Encabezado": "<br><b> Paso 1: Conexión del shield motor y control de los motores DC. </br></b>",
+    "Descripcion": "Para conectar el módulo bluetooth con el Arduino se debe hacer uso de los pines digitales. Ya que no se sabe que tiene cargado el Arduino es importante primero programarlo y así prevenir voltajes de entrada indeseados en los componentes, además es importante verificar que el módulo bluetooth está vinculado al teléfono. Recordemos que la transmisión (abreviatura: Tx) va a nuestra recepción (abreviatura: Rx) y viceversa. Aunque el Modulo puede operar a 5V lo recomendable son los 3.3V para el ahorro de energía.\n Y como respuesta colocar un LED con una resistencia de 220 Ω del pin 12 a GND. La conexión del módulo Bluetooth debe quedar como se aprecia en la figura.",
+    "Image": "images/Taller4/ConexionBlue.JPG"
+    },
+    {
+    "Encabezado" :"<br><b> Paso 1.1: Para emplear el módulo Bluetooth se necesita utilizar el siguiente código. </br></b>",
+    "Descripcion": "<pre><code> //bluetooth hc-06 <pre><code> <pre><code> int ledPin = 12; // usamos un pin de salida al LED <pre><code> <pre><code> int state = 0; // Variable lectura serial <pre><code> <pre><code> void setup() { <pre><code> <pre><code>    pinMode(ledPin, OUTPUT);   //Declara pin de Salida <pre><code> <pre><code>    digitalWrite(ledPin, LOW); //Normalmente Apagado <pre><code> <pre><code>    Serial.begin(9600);} <pre><code> <pre><code> void loop() { //si el modulo a manda dato, guardarlo en estado. <pre><code> <pre><code>   if(Serial.available() > 0){ <pre><code> <pre><code>        state = Serial.read();} // esta parte del codigo es para solo 1 Carácter o Unidad. <pre><code> <pre><code> // si el estado es 0 ese seria Apagado <pre><code> <pre><code>  if (state == '0') { <pre><code> <pre><code>     digitalWrite(ledPin, LOW); <pre><code> <pre><code>     Serial.println(\"LED: off\");} <pre><code> <pre><code> // de lo contrario si el estado es 1 ese seria Encendido <pre><code> <pre><code>  else <pre><code> <pre><code>  if (state == '1') {<pre><code> <pre><code>      digitalWrite(ledPin, HIGH); <pre><code> <pre><code>      Serial.println(\"LED: on\");<pre><code>}} <pre><code>",
+    "Image": "images/Taller4/ConexionBlue.JPG"
+    },
+    {
+    "Encabezado" :"<br><b> Paso 2: Conexión mecánica. </br></b>",
+    "Descripcion": " Los pasos a seguir para la correcta construcción del brazo son los siguientes: \n    ",
+
+    "Image": "images/Taller4/7.png"
+    },
+    {
+    "Encabezado": "<br><b> Paso 2.1: Conexión mecánica. </br></b>",
+    "Descripcion":"Colocar un servomotor en la base del brazo." ,
+    "Image": "images/Taller4/8.jpg"
+    },
+    {
+    "Encabezado": "<br><b> Paso 2.2: Conexión mecánica. </br></b>",
+    "Descripcion":"Conectar la pieza de unión entre base y eje primario  al servo." ,
+    "Image": "images/Taller4/4.jpg"
+    },
+    {
+    "Encabezado": "<br><b> Paso 2.3: Conexión mecánica. </br></b>",
+    "Descripcion":"Colocar el eje primario en la pieza de unión." ,
+    "Image": "images/Taller4/5.jpg"
+    },
+    {
+    "Encabezado": "<br><b> Paso 2.4: Conexión mecánica. </br></b>",
+    "Descripcion":"Colocar dos servo motores en el eje secundario y conectarla a la estructura ya elaborada." ,
+    "Image": "images/Taller4/9.jpg"
+    },
+    {
+    "Encabezado": "<br><b> Paso 2.5: Conexión mecánica. </br></b>",
+    "Descripcion": "Colocar un servo motor en la base de la pinza ." ,
+    "Image": "images/Taller4/10.jpg"
+    },
+    {
+    "Encabezado": "<br><b> Paso 2.6: Conexión mecánica. </br></b>",
+    "Descripcion": "Conectar la base de la pinza  y la pinza ." ,
+    "Image": "images/Taller4/11.jpg"
+    },
+    {
+    "Encabezado" :"<br><b> Paso 3: Conexión electrónica. </br></b>",
+    "Descripcion": "Una vez que se termina de armar el brazo, se debe proceder a realizar las conexiones respectivas a la parte electrónica, esto es: conectar el Arduino, a los servos y al módulo bluetooth. Para ello, se debe conectar los respectivos elementos como se muestra en la figura ",
+    "Image": "images/Taller4/brazo_fritzing.png"
+    },
+    {
+    "Encabezado" :"<br><b> Paso 4: Programación. </br></b>",
+    "Descripcion": " <pre><code> #include <SoftwareSerial.h> <pre><code> <pre><code> #include <Servo.h><pre> <code> <pre><code> SoftwareSerial BT(10,11);  // RX y TX <pre><code> <pre><code> Servo servo; <pre><code> <pre><code> Servo servo2; <pre><code> <pre><code> Servo servo3; <pre><code> <pre><code> Servo servo4; <pre><code> <pre><code> const int motor = 6; <pre><code> <pre><code> const int motor2 = 5; <pre><code> <pre><code> const int motor3 = 4; <pre><code> <pre><code> const int motor4 = 3; <pre><code> <pre><code> const int cambio = 5; <pre><code> <pre><code> int pos_inicial=90; <pre><code> <pre><code> int pos=0; <pre><code> <pre><code> char command; <pre><code> <pre><code> void setup() { <pre><code> <pre><code>   servo.attach(motor); // motor1 --> pin 6 base <pre><code> <pre><code>   servo.write(pos_inicial); <pre><code> <pre><code>   servo2.attach(motor2); // motor2 --> pin 5 ante-ante-pinza <pre><code> <pre><code>   servo2.write(pos_inicial); <pre><code> <pre><code>   servo3.attach(motor3); // motor3 --> pin 4 ante-pinza <pre><code> <pre><code>   servo3.write(pos_inicial); <pre><code> <pre><code>   servo4.attach(motor4); // motor4 --> pin 3 pinza <pre><code> <pre><code>   servo4.write(pos_inicial); <pre><code> <pre><code>   BT.begin(9600); <pre><code> <pre><code>   Serial.begin(9600); }  // DEBUG <pre><code> <pre><code> void loop() { <pre><code> <pre><code>     if(BT.available() > 0){ <pre><code> <pre><code>       command = BT.read(); <pre><code> <pre><code>       switch(command){ //SERVO 1 <pre><code> <pre><code>       case 'q': <pre><code> <pre><code>         pos = servo.read(); <pre><code> <pre><code>         pos= pos+cambio; <pre><code> <pre><code>         servo.write(pos); <pre><code> <pre><code>         break; <pre><code> <pre><code>       case 'a': <pre><code> <pre><code>         pos = servo.read(); <pre><code> <pre><code>         pos = pos-cambio; <pre><code> <pre><code>         servo.write(pos); <pre><code> <pre><code>         break; <pre><code> <pre><code>       //SERVO 2 <pre><code> <pre><code>       case 'w': <pre><code> <pre><code>         pos = servo2.read(); <pre><code> <pre><code>         pos= pos+cambio; <pre><code> <pre><code>         servo2.write(pos); <pre><code> <pre><code>         break; <pre><code> <pre><code>       case 's': <pre><code> <pre><code>         pos = servo2.read(); <pre><code> <pre><code>         pos= pos-cambio; <pre><code> <pre><code>         servo2.write(pos); <pre><code> <pre><code>         break; <pre><code> <pre><code>       //SERVO 3 <pre><code> <pre><code>       case 'e': <pre><code> <pre><code>         pos = servo3.read(); <pre><code> <pre><code>         pos= pos+cambio; <pre><code> <pre><code>         servo3.write(pos); <pre><code> <pre><code>         break; <pre><code> <pre><code>       case 'd': <pre><code> <pre><code>         pos = servo3.read(); <pre><code> <pre><code>         pos= pos-cambio; <pre><code> <pre><code>         servo3.write(pos); <pre><code> <pre><code>         break; <pre><code> <pre><code>       //SERVO 4 <pre><code> <pre><code>       case 'r': <pre><code> <pre><code>         pos = servo4.read(); <pre><code> <pre><code>         pos= pos+cambio; <pre><code> <pre><code>         servo4.write(pos); <pre><code> <pre><code>         break; <pre><code> <pre><code>       case 'f': <pre><code> <pre><code>         pos = servo4.read(); <pre><code> <pre><code>         pos= pos-cambio; <pre><code> <pre><code>         servo4.write(pos); <pre><code> <pre><code>         break;} <pre><code> <pre><code>       //DEBUG <pre><code> <pre><code>       Serial.print(\"Dato recibido: \"); <pre><code> <pre><code>       Serial.println(command);}} <pre><code>",
+    "Image": "images/Taller4/ConexionBlue.JPG"
+    }
     ]
   },
 
@@ -353,7 +404,7 @@
     "Id": "7",
     "Descripcion": "<br><b> Metas </br></b> &bull; Incorporar la robótica en los centros educativos como una herramienta para incentivar a los y las estudiantes a interesarse en las áreas de ciencia y tecnología de una forma eficiente y motivadora que les permita obtener un aprendizaje más significativo. <br> &bull; Mostrar los componentes básicos del carro y su funcionamiento. <br> &bull; Brindar los contenidos necesarios para que los y las alumnas se capaciten de una mejor manera para un futuro cada vez más tecnológico. <br> <br><b> Funcionamiento </b></br> Este taller tiene la finalidad de brindar tanto al docente como al alumnado de educación básica algunas herramientas esenciales y necesarias para la incorporación de la ciencia y tecnología en los métodos de enseñanza. Ya que el vehículo propuesto es controlado de manera remota este taller puede ser el primer paso hacia la construcción de robots de busqueda." ,
     "Imagen": "images/Taller5/Carro1.jpg",
-    "CantidadComponentes": ["1","1","2","2","1","x","1","1","1","1","1","1","4","x"],
+    "CantidadComponentes": ["1","1","2","2","1","x","1","1","1","1","1","1","4","Los necesarios"],
     "Components": [
       "Arduino Uno",
       "Servomotor",
@@ -361,14 +412,14 @@
       "Porta baterías",
       "Shield motor",
       "Cable",
-      "Módulo bluetooth",
+      "Módulo Bluetooth",
       "Sensor ultrasónico",
       "Soporte 1 del sensor ultrasónico",
       "Soporte 2 del sensor ultrasónico",
       "Rueda loca",
       "Chasís",
       "Baterías AAA",
-      "Tornillos 3m"
+      "Tornillos 3M"
     ],
     "Pasos": [
       {
