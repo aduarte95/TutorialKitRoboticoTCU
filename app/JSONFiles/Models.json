@@ -182,7 +182,7 @@
       "Unión corta",
       "Unión mediana",
       "Patas del Caballo",
-      "Motor DC con su rueda",
+      "Motor DC",
       "Cable",
       "Porta baterías",
       "Baterías AAA"
@@ -298,17 +298,16 @@
     "Id": "3",
     "Descripcion": "Consta de una estructura electromecánica capaz de mover objetos de poco peso. Emplea dos motores servos para ejecutar el movimiento y un Arduino como modo de control.",
     "Imagen": "images/Taller3/girabot.jpg",
-    "CantidadComponentes": ["1","1","2","1","1","1","1","1","1"],
+    "CantidadComponentes": ["1","1","2","1","1","1","1","1"],
     "Components": [
       "Arduino Uno",
-      "Servo Motor",
-      "Fotoresistencias",
+      "Servomotor",
+      "Fotoresistencia",
       "Tallo",
       "Flor",
-      "Cables",
-      "Protoboard",
-      "Uniones para cable",
-      "Resistencias"
+      "Cable",
+      "Breadboard",
+      "Resistencia"
     ],
     "Pasos": [
       {

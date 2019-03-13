@@ -237,5 +237,17 @@
   {
     "Descripcion": "Elemento impreso en 3D",
     "Foto": "images/Components/turbina.jpg"
+  },
+
+  "Tallo":
+  {
+    "Descripcion": "Elemento impreso en 3D.",
+    "Foto": "images/Components/tallo.jpg"
+  },
+
+  "Flor":
+  {
+    "Descripcion": "Elemento impreso en 3D.",
+    "Foto": "images/Components/florComponente.jpg"
   }
 }
