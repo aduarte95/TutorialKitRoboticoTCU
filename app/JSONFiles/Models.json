@@ -288,7 +288,7 @@
       },
       {
         "Encabezado": "Código",
-        "Descripcion": "<br>Elaborar el siguiente código en Arduino.",
+        "Descripcion": "<br>Elaborar el siguiente código en Arduino.<br>#include &lt AFMotor.h&gt <br> #include&ltWire.h&gt<br>#include&ltAdafruit_MotorShield.h&gt<br><br>Adafruit_MotorShield AFMS = Adafruit_MotorShield(); // Crea el objeto controlador del motorshield<br><br>Adafruit_DCMotor *miMotor = AFMS.getMotor(1);// Selecciona en cual puerto del shield está motor(en este caso M1)<br><br>void setup() {<br>  pinMode(A5,INPUT); //Pin de lectura del potenciómetro<br>  AFMS.begin(); //Conexión inicial con el shield<br>  miMotor->setSpeed(0); //Determina la velocidad del motor<br>  miMotor->run(FORWARD); //Determina la dirección de rotación del motor<br>}<br><br>void loop() {<br>  int val = analogRead(A0);//Lee el valor del potenciómentro<br>  int intensidad = map(val,0,1023,0,255);<br>  miMotor->setSpeed(intensidad);//Ajusta la velocidad del motor<br>}<br>",
         "Image": "images/Taller2/CodigoG.png"
       }
     ]
@@ -328,7 +328,7 @@
       },
       {
         "Encabezado": "Paso 4",
-        "Descripcion": "Digite (o copie y pegue) en Arduino el siguiente código: ",
+        "Descripcion": "Digite (o copie y pegue) en Arduino el siguiente código: <br> #include &ltServo.h&gt <br> Servo servo; //Creación del objeto para usar la libreria <br> const int motor = 6; <br> int posicion=90; <br> int dato_Izquierda=0;//Dato sensor 1 <br> int dato_Derecha=0;//Dato sensor 2 <br> const int sensor1 = A1; // Sensor Izquierda <br> const int sensor2 = A2;//Sensor derecha <br> void setup() { //Configuraciones <br>  servo.attach(motor);//motor-->pin 6 <br>  servo.write(posicion); //centrar el motor(90*) <br>  pinMode(sensor1,INPUT);//Sensor--->entrada <br>  pinMode(sensor2,INPUT);//Sensor--->entrada <br>  Serial.begin(9600);// Iniciar el puerto serial <br> } <br> void loop() {<br> Serial.print(\"Posicion: \");Serial.print(posicion);Serial.println(\"*\");<br> dato_Izquierda = analogRead(sensor2);// guardo la lectura<br> dato_Derecha = analogRead(sensor1);<br>  Serial.println(dato_Izquierda);<br>  Serial.println(dato_Derecha);<br>  if(dato_Izquierda > dato_Derecha){<br>    if(posicion >= 10)<br>   {<br>      posicion = posicion -10 ; // Girar sentido anti horario<br>    }<br>  }<br>  if(dato_Izquierda < dato_Derecha)<br>  {<br>    if(posicion <= 170)<br>    {<br>      posicion = posicion + 10 ; // Girar sentido horario <br>     }  <br>} <br>   servo.write(posicion);<br>  delay(10);<br>}<br> ",
         "Image": "images/Taller3/codflor.jpg"
       }
     ]
