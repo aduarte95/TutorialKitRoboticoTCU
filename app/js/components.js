@@ -22,6 +22,13 @@ function init() {
 
 function loadComponentInfo() {
     let componentType = localStorage.getItem("component"); //El modelo que se debe cargar
+    let back = "description.html";
+
+    if(localStorage.getItem('level') == "lvlZero") {
+        back = "sectionSteps.html";
+    }
+
+    document.getElementById('component-back').innerHTML = "<a href=\"" + back +"\"> <i class=\"fa fa-arrow-left fa-3x\"> </i> </a>";
     document.getElementById('desc-component-title').innerHTML = componentType; //Carga la lista
     document.getElementById('component-img').innerHTML = "<img class=\"left\" style=\"width:50%\"  src=\"" + result[componentType].Foto +"\"/>"; //Carga la lista
     document.getElementById('componentDescription').innerHTML = result[componentType].Descripcion;

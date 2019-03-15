@@ -69,9 +69,9 @@ function init() {
         let lvl = localStorage.getItem("level");
         let back;
 
-        if(lvl == "3") {
+        if(lvl == "noMultipleLvls") {
             back = "models.html";
-        } else if(lvl == "2") {
+        } else if(lvl == "lvlZero") {
             back = "section.html"; //TODO: Revisar bien
         }
         else {
