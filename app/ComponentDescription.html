@@ -8,6 +8,15 @@
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
     <link rel="stylesheet" href="ComponentDescription.css">
     <script src="js/components.js"></script>
+     <script type="text/javascript">
+        function externalLink(url) {
+            const remote = require('electron').remote;
+        const BrowserWindow = remote.BrowserWindow;
+
+        var win = new BrowserWindow({ width: 1000, height: 600, autoHideMenuBar: true });
+        win.loadURL(url);
+        }
+     </script>
 </head>
 
 <body onload="init()">
