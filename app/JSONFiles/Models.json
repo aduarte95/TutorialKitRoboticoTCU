@@ -36,8 +36,8 @@
       },
       {
         "Encabezado": "Paso 5: Escribir código",
-        "Descripcion": "<br><b> Si se está usando Arduino IDE ingresar el siguiente codigo al arduino: </b></br> <pre><code>\nconst int boton_0 = 2; // se establece una constante entera “boton_0” en el pin 2 <br> const int boton_1 = 3;\n const int boton_2 = 4;\n const int boton_3 = 5;\n const int boton_4 = 6;\n const int boton_5 = 7;\n const int boton_6 = 8;\n const int zumbador = 12;\n\n  void setup () \n{\n \tpinMode (boton_0, INPUT); // se establece “boton_0” (equivalente al pin 2) como entrada\n \tpinMode (boton_1, INPUT);\n \tpinMode (boton_2, INPUT);\n \tpinMode (boton_3, INPUT);\n \tpinMode (boton_4, INPUT);\n \tpinMode (boton_5, INPUT);\n \tpinMode (boton_6, INPUT);\n \tpinMode (zumbador, OUTPUT); // se establece “zumbador” (pin 12) como una salida\n \n}\n\n  void loop () \n{\n \tif (digitalRead (boton_0) == false) \n\t{ // si se presiona el boton_0 se corren las instrucciones\n \t\ttone (zumbador, 261, 100); // el 261 es la frecuencia que equivale a la nota Do\n \t\tdelay (100); // espera de 100 milisegundos que equivalen a 0,1 segundos\n \n\t}\n\n \tif (digitalRead (boton_1) == true) \n\t{\n  \t\ttone (zumbador, 293, 100); // el 293 es la frecuencia que equivale a la nota Re\n \t\tdelay (100);\n \n\t}\n\n \tif (digitalRead (boton_2) == true) \n\t{\n  \t\ttone (zumbador, 329, 100); // el 329 es la frecuencia que equivale a la nota Mi\n \t\tdelay (100);\n \n\t}\n\n \tif (digitalRead (boton_3) == true) \n\t{\n  \t\ttone (zumbador, 349, 100); // el 349 es la frecuencia que equivale a la nota Fa\n \t\tdelay (100);\n \n\t}\n\n \tif (digitalRead (boton_4) == true) \n\t{\n  \t\ttone (zumbador, 392, 100); // el 392 es la frecuencia que equivale a la nota Sol\n \t\tdelay (100);\n \n\t}\n\n \tif (digitalRead (boton_5) == true) \n\t{\n  \t\ttone (zumbador, 440, 100); // el 440 es la frecuencia que equivale a la nota La\n \t\tdelay (100);\n \n\t}\n\n \tif (digitalRead (boton_6) == true) \n\t{\n  \t\ttone (zumbador, 494, 100); // el 494 es la frecuencia que equivale a la nota Si\n \t\tdelay (100);\n \n\t} \n}  </code></pre>",
-        "Image": "images/arduinoLogo.jpg"
+        "Descripcion": "<br><b> Si se está usando Arduino IDE ingresar el siguiente codigo al arduino:</b></br></br><pre><code>const int boton_0 = 2; // se establece una constante entera “boton_0” en el pin 2 <br> const int boton_1 = 3;\n const int boton_2 = 4;\n const int boton_3 = 5;\n const int boton_4 = 6;\n const int boton_5 = 7;\n const int boton_6 = 8;\n const int zumbador = 12;\n\n  void setup () \n{\n \tpinMode (boton_0, INPUT); // se establece “boton_0” (equivalente al pin 2) como entrada\n \tpinMode (boton_1, INPUT);\n \tpinMode (boton_2, INPUT);\n \tpinMode (boton_3, INPUT);\n \tpinMode (boton_4, INPUT);\n \tpinMode (boton_5, INPUT);\n \tpinMode (boton_6, INPUT);\n \tpinMode (zumbador, OUTPUT); // se establece “zumbador” (pin 12) como una salida\n \n}\n\n  void loop () \n{\n \tif (digitalRead (boton_0) == false) \n\t{ // si se presiona el boton_0 se corren las instrucciones\n \t\ttone (zumbador, 261, 100); // el 261 es la frecuencia que equivale a la nota Do\n \t\tdelay (100); // espera de 100 milisegundos que equivalen a 0,1 segundos\n \n\t}\n\n \tif (digitalRead (boton_1) == true) \n\t{\n  \t\ttone (zumbador, 293, 100); // el 293 es la frecuencia que equivale a la nota Re\n \t\tdelay (100);\n \n\t}\n\n \tif (digitalRead (boton_2) == true) \n\t{\n  \t\ttone (zumbador, 329, 100); // el 329 es la frecuencia que equivale a la nota Mi\n \t\tdelay (100);\n \n\t}\n\n \tif (digitalRead (boton_3) == true) \n\t{\n  \t\ttone (zumbador, 349, 100); // el 349 es la frecuencia que equivale a la nota Fa\n \t\tdelay (100);\n \n\t}\n\n \tif (digitalRead (boton_4) == true) \n\t{\n  \t\ttone (zumbador, 392, 100); // el 392 es la frecuencia que equivale a la nota Sol\n \t\tdelay (100);\n \n\t}\n\n \tif (digitalRead (boton_5) == true) \n\t{\n  \t\ttone (zumbador, 440, 100); // el 440 es la frecuencia que equivale a la nota La\n \t\tdelay (100);\n \n\t}\n\n \tif (digitalRead (boton_6) == true) \n\t{\n  \t\ttone (zumbador, 494, 100); // el 494 es la frecuencia que equivale a la nota Si\n \t\tdelay (100);\n \n\t} \n}  </code></pre><br> Créditos de la foto: Fabián Alexis [CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0)] via Wikimedia Commons",
+        "Image": "images/arduinoLogo.png"
       },
       {
         "Encabezado": "Paso 6",
@@ -162,7 +162,7 @@
   "Caballo" : {
     "Id": "2",
     "Descripcion": "Es un mecanismo de una sola entrada de moviemiento mediante el cual se simula el galope de un caballo. Su objetivo es básicamente ilustrar la anatomía del animal y como otros mamíferos se mueven de forma similar.",
-    "Imagen": "images/theo.png",
+    "Imagen": "images/theo.jpeg",
     "CantidadComponentes": [
       "1",
       "1",
@@ -335,9 +335,9 @@
 
   "BrazoMecanico" : {
     "Id" : "6",
-    "Descripcion" :"<br><b> Metas </b></br> &bull; Introducir el concepto de sistema electromecánico. <br> &bull; Demostrar la interacción de diferente fuerzas en un sistema mecánico. <br> &bull; Enseñar a las y los estudiantes la importancia de la automatización de procesos.",
+    "Descripcion" :"<br><b> Metas </b></br> &bull; Introducir el concepto de sistema electromecánico. <br> &bull; Demostrar la interacción de diferente fuerzas en un sistema mecánico. <br> &bull; Enseñar a las y los estudiantes la importancia de la automatización de procesos.<br><br>Créditos de la foto y diseño: Heartman [CC BY-SA 3.0 (https://creativecommons.org/licenses/by-nc/3.0)] via Thingiverse",
     "Imagen" : "images/Taller4/7.png",
-    "CantidadComponentes" : ["1", "1", "1", "2", "Los necesarios", "1", "1", "1", "1", "1", "1", "1", "Los necesarios"],
+    "CantidadComponentes" : ["1", "1", "1", "2", "12", "1", "1", "1", "1", "1", "1", "1", "10"],
     "Components": [
     "Arduino Uno",
     "Servomotor",
@@ -362,13 +362,13 @@
     {
     "Encabezado" :"<br><b> Paso 1.1: Para emplear el módulo Bluetooth se necesita utilizar el siguiente código. </br></b>",
     "Descripcion": "<pre><code> //bluetooth hc-06\n int ledPin = 12; // usamos un pin de salida al LED\n int state = 0; // Variable lectura serial  \n\n void setup() \n{  \n\t    pinMode(ledPin, OUTPUT);   //Declara pin de Salida  \n\t    digitalWrite(ledPin, LOW); //Normalmente Apagado  \n\t    Serial.begin(9600);\n} \n\n void loop() \n{\n\t //si el modulo a manda dato, guardarlo en estado.  \n\tif(Serial.available() > 0)\n\t{  \n\t\tstate = Serial.read();} // esta parte del codigo es para solo 1 Carácter o Unidad.  \n\t\t // si el estado es 0 ese seria Apagado  \n\n\t\t if (state == '0') \n\t\t{  \n\t\t\t     digitalWrite(ledPin, LOW);  \n\t\t\t     Serial.println(\"LED: off\");\n\t\t } // de lo contrario si el estado es 1 ese seria Encendido  \n\t} \n\telse\n\t {  \n\t\tif (state == '1') \n\t\t{ \n\t\t\t      digitalWrite(ledPin, HIGH);  \n\t\t\t      Serial.println(\"LED: on\");\n\t\t}\n\t}\n}",
-    "Image": "images/Taller4/ConexionBlue.JPG"
+    "Image": "images/no-image.png"
     },
     {
     "Encabezado" :"<br><b> Paso 2: Conexión mecánica. </br></b>",
     "Descripcion": " Los pasos a seguir para la correcta construcción del brazo son los siguientes: \n    ",
 
-    "Image": "images/Taller4/7.png"
+    "Image": "images/no-image.png"
     },
     {
     "Encabezado": "<br><b> Paso 2.1: Conexión mecánica. </br></b>",
@@ -377,12 +377,12 @@
     },
     {
     "Encabezado": "<br><b> Paso 2.2: Conexión mecánica. </br></b>",
-    "Descripcion":"Conectar la pieza de unión entre base y eje primario  al servo." ,
+    "Descripcion":"Conectar la pieza de unión entre base y eje primario  al servo.<br><br>Créditos de la foto: Heartman [CC BY-SA 3.0 (https://creativecommons.org/licenses/by-nc/3.0)] via Thingiverse" ,
     "Image": "images/Taller4/4.jpg"
     },
     {
     "Encabezado": "<br><b> Paso 2.3: Conexión mecánica. </br></b>",
-    "Descripcion":"Colocar el eje primario en la pieza de unión." ,
+    "Descripcion":"Colocar el eje primario en la pieza de unión.<br><br>Créditos de la foto: Heartman [CC BY-SA 3.0 (https://creativecommons.org/licenses/by-nc/3.0)] via Thingiverse" ,
     "Image": "images/Taller4/5.jpg"
     },
     {
@@ -408,7 +408,7 @@
     {
     "Encabezado" :"<br><b> Paso 4: Programación. </br></b>",
     "Descripcion": " <pre><code>#include <SoftwareSerial.h>\n #include <Servo.h>\n SoftwareSerial BT(10,11);  // RX y TX \n Servo servo; \n Servo servo2; \n Servo servo3; \n Servo servo4; \n const int motor = 6; \n const int motor2 = 5; \n const int motor3 = 4; \n const int motor4 = 3; \n const int cambio = 5; \n int pos_inicial=90; \n int pos=0; \n char command; \n\n void setup() \n{ \n\t   servo.attach(motor); // motor1 --> pin 6 base \n\t   servo.write(pos_inicial); \n\t   servo2.attach(motor2); // motor2 --> pin 5 ante-ante-pinza \n\t   servo2.write(pos_inicial); \n\t   servo3.attach(motor3); // motor3 --> pin 4 ante-pinza \n\t   servo3.write(pos_inicial); \n\t   servo4.attach(motor4); // motor4 --> pin 3 pinza \n\t   servo4.write(pos_inicial); \n\t   BT.begin(9600); \n\t   Serial.begin(9600); \n}\n\n  // DEBUG\n void loop() \n{\n \tif(BT.available() > 0)\n\t{ \n\t\tcommand = BT.read(); \n\t\tswitch(command)\n\t\t{\n\t\t\t //SERVO 1 \n\t\t\tcase 'q': \n\t\t\t\tpos = servo.read();\n\t\t\t\tpos= pos+cambio; \n\t\t\t\tservo.write(pos); \n\t\t\tbreak; \n\t\t\tcase 'a': \n\t\t\t\tpos = servo.read(); \n\t\t\t\tpos = pos-cambio; \n\t\t\t\tservo.write(pos); \n\t\t\tbreak; //SERVO 2 \n\t\t\tcase 'w': \n\t\t\t\tpos = servo2.read(); \n\t\t\t\tpos= pos+cambio; \n\t\t\t\tservo2.write(pos); \n\t\t\tbreak; \n\t\t\tcase 's': \n\t\t\t\tpos = servo2.read(); \n\t\t\t\tpos= pos-cambio; \n\t\t\t\tservo2.write(pos); \n\t\t\tbreak; \n\t\t\t//SERVO 3 \n\t\t\tcase 'e': \n\t\t\t\tpos = servo3.read(); \n\t\t\t\tpos= pos+cambio; \n\t\t\t\tservo3.write(pos); \n\t\t\tbreak; \n\t\t\tcase 'd': \n\t\t\t\tpos = servo3.read(); \n\t\t\t\tpos= pos-cambio; \n\t\t\t\tservo3.write(pos); \n\t\t\tbreak; \n\t\t\t//SERVO 4 \n\t\t\tcase 'r': \n\t\t\t\tpos = servo4.read(); \n\t\t\t\tpos= pos+cambio; \n\t\t\t\tservo4.write(pos); \n\t\t\tbreak; \n\t\t\tcase 'f': \n\t\t\t\tpos = servo4.read(); \n\t\t\t\tpos= pos-cambio; \n\t\t\t\tservo4.write(pos); \n\t\t\tbreak;\n\t\t } \n\t\t\t//DEBUG \n\t\tSerial.print(\"Dato recibido: \"); \n\t\tSerial.println(command);\n\t}\n} </pre></code>",
-    "Image": "images/Taller4/ConexionBlue.JPG"
+    "Image": "images/no-image.png"
     }
     ]
   },

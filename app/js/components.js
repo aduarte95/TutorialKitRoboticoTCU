@@ -1,3 +1,11 @@
+
+    function externalLink(url) {
+        const remote = require('electron').remote;
+        const BrowserWindow = remote.BrowserWindow;
+
+        var win = new BrowserWindow({ width: 1000, height: 600, autoHideMenuBar: true });
+        win.loadURL(url);
+    }
 function loadJSON(callback) {
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("JSONFiles");
