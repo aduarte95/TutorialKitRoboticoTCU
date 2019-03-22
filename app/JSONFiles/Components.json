@@ -83,7 +83,7 @@
   "Motor DC con su rueda":
 
   {
-    "Descripcion": "Es una máquina que convierte la energía eléctrica en mecánica, provocando un movimiento rotatorio. En algunas modificaciones, ejercen tracción sobre un riel. Estos motores se conocen como motores lineales. Se compone principalmente de dos partes, un estator que da soporte mecánico al aparato y tiene un hueco en el centro generalmente de forma cilíndrica. En el estator además se encuentran los polos, que pueden ser de imanes permanentes o devanados con hilo de cobre sobre núcleo de hierro. El rotor es generalmente de forma cilíndrica, también devanado y con núcleo, al que llega la corriente mediante dos escobillas.",
+    "Descripcion": "Es una máquina que convierte la energía eléctrica en mecánica, provocando un movimiento rotatorio. En algunas modificaciones, ejercen tracción sobre un riel. Estos motores se conocen como motores lineales. Se compone principalmente de dos partes, un estator que da soporte mecánico al aparato y tiene un hueco en el centro generalmente de forma cilíndrica. En el estator además se encuentran los polos, que pueden ser de imanes permanentes o devanados con hilo de cobre sobre núcleo de hierro. El rotor es generalmente de forma cilíndrica, también devanado y con núcleo, al que llega la corriente mediante dos escobillas. <br><br> Créditos de la foto: <a href=\"\" onclick=\"externalLink('https://www.sparkfun.com/products/14180')\">SparkFun Electronics</a> via <a href=\"\" onclick=\"externalLink('https://www.sparkfun.com/')\">Sparkfun</a> <a href=\"\" onclick=\"externalLink('https://creativecommons.org/licenses/by/2.0/')\">(licence)</a>",
     "Foto":"images/Components/MotorDC.jpg"
   },
 
@@ -97,7 +97,7 @@
   "Porta baterías":
 
   {
-    "Descripcion": "Como su nombre lo indica es un portador de baterías que permite alimentar los circuitos de manera remota, donde el cable de color negro representa la tierra (negativo) y el rojo la alimentación (positivo).",
+    "Descripcion": "Como su nombre lo indica es un portador de baterías que permite alimentar los circuitos de manera remota, donde el cable de color negro representa la tierra (negativo) y el rojo la alimentación (positivo)..<br><br> Créditos de la foto: <a href=\"\" onclick=\"externalLink('https://www.sparkfun.com/products/14299')\">SparkFun Electronics</a> via <a href=\"\" onclick=\"externalLink('https://www.sparkfun.com/')\">Sparkfun</a> <a href=\"\" onclick=\"externalLink('https://creativecommons.org/licenses/by/2.0/')\">(licence)</a>",
     "Foto": "images/Components/BatteryHolder.jpg"
   },
 
@@ -129,17 +129,24 @@
     "Foto": "images/Components/ruedaLoca.jpg"
   },
 
+  "Baterías AA":
+
+  {
+    "Descripcion": "Baterías AA.",
+    "Foto": "images/Components/baterias.jpg"
+  },
+
   "Baterías AAA":
 
   {
-    "Descripcion": "",
-    "Foto": "images/Components/baterias.jpg"
+    "Descripcion": "Baterías AAA.",
+    "Foto": "images/Components/bateriasAAA.jpg"
   },
 
   "Tornillos M3":
 
   {
-    "Descripcion": "",
+    "Descripcion": "Tornillos de medida M3.<br><br> Créditos de la foto: <a href=\"\" onclick=\"externalLink('https://www.sparkfun.com/products/12002')\">SparkFun Electronics</a> via <a href=\"\" onclick=\"externalLink('https://www.sparkfun.com/')\">Sparkfun</a> <a href=\"\" onclick=\"externalLink('https://creativecommons.org/licenses/by/2.0/')\">(licence)</a>",
     "Foto": "images/Components/tornillo.jpg"
   },
 
@@ -151,37 +158,37 @@
 
   "Base de brazo":
   {
-    "Descripcion": "Elemento impreso en 3D.",
+    "Descripcion": "Elemento impreso en 3D.<br><br> Créditos de la foto y diseño: <a href=\"\" onclick=\"externalLink('https://www.thingiverse.com/thing:1684471')\">Heartman</a> via <a href=\"\" onclick=\"externalLink('https://www.thingiverse.com/')\">Thingiverse</a> <a href=\"\" onclick=\"externalLink('https://creativecommons.org/licenses/by-nc/3.0/')\">(licence)</a>",
     "Foto": "images/Components/2.jpg"
   },
 
   "Unión entre base y eje primario":
   {
-    "Descripcion": "Elemento impreso en 3D.",
+    "Descripcion": "Elemento impreso en 3D.<br><br> Créditos de la foto y diseño: <a href=\"\" onclick=\"externalLink('https://www.thingiverse.com/thing:1684471')\">Heartman</a> via <a href=\"\" onclick=\"externalLink('https://www.thingiverse.com/')\">Thingiverse</a> <a href=\"\" onclick=\"externalLink('https://creativecommons.org/licenses/by-nc/3.0/')\">(licence)</a>",
     "Foto": "images/Components/2.jpg"
   },
 
   "Eje primario":
   {
-    "Descripcion": "Elemento impreso en 3D.",
+    "Descripcion": "Elemento impreso en 3D.<br><br> Créditos de la foto y diseño: <a href=\"\" onclick=\"externalLink('https://www.thingiverse.com/thing:1684471')\">Heartman</a> via <a href=\"\" onclick=\"externalLink('https://www.thingiverse.com/')\">Thingiverse</a> <a href=\"\" onclick=\"externalLink('https://creativecommons.org/licenses/by-nc/3.0/')\">(licence)</a>",
     "Foto": "images/Components/4.jpg"
   },
 
   "Eje secundario":
   {
-    "Descripcion": "Elemento impreso en 3D.",
+    "Descripcion": "Elemento impreso en 3D.<br><br> Créditos de la foto y diseño: <a href=\"\" onclick=\"externalLink('https://www.thingiverse.com/thing:1684471')\">Heartman</a> via <a href=\"\" onclick=\"externalLink('https://www.thingiverse.com/')\">Thingiverse</a> <a href=\"\" onclick=\"externalLink('https://creativecommons.org/licenses/by-nc/3.0/')\">(licence)</a>",
     "Foto": "images/Components/5.jpg"
   },
 
   "Base para pinza":
   {
-    "Descripcion": "Elemento impreso en 3D.",
+    "Descripcion": "Elemento impreso en 3D.<br><br> Créditos de la foto y diseño: <a href=\"\" onclick=\"externalLink('https://www.thingiverse.com/thing:1684471')\">Heartman</a> via <a href=\"\" onclick=\"externalLink('https://www.thingiverse.com/')\">Thingiverse</a> <a href=\"\" onclick=\"externalLink('https://creativecommons.org/licenses/by-nc/3.0/')\">(licence)</a>",
     "Foto": "images/Components/6.jpg"
   },
 
   "Pinza":
   {
-    "Descripcion": "Elemento impreso en 3D.",
+    "Descripcion": "Elemento impreso en 3D.<br><br> Créditos de la foto y diseño: <a href=\"\" onclick=\"externalLink('https://www.thingiverse.com/thing:1684471')\">Heartman</a> via <a href=\"\" onclick=\"externalLink('https://www.thingiverse.com/')\">Thingiverse</a> <a href=\"\" onclick=\"externalLink('https://creativecommons.org/licenses/by-nc/3.0/')\">(licence)</a>",
     "Foto": "images/Components/3.jpg"
   },
 
@@ -229,7 +236,7 @@
 
   "Motor DC":
   {
-    "Descripcion": "Es una máquina que convierte la energía eléctrica en mecánica, provocando un movimiento rotatorio. En algunas modificaciones, ejercen tracción sobre un riel. Estos motores se conocen como motores lineales. Se compone principalmente de dos partes, un estator que da soporte mecánico al aparato y tiene un hueco en el centro generalmente de forma cilíndrica. En el estator además se encuentran los polos, que pueden ser de imanes permanentes o devanados con hilo de cobre sobre núcleo de hierro. El rotor es generalmente de forma cilíndrica, también devanado y con núcleo, al que llega la corriente mediante dos escobillas.",
+    "Descripcion": "Es una máquina que convierte la energía eléctrica en mecánica, provocando un movimiento rotatorio. En algunas modificaciones, ejercen tracción sobre un riel. Estos motores se conocen como motores lineales. Se compone principalmente de dos partes, un estator que da soporte mecánico al aparato y tiene un hueco en el centro generalmente de forma cilíndrica. En el estator además se encuentran los polos, que pueden ser de imanes permanentes o devanados con hilo de cobre sobre núcleo de hierro. El rotor es generalmente de forma cilíndrica, también devanado y con núcleo, al que llega la corriente mediante dos escobillas..<br><br> Créditos de la foto: <a href=\"\" onclick=\"externalLink('https://www.sparkfun.com/products/13302')\">SparkFun Electronics</a> via <a href=\"\" onclick=\"externalLink('https://www.sparkfun.com/')\">Sparkfun</a> <a href=\"\" onclick=\"externalLink('https://creativecommons.org/licenses/by/2.0/')\">(licence)</a>",
     "Foto": "images/Components/motor.jpg"
   },
 

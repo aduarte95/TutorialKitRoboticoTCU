@@ -185,7 +185,7 @@
       "Motor DC",
       "Cable",
       "Porta baterías",
-      "Baterías AAA"
+      "Baterías AA"
     ],
     "Pasos": [
       {
@@ -337,7 +337,7 @@
     "Id" : "6",
     "Descripcion" :"<br><b> Metas </b></br> &bull; Introducir el concepto de sistema electromecánico. <br> &bull; Demostrar la interacción de diferente fuerzas en un sistema mecánico. <br> &bull; Enseñar a las y los estudiantes la importancia de la automatización de procesos.<br><br>Créditos de la foto y diseño: Heartman [CC BY-SA 3.0 (https://creativecommons.org/licenses/by-nc/3.0)] via Thingiverse",
     "Imagen" : "images/Taller4/7.png",
-    "CantidadComponentes" : ["1", "1", "1", "2", "12", "1", "1", "1", "1", "1", "1", "1", "10"],
+    "CantidadComponentes" : ["1", "1", "1", "4", "12", "1", "1", "1", "1", "1", "1", "1", "10"],
     "Components": [
     "Arduino Uno",
     "Servomotor",
@@ -417,7 +417,7 @@
     "Id": "7",
     "Descripcion": "<br><b> Metas </br></b> &bull; Incorporar la robótica en los centros educativos como una herramienta para incentivar a los y las estudiantes a interesarse en las áreas de ciencia y tecnología de una forma eficiente y motivadora que les permita obtener un aprendizaje más significativo. <br> &bull; Mostrar los componentes básicos del carro y su funcionamiento. <br> &bull; Brindar los contenidos necesarios para que los y las alumnas se capaciten de una mejor manera para un futuro cada vez más tecnológico. <br> <br><b> Funcionamiento </b></br> Este taller tiene la finalidad de brindar tanto al docente como al alumnado de educación básica algunas herramientas esenciales y necesarias para la incorporación de la ciencia y tecnología en los métodos de enseñanza. Ya que el vehículo propuesto es controlado de manera remota este taller puede ser el primer paso hacia la construcción de robots de busqueda." ,
     "Imagen": "images/Taller5/Carro1.jpg",
-    "CantidadComponentes": ["1","1","2","2","1","x","1","1","1","1","1","1","4","Los necesarios"],
+    "CantidadComponentes": ["1","1","2","2","1","x","1","1","1","1","1","1","4","15"],
     "Components": [
       "Arduino Uno",
       "Servomotor",
