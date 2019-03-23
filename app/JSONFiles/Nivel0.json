@@ -124,8 +124,8 @@
             "Imagen": "images/Taller0/paso3EncenderLed.png"
           },
           {
-            "Descripción": "<br> <b> Código en Arduino IDE </b> </br> const int led = 13; // se declara el pin 13 como un entero constante llamado “led”\n\nvoid setup ()\n{\npinMode (led, OUTPUT); // se establece el pin 13 como una salida\n}\n\nvoid loop ()\n{\ndigitalWrite (led, HIGH); // la LED se enciende\ndelay (1000); // espera de 1 segundo\ndigitalWrite (led, LOW); // la LED se apaga\ndelay (1000); // espera de 1 segundo\n}\n",
-            "Imagen": "images/Taller0/paso3Arduino.png"
+            "Descripción": "<br> <b> Código en Arduino IDE </b> </br> <pre><code> const int led = 13; // se declara el pin 13 como un entero constante llamado “led” <br> </pre></code> <pre><code> void setup ()</pre></code> <pre><code> <br> { </pre></code> <br> <pre><code> pinMode (led, OUTPUT); // se establece el pin 13 como una salida </pre></code> <pre><code> } </pre></code> \n\nvoid loop ()\n{\ndigitalWrite (led, HIGH); // la LED se enciende\ndelay (1000); // espera de 1 segundo\ndigitalWrite (led, LOW); // la LED se apaga\ndelay (1000); // espera de 1 segundo\n}\n",
+            "Imagen": ""
           },
           {
             "Descripción": "<br> <b> Código en Bitbloq </b> </br> ",
