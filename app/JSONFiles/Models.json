@@ -416,8 +416,8 @@
   "Carro" : {
     "Id": "7",
     "Descripcion": "<br><b> Metas </br></b> &bull; Incorporar la robótica en los centros educativos como una herramienta para incentivar a los y las estudiantes a interesarse en las áreas de ciencia y tecnología de una forma eficiente y motivadora que les permita obtener un aprendizaje más significativo. <br> &bull; Mostrar los componentes básicos del carro y su funcionamiento. <br> &bull; Brindar los contenidos necesarios para que los y las alumnas se capaciten de una mejor manera para un futuro cada vez más tecnológico. <br> <br><b> Funcionamiento </b></br> Este taller tiene la finalidad de brindar tanto al docente como al alumnado de educación básica algunas herramientas esenciales y necesarias para la incorporación de la ciencia y tecnología en los métodos de enseñanza. Ya que el vehículo propuesto es controlado de manera remota este taller puede ser el primer paso hacia la construcción de robots de busqueda." ,
-    "Imagen": "images/Taller5/Carro1.jpg",
-    "CantidadComponentes": ["1","1","2","2","1","x","1","1","1","1","1","1","4","15"],
+    "Imagen": "images/Taller5/Carro1.jpeg",
+    "CantidadComponentes": ["1","1","2","2","1","x","1","1","1","1","1","1","4","Los necesarios"],
     "Components": [
       "Arduino Uno",
       "Servomotor",
