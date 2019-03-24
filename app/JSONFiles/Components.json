@@ -111,7 +111,7 @@
   "Soporte 1 del sensor ultrasónico":
 
   {
-    "Descripcion": "Elemento impreso en 3D que sirve como soporte para el sensor ultrasónico (complementado con el soporte 2).",
+    "Descripcion": "Elemento impreso en 3D que sirve como soporte para el sensor ultrasónico (complementado con el soporte 2). Créditos de la foto: <a href=\"\" onclick=\"externalLink('https://www.thingiverse.com/thing:780050')\">Tingiverse Electronics</a> via <a href=\"\" onclick=\"externalLink('https://www.thingiverse.com/')\">Tingiverse</a> <a href=\"\" onclick=\"externalLink('https://creativecommons.org/licenses/by-sa/3.0/')\">(licence)</a>",
     "Foto": "images/Components/SoporteUltra.jpg"
   },
 
