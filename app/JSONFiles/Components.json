@@ -145,7 +145,7 @@
 
   "Módulo Bluetooth":
   {
-    "Descripcion": "Este módulo da la posibilidad al Arduino de comunicarse sin cables con otros dispositivos. El módulo Bluetotth HC-06 se comporta como esclavo, , esperando peticiones de conexión, Si algún dispositivo se conecta, el HC-06 transmite a este todos los datos que recibe del Arduino y viceversa. Créditos de la foto: <a href=\"\" onclick=\"externalLink('https://commons.wikimedia.org/wiki/File:Bluetooth.png')\">Quel.soler</a> via <a href=\"\" onclick=\"externalLink('https://commons.wikimedia.org/')\">Commons Wikipedia</a> <a href=\"\" onclick=\"externalLink('https://creativecommons.org/licenses/by-sa/4.0/deed.en')\">(licence)</a> No se hicieron cambios",
+    "Descripcion": "Este módulo da la posibilidad al Arduino de comunicarse sin cables con otros dispositivos. El módulo Bluetotth HC-06 se comporta como esclavo, , esperando peticiones de conexión, Si algún dispositivo se conecta, el HC-06 transmite a este todos los datos que recibe del Arduino y viceversa.<br><br> Créditos de la foto: <a href=\"\" onclick=\"externalLink('https://commons.wikimedia.org/wiki/File:Bluetooth.png')\">Quel.soler</a> via <a href=\"\" onclick=\"externalLink('https://commons.wikimedia.org/')\">Commons Wikipedia</a> <a href=\"\" onclick=\"externalLink('https://creativecommons.org/licenses/by-sa/4.0/deed.en')\">(licence)</a> No se hicieron cambios",
     "Foto": "images/Components/moduloBluetooth2.png"
   },
 
