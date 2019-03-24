@@ -12,10 +12,12 @@
   "license": "ISC",
   "devDependencies": {
     "electron": "^4.0.2",
-    "electron-packager": "^13.0.1"
+    "electron-packager": "^13.0.1",
+    "electron-prebuilt-compile": "^4.0.0"
   },
   "dependencies": {
     "bootstrap": "^4.2.1",
+    "electron-compile": "^6.4.4",
     "electron-reload": "^1.4.0",
     "load-json-file": "^5.2.0"
   }

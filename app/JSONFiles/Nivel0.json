@@ -33,7 +33,7 @@
       {
         "Titulo": "Arduino IDE",
         "Descripción": "<br><b> Pasos básicos iniciales – Arduino IDE </b></br> El software de código abierto Arduino IDE (Integrated Development Environment, o en español Entorno de Desarrollo Integrado) facilita escribir código y cargarlo en la placa de Arduino. Este IDE permite a los desarrolladores escribir código, configurar tableros y crear proyectos. Es decir, es una plataforma de hardware libre, basada en una placa con un microcontrolador y un entorno de desarrollo, diseñada para facilitar el uso de la electrónica en proyectos multidisciplinarios.",
-        "Imagen": "images/Taller0/arduino.png",
+        "Imagen": "images/Taller0/arduino2.png",
         "Pasos": [
           {
             "Descripción": "<br>Conectar el Arduino Uno a la computadora mediante el cable USB.</br>",
@@ -72,7 +72,7 @@
       {
         "Titulo": "Bitbloq",
         "Descripcción": "<br><b> Pasos básicos iniciales – Bitbloq </b></br> Bitbloq es una herramienta online que permite crear programas para un microcontrolador y cargarlos en el mismo de forma sencilla y sin tener necesariamente conocimientos de programación. Es de código abierto y puede usarse de forma gratuita, se requiere de un explorador basado en Chromium (Google Chrome, por ejemplo) para acceder a la herramienta.",
-        "Imagen": "images/Taller0/bitbloq.jpg",
+        "Imagen": "images/Taller0/bitbloq2.jpg",
         "Pasos": [
           {
             "Descripción": "<br>Crear una cuenta en Bitbloq, todo es almacenado en la nube, puede ser compartido con otras cuentas o descargado para tener un respaldo local.</br>",
@@ -124,8 +124,8 @@
             "Imagen": "images/Taller0/paso3EncenderLed.png"
           },
           {
-            "Descripción": "<br> <b> Código en Arduino IDE </b> </br> const int led = 13; // se declara el pin 13 como un entero constante llamado “led”\n\nvoid setup ()\n{\npinMode (led, OUTPUT); // se establece el pin 13 como una salida\n}\n\nvoid loop ()\n{\ndigitalWrite (led, HIGH); // la LED se enciende\ndelay (1000); // espera de 1 segundo\ndigitalWrite (led, LOW); // la LED se apaga\ndelay (1000); // espera de 1 segundo\n}\n",
-            "Imagen": "images/Taller0/paso3Arduino.png"
+            "Descripción": "<br> <b> Código en Arduino IDE </b> </br> <pre><code> const int led = 13; // se declara el pin 13 como un entero constante llamado “led” <br> </pre></code> <pre><code> void setup ()</pre></code> <pre><code> <br> { </pre></code> <br> <pre><code> pinMode (led, OUTPUT); // se establece el pin 13 como una salida </pre></code> <pre><code> } </pre></code> \n\nvoid loop ()\n{\ndigitalWrite (led, HIGH); // la LED se enciende\ndelay (1000); // espera de 1 segundo\ndigitalWrite (led, LOW); // la LED se apaga\ndelay (1000); // espera de 1 segundo\n}\n",
+            "Imagen": ""
           },
           {
             "Descripción": "<br> <b> Código en Bitbloq </b> </br> ",
