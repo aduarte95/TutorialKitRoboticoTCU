@@ -335,7 +335,7 @@
 
   "BrazoMecanico" : {
     "Id" : "6",
-    "Descripcion" :"<br><b> Metas </b></br> &bull; Introducir el concepto de sistema electromecánico. <br> &bull; Demostrar la interacción de diferente fuerzas en un sistema mecánico. <br> &bull; Enseñar a las y los estudiantes la importancia de la automatización de procesos.<br><br>Créditos de la foto y diseño: Heartman [CC BY-SA 3.0 (https://creativecommons.org/licenses/by-nc/3.0)] via Thingiverse",
+    "Descripcion" :"<br><b> Metas </b></br> &bull; Introducir el concepto de sistema electromecánico. <br> &bull; Demostrar la interacción de diferente fuerzas en un sistema mecánico. <br> &bull; Enseñar a las y los estudiantes la importancia de la automatización de procesos.<br><br>Créditos de la foto y diseño: Heartman [CC BY-NC 3.0 (https://creativecommons.org/licenses/by-nc/3.0)] via Thingiverse",
     "Imagen" : "images/Taller4/7.png",
     "CantidadComponentes" : ["1", "1", "1", "2", "12", "1", "1", "1", "1", "1", "1", "1", "10"],
     "Components": [
@@ -377,12 +377,12 @@
     },
     {
     "Encabezado": "<br><b> Paso 2.2: Conexión mecánica. </br></b>",
-    "Descripcion":"Conectar la pieza de unión entre base y eje primario  al servo.<br><br>Créditos de la foto: Heartman [CC BY-SA 3.0 (https://creativecommons.org/licenses/by-nc/3.0)] via Thingiverse" ,
+    "Descripcion":"Conectar la pieza de unión entre base y eje primario  al servo.<br><br>Créditos de la foto: Heartman [CC BY-NC 3.0 (https://creativecommons.org/licenses/by-nc/3.0)] via Thingiverse" ,
     "Image": "images/Taller4/4.jpg"
     },
     {
     "Encabezado": "<br><b> Paso 2.3: Conexión mecánica. </br></b>",
-    "Descripcion":"Colocar el eje primario en la pieza de unión.<br><br>Créditos de la foto: Heartman [CC BY-SA 3.0 (https://creativecommons.org/licenses/by-nc/3.0)] via Thingiverse" ,
+    "Descripcion":"Colocar el eje primario en la pieza de unión.<br><br>Créditos de la foto: Heartman [CC BY-NC 3.0 (https://creativecommons.org/licenses/by-nc/3.0)] via Thingiverse" ,
     "Image": "images/Taller4/5.jpg"
     },
     {
@@ -447,7 +447,7 @@
       },
       {
         "Encabezado": "Paso 2: Construcción mecánica del carro<br>",
-        "Descripcion": "En esta sección se dará el paso a paso de como ensamblar el carro.",
+        "Descripcion": "En esta sección se dará el paso a paso de como ensamblar el carro.<br><br>Créditos de la foto y diseño: rtheiss [CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0)] via Thingiverse",
         "Image": "images/Taller5/Carro1.jpg"
       },
       {
@@ -456,7 +456,7 @@
         "Image": "images/Taller5/paso21.jpg"
       },{
         "Encabezado": "Paso 2.2: Construcción mecánica del carro<br>",
-        "Descripcion": "Ahora se debe conectar el soporte 2 con el soporte 1 y pegarlo al servomotor (con el servomotor ya unido al chasís).",
+        "Descripcion": "Ahora se debe conectar el soporte 2 con el soporte 1 y pegarlo al servomotor (con el servomotor ya unido al chasís).<br><br>Créditos de la foto y diseño: rtheiss [CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0)] via Thingiverse",
         "Image": "images/Taller5/Carro2.jpg"
       },{
         "Encabezado": "Paso 2.3: Construcción mecánica del carro<br>",
