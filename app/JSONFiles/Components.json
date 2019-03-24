@@ -104,28 +104,28 @@
   "Chasís":
 
   {
-    "Descripcion": "Armazón que sostiene el motor y la carrocería de un vehículo",
+    "Descripcion": "Armazón que sostiene el motor y la carrocería de un vehículo. Creditos de la foto: <a href=\"\" onclick=\"externalLink('https://cdn.thingiverse.com/renders/74/1a/73/7a/46/SCRU-FEv1body_preview_featured.jpg')\">Tingiverse </a> via <a href=\"\" onclick=\"externalLink('https://www.thingiverse.com/')\">Tingiverse</a> <a href=\"\" onclick=\"externalLink('https://creativecommons.org/licenses/by-sa/3.0/')\">(licence)</a>",
     "Foto": "images/Components/Chasis.jpg"
   },
 
   "Soporte 1 del sensor ultrasónico":
 
   {
-    "Descripcion": "Elemento impreso en 3D que sirve como soporte para el sensor ultrasónico (complementado con el soporte 2). Créditos de la foto: <a href=\"\" onclick=\"externalLink('https://cdn.thingiverse.com/renders/bf/71/e0/dd/f4/SCRU-FEv1servoExtender2_preview_featured.jpg')\">Tingiverse Electronics</a> via <a href=\"\" onclick=\"externalLink('https://www.thingiverse.com/')\">Tingiverse</a> <a href=\"\" onclick=\"externalLink('https://creativecommons.org/licenses/by-sa/3.0/')\">(licence)</a>",
+    "Descripcion": "Elemento impreso en 3D que sirve como soporte para el sensor ultrasónico (complementado con el soporte 2). Créditos de la foto: <a href=\"\" onclick=\"externalLink('https://cdn.thingiverse.com/renders/bf/71/e0/dd/f4/SCRU-FEv1servoExtender2_preview_featured.jpg')\">Tingiverse </a> via <a href=\"\" onclick=\"externalLink('https://www.thingiverse.com/')\">Tingiverse</a> <a href=\"\" onclick=\"externalLink('https://creativecommons.org/licenses/by-sa/3.0/')\">(licence)</a>",
     "Foto": "images/Components/SoporteUltra.jpg"
   },
 
   "Soporte 2 del sensor ultrasónico":
 
   {
-    "Descripcion": "Elemento impreso en 3D que sirve como soporte para el sensor ultrasónico (complementado con el soporte 1). Créditos de la foto: <a href=\"\" onclick=\"externalLink('https://cdn.thingiverse.com/renders/89/d4/51/73/04/SCRU-FEv1USmount_preview_featured.jpg')\">Tingiverse Electronics</a> via <a href=\"\" onclick=\"externalLink('https://www.thingiverse.com/')\">Tingiverse</a> <a href=\"\" onclick=\"externalLink('https://creativecommons.org/licenses/by-sa/3.0/')\">(licence)</a>",
+    "Descripcion": "Elemento impreso en 3D que sirve como soporte para el sensor ultrasónico (complementado con el soporte 1). Créditos de la foto: <a href=\"\" onclick=\"externalLink('https://cdn.thingiverse.com/renders/89/d4/51/73/04/SCRU-FEv1USmount_preview_featured.jpg')\">Tingiverse </a> via <a href=\"\" onclick=\"externalLink('https://www.thingiverse.com/')\">Tingiverse</a> <a href=\"\" onclick=\"externalLink('https://creativecommons.org/licenses/by-sa/3.0/')\">(licence)</a>",
     "Foto": "images/Components/Soporte2Ultra.jpg"
   },
 
   "Rueda loca":
 
   {
-    "Descripcion": "Es una rueda sin tracción, simple o doble, que puede girar libremente",
+    "Descripcion": "Es una rueda sin tracción, simple o doble, que puede girar libremente. Creditos de la foto: <a href=\"\" onclick=\"externalLink('https://cdn.thingiverse.com/renders/89/d4/51/73/04/SCRU-FEv1USmount_preview_featured.jpg')\">Tingiverse </a> via <a href=\"\" onclick=\"externalLink('https://www.thingiverse.com/')\">Tingiverse</a> <a href=\"\" onclick=\"externalLink('https://creativecommons.org/licenses/by-sa/3.0/')\">(licence)</a>",
     "Foto": "images/Components/ruedaLoca.jpg"
   },
 
